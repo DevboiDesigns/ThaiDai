@@ -10,19 +10,16 @@ import SwiftUI
 struct CellCard: View {
     
     let word: Word
+    @State private var backDegree = 0.0
+    @State private var frontDegree = -90.0
+    @State private var isFlipped = false
     
-    @State var backDegree = 0.0
-    @State var frontDegree = -90.0
-    @State var isFlipped = false
-    
-    let width : CGFloat = 200
-    let height : CGFloat = 250
     let durationAndDelay : CGFloat = 0.2
     
     var body: some View {
         ZStack {
-            CellEnglish(word: word, width: width, height: height, degree: $frontDegree)
-            CellThai(word: word, width: width, height: height, degree: $backDegree)
+            CellEnglish(word: word, degree: $backDegree)
+            CellThai(word: word, degree: $frontDegree)
         }.onTapGesture {
             flipCard ()
         }
