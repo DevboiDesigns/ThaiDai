@@ -9,19 +9,23 @@ import SwiftUI
 
 struct PhrasesView: View {
     @ObservedObject private var phrasesVM = PhrasesViewModel()
+    @State private var language: Language = .english
     var body: some View {
         VStack {
+            HeaderBar(language: $language, title: "Phrases")
+            
             ScrollView {
                 ForEach(phrasesVM.phrases) { word in
-                    CellCard(word: word)
+                    CellCard(word: word, language: $language)
                 }
             }
         }
+        .background(Color.black)
     }
 }
 
-struct PhrasesView_Previews: PreviewProvider {
-    static var previews: some View {
-        PhrasesView()
-    }
-}
+//struct PhrasesView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PhrasesView()
+//    }
+//}

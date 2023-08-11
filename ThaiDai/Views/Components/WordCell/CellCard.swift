@@ -10,6 +10,7 @@ import SwiftUI
 struct CellCard: View {
     
     let word: Word
+    @Binding var language: Language
     @State private var backDegree = 0.0
     @State private var frontDegree = -90.0
     @State private var isFlipped = false
@@ -23,9 +24,15 @@ struct CellCard: View {
         }.onTapGesture {
             flipCard ()
         }
+        .onChange(of: language, perform: { _ in
+          toggleLanguage()
+        })
+        .onAppear {
+           toggleLanguage()
+        }
     }
     
-    func flipCard () {
+    private func flipCard () {
         isFlipped = !isFlipped
         if isFlipped {
             withAnimation(.linear(duration: durationAndDelay)) {
@@ -41,6 +48,16 @@ struct CellCard: View {
             withAnimation(.linear(duration: durationAndDelay).delay(durationAndDelay)){
                 backDegree = 0
             }
+        }
+    }
+    
+    private func toggleLanguage() {
+        if language == .english {
+            backDegree = 0.0
+            frontDegree = -90.0
+        } else {
+            backDegree = -90.0
+            frontDegree = 0.0
         }
     }
 }

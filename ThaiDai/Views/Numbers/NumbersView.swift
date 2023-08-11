@@ -9,14 +9,21 @@ import SwiftUI
 
 struct NumbersView: View {
     @ObservedObject private var numbersVM = NumbersViewModel()
+    @State private var language: Language = .english
     var body: some View {
         VStack {
-            ScrollView {
-                ForEach(numbersVM.numbers) { word in
-                    CellCard(word: word)
-                }
+            HeaderBar(language: $language, title: "Numbers")
+            
+            ScrollView(showsIndicators: false) {
+                SectionView(words: numbersVM.numbers, title: "0-9", language: $language)
+                SectionView(words: numbersVM.numbers, title: "10-19", language: $language)
+                SectionView(words: numbersVM.numbers, title: "20-99", language: $language)
+                SectionView(words: numbersVM.numbers, title: "100-999", language: $language)
+                SectionView(words: numbersVM.numbers, title: "1,000-9,999", language: $language)
             }
+
         }
+        .background(Color.black)
     }
 }
 

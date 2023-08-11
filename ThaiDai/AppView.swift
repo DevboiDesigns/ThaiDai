@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AppView.swift
 //  ThaiDai
 //
 //  Created by Christopher Hicks on 8/11/23.
@@ -7,8 +7,14 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AppView: View {
     @State private var selection = 0
+    
+    init() {
+        UITabBar.appearance().isTranslucent = false
+        UITabBar.appearance().backgroundColor = UIColor.black
+    }
+    
     var body: some View {
         NavigationStack {
             TabView(selection: $selection) {
@@ -30,20 +36,21 @@ struct ContentView: View {
                         Text("Phrases")
                     }
             }
+            .accentColor(.purple)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AppView()
     }
 }
 
 
 
 
-    
-   
 
-        
+
+
+
