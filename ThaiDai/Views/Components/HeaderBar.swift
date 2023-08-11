@@ -38,9 +38,9 @@ struct HeaderBar: View {
         .foregroundColor(.white)
         .onTapGesture {
             if language == .english {
-                language = .thai
+                withAnimation(.easeInOut) { language = .thai }
             } else {
-                language = .english
+                withAnimation(.easeInOut) { language = .english }
             }
         }
     }
