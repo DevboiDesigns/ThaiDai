@@ -19,4 +19,10 @@ extension Text {
             .font(.title3)
             .foregroundColor(.purple)
     }
+    
+    func appCellFont() -> some View {
+        self
+            .font(.body)
+            .foregroundColor(.black)
+    }
 }

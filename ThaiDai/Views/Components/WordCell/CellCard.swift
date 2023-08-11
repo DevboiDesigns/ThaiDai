@@ -11,10 +11,10 @@ struct CellCard: View {
     
     let word: Word
     @Binding var language: Language
+    
     @State private var backDegree = 0.0
     @State private var frontDegree = -90.0
     @State private var isFlipped = false
-    
     let durationAndDelay : CGFloat = 0.2
     
     var body: some View {

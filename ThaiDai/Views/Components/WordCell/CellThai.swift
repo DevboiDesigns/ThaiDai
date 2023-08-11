@@ -15,13 +15,9 @@ struct CellThai: View {
     var body: some View {
         HStack {
             Text(word.thai)
+                .appCellFont()
         }
-        .padding()
-        .frame(width: rect.width - 20)
-        .background(Color.gray)
-        .cornerRadius(8)
-        .rotation3DEffect(Angle(degrees: degree), axis: (x: 1, y: 0, z: 0))
+        .cardCellLayer(degree)
     }
-    
 }
 
