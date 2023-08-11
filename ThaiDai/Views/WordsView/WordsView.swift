@@ -13,7 +13,7 @@ struct WordsView: View {
         VStack {
             ScrollView {
                 ForEach(wordVM.words) { word in
-                    WordCell(card: word)
+                    CellCard(word: word)
                 }
             }
         }
