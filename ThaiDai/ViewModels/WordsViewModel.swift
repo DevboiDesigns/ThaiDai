@@ -9,24 +9,9 @@ import SwiftUI
 
 
 final class WordsViewModel: BaseViewModel {
-    @Published var words: [Word] = []
+    @Published var words: [Word] = Bundle.main.decode("lesson.json")
     
-    override init() {
-        super.init()
-        words = initView()
-    }
-    
-    
-    func initView() -> [Word] {
-        let mockWords: [Word] = [
-            .init(english: "yes", thai: "chai"),
-            .init(english: "no", thai: "mai"),
-            .init(english: "know", thai: "ruu"),
-            .init(english: "teacher", thai: "kru"),
-            .init(english: "you", thai: "kun"),
-        ]
-        
-        return mockWords
-    }
+
+
 }
     
