@@ -1,5 +1,5 @@
 //
-//  HomeViewModel.swift
+//  WordsViewModel.swift
 //  ThaiDai
 //
 //  Created by Christopher Hicks on 8/11/23.
@@ -8,10 +8,11 @@
 import SwiftUI
 
 
-final class HomeViewModel: ObservableObject {
+final class WordsViewModel: BaseViewModel {
     @Published var words: [Word] = []
     
-    init() {
+    override init() {
+        super.init()
         words = initView()
     }
     

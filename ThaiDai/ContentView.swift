@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection = 0
     var body: some View {
-        HomeView()
+        NavigationStack {
+            TabView(selection: $selection) {
+                WordsView()
+                    .tabItem {
+                        Image(systemName: "textformat.abc")
+                        Text("Words")
+                    }
+                
+                NumbersView()
+                    .tabItem {
+                        Image(systemName: "list.number")
+                        Text("Numbers")
+                    }
+                
+                PhrasesView()
+                    .tabItem {
+                        Image(systemName: "text.word.spacing")
+                        Text("Phrases")
+                    }
+            }
+        }
     }
 }
 

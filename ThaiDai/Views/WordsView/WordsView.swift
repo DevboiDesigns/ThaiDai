@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  WordsView.swift
 //  ThaiDai
 //
 //  Created by Christopher Hicks on 8/11/23.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct HomeView: View {
-    @ObservedObject private var listVM = WordListViewModel()
+struct WordsView: View {
+    @ObservedObject private var wordVM = WordsViewModel()
     var body: some View {
         VStack {
             ScrollView {
-                ForEach(listVM.words) { word in
+                ForEach(wordVM.words) { word in
                     WordCell(card: word)
                 }
             }
