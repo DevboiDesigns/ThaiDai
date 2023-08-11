@@ -12,10 +12,19 @@ struct WordsView: View {
     var body: some View {
         VStack {
             ScrollView {
-                ForEach(wordVM.words) { word in
-                    CellCard(word: word)
-                }
+                // Basics
+                SectionView(words: wordVM.words, title: "Basics")
+                
+                // Intermediate
+                SectionView(words: wordVM.words, title: "Intermediate")
+                
+                
+                // Advanced
+                SectionView(words: wordVM.words, title: "Advanced")
             }
         }
     }
 }
+
+
+

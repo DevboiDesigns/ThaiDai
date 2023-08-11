@@ -24,6 +24,7 @@
 		A795F7E62A86655D007BF2FD /* CellThai.swift in Sources */ = {isa = PBXBuildFile; fileRef = A795F7E52A86655D007BF2FD /* CellThai.swift */; };
 		A795F7E82A866582007BF2FD /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = A795F7E72A866582007BF2FD /* Language.swift */; };
 		A795F7EC2A866726007BF2FD /* CellCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A795F7EB2A866726007BF2FD /* CellCard.swift */; };
+		A795F7EF2A866C39007BF2FD /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A795F7EE2A866C39007BF2FD /* SectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		A795F7E52A86655D007BF2FD /* CellThai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellThai.swift; sourceTree = "<group>"; };
 		A795F7E72A866582007BF2FD /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		A795F7EB2A866726007BF2FD /* CellCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCard.swift; sourceTree = "<group>"; };
+		A795F7EE2A866C39007BF2FD /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +124,7 @@
 		A7112D152A862CC300091ECC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A795F7E42A86650C007BF2FD /* Cell */,
+				A795F7ED2A866C2C007BF2FD /* Components */,
 				A795F7BF2A863DF5007BF2FD /* PhrasesView */,
 				A7112D1E2A863B8B00091ECC /* Numbers */,
 				A7112D1D2A862EE700091ECC /* WordsView */,
@@ -162,14 +164,23 @@
 			path = PhrasesView;
 			sourceTree = "<group>";
 		};
-		A795F7E42A86650C007BF2FD /* Cell */ = {
+		A795F7E42A86650C007BF2FD /* WordCell */ = {
 			isa = PBXGroup;
 			children = (
 				A7112D182A862D1E00091ECC /* CellEnglish.swift */,
 				A795F7E52A86655D007BF2FD /* CellThai.swift */,
 				A795F7EB2A866726007BF2FD /* CellCard.swift */,
 			);
-			path = Cell;
+			path = WordCell;
+			sourceTree = "<group>";
+		};
+		A795F7ED2A866C2C007BF2FD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A795F7E42A86650C007BF2FD /* WordCell */,
+				A795F7EE2A866C39007BF2FD /* SectionView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +265,7 @@
 				A7112D172A862CD200091ECC /* WordsView.swift in Sources */,
 				A7112D1C2A862E3800091ECC /* View+.swift in Sources */,
 				A795F7BA2A863C9B007BF2FD /* NumbersViewModel.swift in Sources */,
+				A795F7EF2A866C39007BF2FD /* SectionView.swift in Sources */,
 				A7112D192A862D1E00091ECC /* CellEnglish.swift in Sources */,
 				A795F7C12A863E03007BF2FD /* PhrasesView.swift in Sources */,
 				A7112D112A862BE900091ECC /* Word.swift in Sources */,
