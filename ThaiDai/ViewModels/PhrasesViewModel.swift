@@ -9,5 +9,13 @@ import SwiftUI
 
 final class PhrasesViewModel: BaseViewModel {
     @Published var phrases: [Word] = []
+    
+    override init() {
+        super.init()
+        phrases = setPhrases()
+    }
 
+    private func setPhrases() -> [Word] {
+        getData(.phrases) ?? Bundle.main.decode("phrases.json")
+    }
 }

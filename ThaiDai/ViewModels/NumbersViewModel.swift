@@ -10,6 +10,15 @@ import SwiftUI
 final class NumbersViewModel: BaseViewModel {
     @Published var numbers: [Word] = []
     
+    override init() {
+        super.init()
+        numbers = setNumbers()
+    }
+    
+    private func setNumbers() -> [Word] {
+        getData(.numbers) ?? Bundle.main.decode("numbers.json")
+    }
+    
     func reset() {
         let newNums: [Word] = Bundle.main.decode("numbers.json")
         self.save(newNums, key: UserKeys.numbers)

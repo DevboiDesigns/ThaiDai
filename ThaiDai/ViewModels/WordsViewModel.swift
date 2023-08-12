@@ -18,22 +18,13 @@ final class WordsViewModel: BaseViewModel {
     }
     
     func reset() {
-        let newWords: [Word] = Bundle.main.decode("lesson.json")
+        let newWords: [Word] = Bundle.main.decode("words.json")
         self.save(newWords, key: UserKeys.words)
         self.words = newWords
     }
     
     private func setWords() -> [Word] {
-        if let data = UserDefaults.standard.data(forKey: UserKeys.words.rawValue) {
-            let words = try? JSONDecoder().decode([Word].self, from: data)
-            if let words = words {
-                return words
-            } else {
-                return Bundle.main.decode("lesson.json")
-            }
-        } else {
-            return Bundle.main.decode("lesson.json")
-        }
+        getData(.words) ?? Bundle.main.decode("words.json")
     }
     
     func buttonHandler(_ button: CellButtons, _ word: Word) {
