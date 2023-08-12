@@ -11,7 +11,7 @@ extension Text {
     func appSectionFont() -> some View {
         self
             .font(.headline)
-            .foregroundColor(.white)
+            .foregroundColor(.appWhite)
     }
     
     func appTitleFont() -> some View {
@@ -23,6 +23,6 @@ extension Text {
     func appCellFont() -> some View {
         self
             .font(.body)
-            .foregroundColor(.black)
+            .foregroundColor(.appBlack)
     }
 }

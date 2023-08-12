@@ -20,7 +20,7 @@ struct PhrasesView: View {
                 }
             }
         }
-        .background(Color.black)
+        .mainBackground()
     }
 }
 

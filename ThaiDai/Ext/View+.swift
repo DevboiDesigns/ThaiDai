@@ -16,8 +16,17 @@ extension View {
         self
             .padding()
             .frame(width: rect.width - 20)
-            .background(Color.gray)
+            .background(Color.appWhite)
             .cornerRadius(8)
             .rotation3DEffect(Angle(degrees: degree), axis: (x: 1, y: 0, z: 0))
+    }
+    
+    func mainBackground() -> some View {
+        self
+            .background(LinearGradient(colors: [Color.appBlack, Color.appGray], startPoint: .topTrailing, endPoint: .bottomLeading))
+    }
+    
+    func addSwipeButtons(leadingButtons: [CellButtons], trailingButton: [CellButtons], onClick: @escaping (CellButtons) -> Void) -> some View {
+        self.modifier(SwipeContainerCell(leadingButtons: leadingButtons, trailingButton: trailingButton, onClick: onClick))
     }
 }

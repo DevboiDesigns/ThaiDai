@@ -36,16 +36,16 @@ struct AppView: View {
                         Text("Phrases")
                     }
             }
-            .accentColor(.purple)
+            .tint(.appWhite)
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        AppView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AppView()
+//    }
+//}
 
 
 

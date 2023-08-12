@@ -10,23 +10,36 @@ import SwiftUI
 struct SectionView: View {
     let words: [Word]
     let title: String
-    @State private var selected = true
     @Binding var language: Language
+    let action: (CellButtons, Word) -> Void
+    @State private var selected = true
     var body: some View {
-        Group {
+        ZStack {
             if selected {
                 VStack {
-                    Text(title)
-                        .appSectionFont()
+                    HStack {
+                        Text(title)
+                            .appSectionFont()
+                        Spacer()
+                    }
+                    .padding(.horizontal)
+                    
                     Divider()
                     ForEach(words) { word in
                         CellCard(word: word, language: $language)
+                            .addSwipeButtons(leadingButtons: [.save], trailingButton: [.delete]) { button in
+                                action(button, word)
+                            }
                     }
                 }
             } else {
                 VStack {
-                    Text(title)
-                        .appSectionFont()
+                    HStack {
+                        Text(title)
+                            .appSectionFont()
+                        Spacer()
+                    }
+                    .padding(.horizontal)
                     Divider()
                 }
             }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Word: Identifiable, Codable {
-    var id: String { UUID().uuidString }
+    let id: String = UUID().uuidString
     let english: String
     let thai: String
     let lesson: Int

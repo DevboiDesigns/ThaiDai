@@ -21,15 +21,12 @@ struct CellCard: View {
         ZStack {
             CellEnglish(word: word, degree: $backDegree)
             CellThai(word: word, degree: $frontDegree)
-        }.onTapGesture {
-            flipCard ()
         }
+        .onTapGesture { flipCard () }
         .onChange(of: language, perform: { _ in
           toggleLanguage()
         })
-        .onAppear {
-           toggleLanguage()
-        }
+//        .onAppear { toggleLanguage() }
     }
     
     private func flipCard () {

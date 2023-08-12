@@ -16,19 +16,17 @@ struct WordsView: View {
             HeaderBar(language: $language, title: "Words")
             
             ScrollView(showsIndicators: false) {
-                // Basics
-                SectionView(words: wordVM.words.filter { $0.lesson == 1 }, title: "Lesson 001", language: $language)
-                
-                // Intermediate
-                SectionView(words: wordVM.words.filter { $0.lesson == 2 }, title: "Lesson 002", language: $language)
-                
-                
-                // Advanced
-                SectionView(words: wordVM.words.filter { $0.lesson == 3 }, title: "Lesson 003", language: $language)
+                SectionView(words: wordVM.words.filter { $0.lesson == 1 }, title: "Lesson 1", language: $language, action: wordVM.buttonHandler)
+                SectionView(words: wordVM.words.filter { $0.lesson == 2 }, title: "Lesson 2", language: $language, action: wordVM.buttonHandler)
+                SectionView(words: wordVM.words.filter { $0.lesson == 3 }, title: "Lesson 3", language: $language, action: wordVM.buttonHandler)
             }
         }
-        .background(Color.black)
-        .onAppear { wordVM.words.shuffle() }
+        .mainBackground()
+        .onAppear {
+//            wordVM.words = wordVM.resetWords()
+//            wordVM.words.shuffle()
+            
+        }
     }
 }
 

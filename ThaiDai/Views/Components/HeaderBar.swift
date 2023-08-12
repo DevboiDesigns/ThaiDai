@@ -12,11 +12,24 @@ struct HeaderBar: View {
     let title: String
     var body: some View {
         HStack(alignment: .bottom) {
-            Text(title)
-                .appTitleFont()
+            
             Spacer()
             
             LanguageIcon
+            
+            
+            NavigationLink {
+                SettingsView()
+            } label: {
+                Image(systemName: "gear.circle")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 26)
+                    .foregroundColor(.appWhite)
+                
+            }
+            
+            
         }
         .padding(.horizontal)
     }
@@ -35,7 +48,7 @@ struct HeaderBar: View {
             }
         }
         .frame(width: 26)
-        .foregroundColor(.white)
+        .foregroundColor(.appWhite)
         .onTapGesture {
             if language == .english {
                 withAnimation(.easeInOut) { language = .thai }
