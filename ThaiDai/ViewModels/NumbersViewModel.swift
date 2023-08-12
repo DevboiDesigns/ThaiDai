@@ -10,6 +10,12 @@ import SwiftUI
 final class NumbersViewModel: BaseViewModel {
     @Published var numbers: [Word] = []
     
+    func reset() {
+        let newNums: [Word] = Bundle.main.decode("numbers.json")
+        self.save(newNums, key: UserKeys.numbers.rawValue)
+        self.numbers = newNums
+    }
+    
     func buttonHandler(_ button: CellButtons, _ word: Word) {
         switch button {
         case .edit:

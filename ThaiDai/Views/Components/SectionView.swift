@@ -12,14 +12,19 @@ struct SectionView: View {
     let title: String
     @Binding var language: Language
     let action: (CellButtons, Word) -> Void
+    let resetAction: () -> Void
     @State private var selected = true
     var body: some View {
         ZStack {
             if selected {
                 VStack {
-                    HStack {
+                    HStack(alignment: .bottom, spacing: 14) {
                         Text(title)
                             .appSectionFont()
+                            .onTapGesture { toggleView() }
+                        Text("Reset")
+                            .appCellFont(.appWhite, size: .footnote)
+                            .onTapGesture { resetAction() }
                         Spacer()
                     }
                     .padding(.horizontal)
@@ -34,9 +39,13 @@ struct SectionView: View {
                 }
             } else {
                 VStack {
-                    HStack {
+                    HStack(alignment: .bottom, spacing: 14) {
                         Text(title)
                             .appSectionFont()
+                            .onTapGesture { toggleView() }
+                        Text("Reset")
+                            .appCellFont(.appWhite, size: .footnote)
+                            .onTapGesture { resetAction() }
                         Spacer()
                     }
                     .padding(.horizontal)
@@ -44,10 +53,11 @@ struct SectionView: View {
                 }
             }
         }
-        .onTapGesture {
-            withAnimation(.easeInOut) {
-                selected.toggle()
-            }
+    }
+    
+    private func toggleView() {
+        withAnimation(.easeInOut) {
+            selected.toggle()
         }
     }
 }

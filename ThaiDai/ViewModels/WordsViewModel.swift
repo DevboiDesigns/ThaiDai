@@ -14,10 +14,16 @@ final class WordsViewModel: BaseViewModel {
     
     override init() {
         super.init()
-        words = resetWords()
+        words = setWords()
     }
     
-    func resetWords() -> [Word] {
+    func reset() {
+        let newWords: [Word] = Bundle.main.decode("lesson.json")
+        self.save(newWords, key: UserKeys.words.rawValue)
+        self.words = newWords
+    }
+    
+    private func setWords() -> [Word] {
         if let data = UserDefaults.standard.data(forKey: UserKeys.words.rawValue) {
             let words = try? JSONDecoder().decode([Word].self, from: data)
             if let words = words {
@@ -42,7 +48,7 @@ final class WordsViewModel: BaseViewModel {
             print("INFO Selected......\(word) : ID: \(word.id)")
         }
     }
-    
+
     private func delete(_ id: String) {
         words = words.filter { $0.id != id }
         self.save(self.words, key: UserKeys.words.rawValue)
