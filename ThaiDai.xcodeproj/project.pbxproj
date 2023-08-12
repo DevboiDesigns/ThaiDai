@@ -31,7 +31,9 @@
 		A795F7F92A868F96007BF2FD /* lesson.json in Resources */ = {isa = PBXBuildFile; fileRef = A795F7F52A868CD4007BF2FD /* lesson.json */; };
 		A797CD5F2A87BBB200AC790B /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD5E2A87BBB200AC790B /* Color+.swift */; };
 		A797CD612A87BE1600AC790B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD602A87BE1600AC790B /* SettingsView.swift */; };
-		A797CD812A87C54B00AC790B /* SwipeToDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD802A87C54B00AC790B /* SwipeToDelete.swift */; };
+		A797CD812A87C54B00AC790B /* SwipeContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD802A87C54B00AC790B /* SwipeContainerCell.swift */; };
+		A797CD832A87CCA800AC790B /* CellButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD822A87CCA800AC790B /* CellButtons.swift */; };
+		A797CD862A87CF4200AC790B /* UserKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD852A87CF4200AC790B /* UserKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +63,9 @@
 		A795F7F72A868D03007BF2FD /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
 		A797CD5E2A87BBB200AC790B /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		A797CD602A87BE1600AC790B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		A797CD802A87C54B00AC790B /* SwipeToDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToDelete.swift; sourceTree = "<group>"; };
+		A797CD802A87C54B00AC790B /* SwipeContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeContainerCell.swift; sourceTree = "<group>"; };
+		A797CD822A87CCA800AC790B /* CellButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellButtons.swift; sourceTree = "<group>"; };
+		A797CD852A87CF4200AC790B /* UserKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		A7112CFF2A862AAB00091ECC /* ThaiDai */ = {
 			isa = PBXGroup;
 			children = (
+				A797CD842A87CF3100AC790B /* Utils */,
 				A7112D002A862AAB00091ECC /* ThaiDaiApp.swift */,
 				A7112D022A862AAB00091ECC /* AppView.swift */,
 				A7112D152A862CC300091ECC /* Views */,
@@ -215,9 +220,18 @@
 		A797CD7F2A87C52300AC790B /* SwipeDelete */ = {
 			isa = PBXGroup;
 			children = (
-				A797CD802A87C54B00AC790B /* SwipeToDelete.swift */,
+				A797CD802A87C54B00AC790B /* SwipeContainerCell.swift */,
+				A797CD822A87CCA800AC790B /* CellButtons.swift */,
 			);
 			path = SwipeDelete;
+			sourceTree = "<group>";
+		};
+		A797CD842A87CF3100AC790B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A797CD852A87CF4200AC790B /* UserKeys.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +314,7 @@
 				A795F7E82A866582007BF2FD /* Language.swift in Sources */,
 				A7112D012A862AAB00091ECC /* ThaiDaiApp.swift in Sources */,
 				A795F7C32A863E0E007BF2FD /* PhrasesViewModel.swift in Sources */,
+				A797CD832A87CCA800AC790B /* CellButtons.swift in Sources */,
 				A795F7F12A867EF7007BF2FD /* HeaderBar.swift in Sources */,
 				A795F7F32A868203007BF2FD /* Text+.swift in Sources */,
 				A795F7F82A868D03007BF2FD /* Bundle+.swift in Sources */,
@@ -310,8 +325,9 @@
 				A795F7BA2A863C9B007BF2FD /* NumbersViewModel.swift in Sources */,
 				A795F7EF2A866C39007BF2FD /* SectionView.swift in Sources */,
 				A7112D192A862D1E00091ECC /* CellEnglish.swift in Sources */,
+				A797CD862A87CF4200AC790B /* UserKeys.swift in Sources */,
 				A795F7C12A863E03007BF2FD /* PhrasesView.swift in Sources */,
-				A797CD812A87C54B00AC790B /* SwipeToDelete.swift in Sources */,
+				A797CD812A87C54B00AC790B /* SwipeContainerCell.swift in Sources */,
 				A7112D112A862BE900091ECC /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

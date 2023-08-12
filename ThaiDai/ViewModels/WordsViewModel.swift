@@ -8,6 +8,7 @@
 import SwiftUI
 
 
+
 final class WordsViewModel: BaseViewModel {
     @Published var words: [Word] = []
     
@@ -17,7 +18,16 @@ final class WordsViewModel: BaseViewModel {
     }
     
     func resetWords() -> [Word] {
-        Bundle.main.decode("lesson.json")
+        if let data = UserDefaults.standard.data(forKey: UserKeys.words.rawValue) {
+            let words = try? JSONDecoder().decode([Word].self, from: data)
+            if let words = words {
+                return words
+            } else {
+                return Bundle.main.decode("lesson.json")
+            }
+        } else {
+            return Bundle.main.decode("lesson.json")
+        }
     }
     
     func buttonHandler(_ button: CellButtons, _ word: Word) {
@@ -35,6 +45,7 @@ final class WordsViewModel: BaseViewModel {
     
     private func delete(_ id: String) {
         words = words.filter { $0.id != id }
+        self.save(self.words, key: UserKeys.words.rawValue)
     }
 
 }

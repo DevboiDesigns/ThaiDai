@@ -16,6 +16,7 @@ struct HeaderBar: View {
             Spacer()
             
             LanguageIcon
+                .padding(.trailing, 8)
             
             
             NavigationLink {
