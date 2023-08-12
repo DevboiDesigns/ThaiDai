@@ -19,7 +19,7 @@ final class WordsViewModel: BaseViewModel {
     
     func reset() {
         let newWords: [Word] = Bundle.main.decode("lesson.json")
-        self.save(newWords, key: UserKeys.words.rawValue)
+        self.save(newWords, key: UserKeys.words)
         self.words = newWords
     }
     
@@ -43,7 +43,7 @@ final class WordsViewModel: BaseViewModel {
         case .delete:
             self.delete(word.id)
         case .save:
-            print("SAVE Selected......\(word) : ID: \(word.id)")
+            self.saveStatus(word, key: .words)
         case .info:
             print("INFO Selected......\(word) : ID: \(word.id)")
         }
@@ -51,8 +51,9 @@ final class WordsViewModel: BaseViewModel {
 
     private func delete(_ id: String) {
         words = words.filter { $0.id != id }
-        self.save(self.words, key: UserKeys.words.rawValue)
+        self.save(self.words, key: UserKeys.words)
     }
+    
 
 }
     

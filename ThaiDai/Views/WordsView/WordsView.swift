@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WordsView: View {
     
-    @ObservedObject private var wordVM = WordsViewModel()
+    @StateObject private var wordVM = WordsViewModel()
     @State private var language: Language = .english
     @State private var selected: Bool = false
     @State private var level: WordLevels = .one

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PhrasesView: View {
-    @ObservedObject private var phrasesVM = PhrasesViewModel()
+    @StateObject private var phrasesVM = PhrasesViewModel()
     @State private var language: Language = .english
     var body: some View {
         VStack {

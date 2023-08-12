@@ -22,19 +22,19 @@ struct AppView: View {
                     .tabItem {
                         Image(systemName: "textformat.abc")
                         Text("Words")
-                    }
+                    }.tag(0)
                 
                 NumbersView()
                     .tabItem {
                         Image(systemName: "list.number")
                         Text("Numbers")
-                    }
+                    }.tag(1)
                 
                 PhrasesView()
                     .tabItem {
                         Image(systemName: "text.word.spacing")
                         Text("Phrases")
-                    }
+                    }.tag(2)
             }
             .tint(.appWhite)
         }

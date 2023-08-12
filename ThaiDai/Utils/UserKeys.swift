@@ -8,7 +8,8 @@
 import SwiftUI
 
 enum UserKeys: String {
-case words = "co.thaidai.words"
-case numbers = "co.thaidai.numbers"
-case phrases = "co.thaidai.phrases"
+    case words = "co.thaidai.words"
+    case numbers = "co.thaidai.numbers"
+    case phrases = "co.thaidai.phrases"
+    case savedWords = "co.thaidai.savedWords"
 }

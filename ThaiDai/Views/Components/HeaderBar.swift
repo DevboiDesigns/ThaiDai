@@ -20,7 +20,7 @@ struct HeaderBar: View {
             
             
             NavigationLink {
-                SettingsView()
+                SettingsView(settingsVM: SettingsViewModel())
             } label: {
                 Image(systemName: "gear.circle")
                     .resizable()

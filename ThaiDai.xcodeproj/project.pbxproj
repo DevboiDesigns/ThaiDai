@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A70A34F12A8803B300A2671C /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70A34F02A8803B300A2671C /* SettingsViewModel.swift */; };
 		A7112D012A862AAB00091ECC /* ThaiDaiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7112D002A862AAB00091ECC /* ThaiDaiApp.swift */; };
 		A7112D032A862AAB00091ECC /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7112D022A862AAB00091ECC /* AppView.swift */; };
 		A7112D052A862AAC00091ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7112D042A862AAC00091ECC /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A70A34F02A8803B300A2671C /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		A7112CFD2A862AAB00091ECC /* ThaiDai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThaiDai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7112D002A862AAB00091ECC /* ThaiDaiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiDaiApp.swift; sourceTree = "<group>"; };
 		A7112D022A862AAB00091ECC /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				A795F7B92A863C9B007BF2FD /* NumbersViewModel.swift */,
 				A795F7C22A863E0E007BF2FD /* PhrasesViewModel.swift */,
 				A795F7BB2A863CBB007BF2FD /* BaseViewModel.swift */,
+				A70A34F02A8803B300A2671C /* SettingsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				A795F7F32A868203007BF2FD /* Text+.swift in Sources */,
 				A795F7F82A868D03007BF2FD /* Bundle+.swift in Sources */,
 				A7112D142A862C2200091ECC /* WordsViewModel.swift in Sources */,
+				A70A34F12A8803B300A2671C /* SettingsViewModel.swift in Sources */,
 				A7112D202A863BC400091ECC /* NumbersView.swift in Sources */,
 				A7112D172A862CD200091ECC /* WordsView.swift in Sources */,
 				A7112D1C2A862E3800091ECC /* View+.swift in Sources */,

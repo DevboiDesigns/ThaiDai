@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NumbersView: View {
-    @ObservedObject private var numbersVM = NumbersViewModel()
+    @StateObject private var numbersVM = NumbersViewModel()
     @State private var language: Language = .english
     var body: some View {
         VStack {

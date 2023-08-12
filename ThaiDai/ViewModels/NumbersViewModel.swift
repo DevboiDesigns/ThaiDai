@@ -12,7 +12,7 @@ final class NumbersViewModel: BaseViewModel {
     
     func reset() {
         let newNums: [Word] = Bundle.main.decode("numbers.json")
-        self.save(newNums, key: UserKeys.numbers.rawValue)
+        self.save(newNums, key: UserKeys.numbers)
         self.numbers = newNums
     }
     
