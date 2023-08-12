@@ -1,5 +1,5 @@
 //
-//  SectionView.swift
+//  LevelsSectionView.swift
 //  ThaiDai
 //
 //  Created by Christopher Hicks on 8/11/23.
@@ -7,19 +7,21 @@
 
 import SwiftUI
 
-struct SectionView: View {
+struct LevelsSectionView: View {
     let words: [Word]
-    let title: String
+    let level: WordLevels
     @Binding var language: Language
     let action: (CellButtons, Word) -> Void
     let resetAction: () -> Void
+    let toggleAction: (WordLevels) -> Void
+    var selectable: Bool = true
     @State private var selected = true
     var body: some View {
         ZStack {
             if selected {
                 VStack {
-                    SectionCell(title: title, toggleAction: toggleView, resetAction: resetAction)
-                    
+                    LevelsCell(level: level, toggleAction: toggleAction, resetAction: resetAction)
+   
                     ForEach(words) { word in
                         CellCard(word: word, language: $language)
                             .addSwipeButtons(leadingButtons: [.save], trailingButton: [.delete]) { button in
@@ -29,15 +31,17 @@ struct SectionView: View {
                 }
             } else {
                 VStack {
-                    SectionCell(title: title, toggleAction: toggleView, resetAction: resetAction)
+                    LevelsCell(level: level, toggleAction: toggleAction, resetAction: resetAction)
                 }
             }
         }
     }
     
-    private func toggleView() {
-        withAnimation(.easeInOut) {
-            selected.toggle()
-        }
-    }
+//    private func toggleView(_ level: WordLevels) {
+//        if selectable {
+//            withAnimation(.easeInOut) {
+//                selected.toggle()
+//            }
+//        }
+//    }
 }
