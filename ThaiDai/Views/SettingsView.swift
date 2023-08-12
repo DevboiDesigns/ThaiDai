@@ -12,13 +12,31 @@ struct SettingsView: View {
     @State private var language: Language = .english
     var body: some View {
         VStack {
-            ScrollView(showsIndicators: false) {
-                SectionView(words: settingsVM.savedWords,
-                            title: "Saved Words",
-                            language: $language,
-                            action: settingsVM.buttonHandler,
-                            resetAction: settingsVM.reset)
+            Text("Reset All Lessons")
+                .foregroundColor(.appWhite)
+                .font(.callout)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 6)
+                .background(Color.appPurple)
+                .cornerRadius(8)
+                .onTapGesture {
+                    settingsVM.resetAllLessons()
+                }
+                .padding(.top)
+            
+            VStack {
+                ScrollView(showsIndicators: false) {
+                    SectionView(words: settingsVM.savedWords,
+                                title: "Saved Words",
+                                language: $language,
+                                action: settingsVM.buttonHandler,
+                                resetAction: settingsVM.reset,
+                                selectable: false)
+                }
             }
+            .padding()
+            .padding(.top)
+            
         }
         .background(Color.appBlack)
         .onAppear { settingsVM.setView() }

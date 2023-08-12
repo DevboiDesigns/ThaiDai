@@ -36,8 +36,8 @@ struct AppView: View {
                         Text("Phrases")
                     }.tag(2)
             }
-            .tint(.appWhite)
         }
+        .tint(.appWhite)
     }
 }
 

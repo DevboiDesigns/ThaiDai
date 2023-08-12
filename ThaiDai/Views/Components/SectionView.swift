@@ -13,6 +13,7 @@ struct SectionView: View {
     @Binding var language: Language
     let action: (CellButtons, Word) -> Void
     let resetAction: () -> Void
+    var selectable: Bool = true
     @State private var selected = true
     var body: some View {
         ZStack {
@@ -21,10 +22,15 @@ struct SectionView: View {
                     SectionCell(title: title, toggleAction: toggleView, resetAction: resetAction)
                     
                     ForEach(words) { word in
-                        CellCard(word: word, language: $language)
-                            .addSwipeButtons(leadingButtons: [.save], trailingButton: [.delete]) { button in
-                                action(button, word)
-                            }
+                        if selectable {
+                            CellCard(word: word, language: $language)
+                                .addSwipeButtons(leadingButtons: [.save], trailingButton: [.delete]) { button in
+                                    action(button, word)
+                                }
+                        } else {
+                            CellCard(word: word, language: $language)
+            
+                        }
                     }
                 }
             } else {

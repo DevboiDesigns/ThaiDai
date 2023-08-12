@@ -35,5 +35,11 @@ class BaseViewModel: ObservableObject {
         }
     }
     
+    
+    func resetAllLessons() {
+        UserDefaults.standard.removeObject(forKey: UserKeys.words.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserKeys.numbers.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserKeys.phrases.rawValue)
+    }
 
 }
