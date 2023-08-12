@@ -43,7 +43,7 @@ final class WordsViewModel: BaseViewModel {
         case .delete:
             self.delete(word.id)
         case .save:
-            self.saveStatus(word, key: .words)
+            self.saveStatus(word, key: .savedWords)
         case .info:
             print("INFO Selected......\(word) : ID: \(word.id)")
         }
