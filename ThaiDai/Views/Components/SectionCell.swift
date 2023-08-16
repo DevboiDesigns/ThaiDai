@@ -19,10 +19,10 @@ struct SectionCell: View {
                 Text(title)
                     .appSectionFont()
                     .onTapGesture { toggleAction() }
-                Text("Reset")
-                    .appCellFont(.appWhite, size: .footnote)
-                    .onTapGesture { resetAction() }
                 Spacer()
+                Text("Reset")
+                    .appCellFont(.appPurple, size: .footnote)
+                    .onTapGesture { resetAction() }
             }
             .padding(.horizontal)
             Divider()

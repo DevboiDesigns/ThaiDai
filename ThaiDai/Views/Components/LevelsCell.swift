@@ -15,14 +15,14 @@ struct LevelsCell: View {
     
     var body: some View {
         VStack {
-            HStack(alignment: .bottom, spacing: 14) {
+            HStack(alignment: .bottom, spacing: 24) {
                 Text(level.name)
                     .appSectionFont()
                     .onTapGesture { toggleAction(level) }
+                  Spacer()
                 Text("Reset")
-                    .appCellFont(.appWhite, size: .footnote)
+                    .appCellFont(.appPurple, size: .footnote)
                     .onTapGesture { resetAction() }
-                Spacer()
             }
             .padding(.horizontal)
             Divider()

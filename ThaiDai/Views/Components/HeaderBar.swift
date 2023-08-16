@@ -12,12 +12,9 @@ struct HeaderBar: View {
     let title: String
     var body: some View {
         HStack(alignment: .bottom) {
-            
             Spacer()
-            
             LanguageIcon
                 .padding(.trailing, 8)
-            
             
             NavigationLink {
                 SettingsView(settingsVM: SettingsViewModel())
@@ -27,12 +24,10 @@ struct HeaderBar: View {
                     .scaledToFit()
                     .frame(width: 26)
                     .foregroundColor(.appWhite)
-                
             }
-            
-            
         }
         .padding(.horizontal)
+        .padding(.bottom)
     }
     
     @ViewBuilder

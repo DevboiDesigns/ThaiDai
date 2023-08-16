@@ -50,6 +50,7 @@ struct WordsView: View {
     
     private func select(_ level: WordLevels) {
         withAnimation(.easeIn) {
+            print(level)
             self.level = level
             self.selected.toggle()
         }
