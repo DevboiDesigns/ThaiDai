@@ -39,13 +39,13 @@
 		A797CD812A87C54B00AC790B /* SwipeContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD802A87C54B00AC790B /* SwipeContainerCell.swift */; };
 		A797CD832A87CCA800AC790B /* CellButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD822A87CCA800AC790B /* CellButtons.swift */; };
 		A797CD862A87CF4200AC790B /* UserKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD852A87CF4200AC790B /* UserKeys.swift */; };
-		A7BCB0932A8D2A700053415E /* numbersData.json in Resources */ = {isa = PBXBuildFile; fileRef = A70A34F22A880B1700A2671C /* numbersData.json */; };
+		A7BCB0932A8D2A700053415E /* numbers.json in Resources */ = {isa = PBXBuildFile; fileRef = A70A34F22A880B1700A2671C /* numbers.json */; };
 		A7BCB0942A8D2AA80053415E /* phrases.json in Resources */ = {isa = PBXBuildFile; fileRef = A70A34F42A880B3100A2671C /* phrases.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A70A34F02A8803B300A2671C /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		A70A34F22A880B1700A2671C /* numbersData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = numbersData.json; sourceTree = "<group>"; };
+		A70A34F22A880B1700A2671C /* numbers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = numbers.json; sourceTree = "<group>"; };
 		A70A34F42A880B3100A2671C /* phrases.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = phrases.json; sourceTree = "<group>"; };
 		A7112CFD2A862AAB00091ECC /* ThaiDai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThaiDai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7112D002A862AAB00091ECC /* ThaiDaiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiDaiApp.swift; sourceTree = "<group>"; };
@@ -231,7 +231,7 @@
 		A795F7F42A868CC2007BF2FD /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				A70A34F22A880B1700A2671C /* numbersData.json */,
+				A70A34F22A880B1700A2671C /* numbers.json */,
 				A70A34F42A880B3100A2671C /* phrases.json */,
 				A795F7F52A868CD4007BF2FD /* words.json */,
 			);
@@ -315,7 +315,7 @@
 			files = (
 				A7112D092A862AAC00091ECC /* Preview Assets.xcassets in Resources */,
 				A795F7F92A868F96007BF2FD /* words.json in Resources */,
-				A7BCB0932A8D2A700053415E /* numbersData.json in Resources */,
+				A7BCB0932A8D2A700053415E /* numbers.json in Resources */,
 				A7BCB0942A8D2AA80053415E /* phrases.json in Resources */,
 				A7112D052A862AAC00091ECC /* Assets.xcassets in Resources */,
 			);

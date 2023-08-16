@@ -10,23 +10,23 @@ import Foundation
 
 class BaseViewModel: ObservableObject {
     
-    func save(_ items: [Word], key: UserKeys) {
+    func save<T: Codable>(_ items: [T], key: UserKeys) {
         if let encoded = try? JSONEncoder().encode(items) {
             UserDefaults.standard.set(encoded, forKey: key.rawValue)
         }
     }
     
-    func getData(_ key: UserKeys) -> [Word]? {
+    func getData<T: Codable>(_ key: UserKeys) -> [T]? {
         if let data = UserDefaults.standard.data(forKey: key.rawValue) {
-            let words = try? JSONDecoder().decode([Word].self, from: data)
+            let words = try? JSONDecoder().decode([T].self, from: data)
             return words
         } else {
             return nil
         }
     }
     
-    func saveStatus(_ word: Word, key: UserKeys) {
-        if let savedWords = self.getData(key) {
+    func saveStatus<T: Codable>(_ word: T, key: UserKeys) {
+        if let savedWords: [T] = self.getData(key) {
             var newWords = [word]
             newWords.append(contentsOf: savedWords)
             self.save(newWords, key: UserKeys.savedWords)

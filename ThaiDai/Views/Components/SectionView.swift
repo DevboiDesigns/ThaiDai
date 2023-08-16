@@ -14,7 +14,7 @@ struct SectionView: View {
     let action: (CellButtons, Word) -> Void
     let resetAction: () -> Void
     var selectable: Bool = true
-    @State private var selected = true
+    @State private var selected = false
     var body: some View {
         ZStack {
             if selected {

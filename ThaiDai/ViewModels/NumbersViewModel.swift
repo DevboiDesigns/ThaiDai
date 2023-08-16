@@ -9,7 +9,7 @@ import SwiftUI
 
 final class NumbersViewModel: BaseViewModel {
     @Published var numbers: [Word] = []
-    private let path = "numbersData.json"
+    private let path = "numbers.json"
     
     override init() {
         super.init()
