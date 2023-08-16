@@ -1,248 +1,485 @@
-    [
-     {
-       "english": "hello",
-       "thai": "sawadee",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "to come",
-       "thai": "maa",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "yes",
-       "thai": "chai",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "no",
-       "thai": "mai",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "teacher",
-       "thai": "kru",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "you",
-       "thai": "kun",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "good",
-       "thai": "dee",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "island",
-       "thai": "goh",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "beach",
-       "thai": "haad",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "long",
-       "thai": "yao",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "to pray",
-       "thai": "wai",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "not good",
-       "thai": "mai dee",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "not correct",
-       "thai": "mai chai",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "not true",
-       "thai": "mai jing",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "sick, not feel good",
-       "thai": "mai sabai",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "don't want, don’t take",
-       "thai": "mai aao",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "sorry",
-       "thai": "koh tod",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "older, excuse me",
-       "thai": "pii ",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "younger, excuse me",
-       "thai": "nong",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "sibling",
-       "thai": "pii nong",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "you",
-       "thai": "kun",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "very good",
-       "thai": "dee maag",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "very very good",
-       "thai": "dee maag maag",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "little bit",
-       "thai": "nid noi",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "very little bit",
-       "thai": "niiid noi",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "water",
-       "thai": "nam",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "to swim",
-       "thai": "swim",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "i, hair",
-       "thai": "pom, chan",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "name",
-       "thai": "cheu",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "your welcome, my pleasure",
-       "thai": "yin dee",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "in, out, at",
-       "thai": "tii",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "can",
-       "thai": "dai",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "can not",
-       "thai": "mai dai",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "to know something",
-       "thai": "ruu",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "to know some one or place",
-       "thai": "ruu jag",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "to speak",
-       "thai": "puud",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "language",
-       "thai": "pasa",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "foreigner",
-       "thai": "farang",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "what",
-       "thai": "arai",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "maybe",
-       "thai": "haa sib",
-       "lesson": 1,
-       "id": "“”"
-     },
-     {
-       "english": "shop",
-       "thai": "raan",
-       "lesson": 1,
-       "id": "“”"
-     }
-    ]
+[
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "sawadee",
+   "english": "hello",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "maa",
+   "english": "to come",
+   "tone": 1
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "chai",
+   "english": "yes",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "mai",
+   "english": "no",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "kru",
+   "english": "teacher",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "kun",
+   "english": "you",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "dee",
+   "english": "good",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "goh",
+   "english": "island",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "haad",
+   "english": "beach",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "yao",
+   "english": "long",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "wai",
+   "english": "to pray",
+   "tone": 3
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "mai dee",
+   "english": "not good",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "mai chai",
+   "english": "not correct",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "mai jing",
+   "english": "not true",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "mai sabai",
+   "english": "sick, not feel good",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "mai aao",
+   "english": "don't want, don’t take",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "koh tod",
+   "english": "sorry",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "pii ",
+   "english": "older, excuse me",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "nong",
+   "english": "younger, excuse me",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "pii nong",
+   "english": "sibling",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "kun",
+   "english": "you, mr, mrs",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "dee maag",
+   "english": "very good",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "dee maag maag",
+   "english": "very very good",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "nid noi",
+   "english": "little bit",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "niiid noi",
+   "english": "very little bit",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "nam",
+   "english": "water",
+   "tone": 4
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "wai nam",
+   "english": "to swim",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "pom, chan",
+   "english": "i, hair",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "cheu",
+   "english": "name",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "yin dee",
+   "english": "your welcome, my pleasure",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "tii",
+   "english": "in, out, at",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "dai",
+   "english": "can",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "mai dai",
+   "english": "can not",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "ruu",
+   "english": "to know something",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "ruu jag",
+   "english": "to know some one or place",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "puud",
+   "english": "to speak",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "pasa",
+   "english": "language",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "farang",
+   "english": "foreigner",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "arai",
+   "english": "what",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "haa sib",
+   "english": "maybe",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "raan",
+   "english": "shop",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "aao",
+   "english": "take, want",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "mao",
+   "english": "drunk",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "bpen rai",
+   "english": "matter",
+   "tone": 0
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "mai ruu",
+   "english": "dont know",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "tam",
+   "english": "to do, to make",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "yoka",
+   "english": "yoga",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "dtua leg",
+   "english": "number",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "ber",
+   "english": "size",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "raan aa-haan",
+   "english": "resturant",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "bpai",
+   "english": "to go",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "tam aa-haan",
+   "english": "to cook, make food",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "gafae",
+   "english": "coffee",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "koh ",
+   "english": "please give me",
+   "tone": 5
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "sabai sabai",
+   "english": "relax",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "sabai dii",
+   "english": "i am good",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "len",
+   "english": "to play",
+   "tone": 3
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "puud len",
+   "english": "joke",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "cheu len",
+   "english": "nickname",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "cheu jing",
+   "english": "real name",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "rian",
+   "english": "to study, to learn",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "mii ",
+   "english": "to have",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "mai?",
+   "english": "make a question",
+   "tone": 4
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "mai mii",
+   "english": "dont have",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "gin",
+   "english": "eat",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "deum (doom)",
+   "english": "drink",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "chaa",
+   "english": "tea",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "nom",
+   "english": "milk or breast",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "nom som",
+   "english": "orange juice",
+   "tone": null
+ }
+]

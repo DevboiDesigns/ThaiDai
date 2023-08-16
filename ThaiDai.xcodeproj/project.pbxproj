@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A70A34F12A8803B300A2671C /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70A34F02A8803B300A2671C /* SettingsViewModel.swift */; };
-		A70A34F32A880B1700A2671C /* numbers.json in Sources */ = {isa = PBXBuildFile; fileRef = A70A34F22A880B1700A2671C /* numbers.json */; };
-		A70A34F52A880B3100A2671C /* phrases.json in Sources */ = {isa = PBXBuildFile; fileRef = A70A34F42A880B3100A2671C /* phrases.json */; };
 		A7112D012A862AAB00091ECC /* ThaiDaiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7112D002A862AAB00091ECC /* ThaiDaiApp.swift */; };
 		A7112D032A862AAB00091ECC /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7112D022A862AAB00091ECC /* AppView.swift */; };
 		A7112D052A862AAC00091ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7112D042A862AAC00091ECC /* Assets.xcassets */; };
@@ -41,11 +39,13 @@
 		A797CD812A87C54B00AC790B /* SwipeContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD802A87C54B00AC790B /* SwipeContainerCell.swift */; };
 		A797CD832A87CCA800AC790B /* CellButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD822A87CCA800AC790B /* CellButtons.swift */; };
 		A797CD862A87CF4200AC790B /* UserKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD852A87CF4200AC790B /* UserKeys.swift */; };
+		A7BCB0932A8D2A700053415E /* numbersData.json in Resources */ = {isa = PBXBuildFile; fileRef = A70A34F22A880B1700A2671C /* numbersData.json */; };
+		A7BCB0942A8D2AA80053415E /* phrases.json in Resources */ = {isa = PBXBuildFile; fileRef = A70A34F42A880B3100A2671C /* phrases.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A70A34F02A8803B300A2671C /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		A70A34F22A880B1700A2671C /* numbers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = numbers.json; sourceTree = "<group>"; };
+		A70A34F22A880B1700A2671C /* numbersData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = numbersData.json; sourceTree = "<group>"; };
 		A70A34F42A880B3100A2671C /* phrases.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = phrases.json; sourceTree = "<group>"; };
 		A7112CFD2A862AAB00091ECC /* ThaiDai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThaiDai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7112D002A862AAB00091ECC /* ThaiDaiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiDaiApp.swift; sourceTree = "<group>"; };
@@ -231,9 +231,9 @@
 		A795F7F42A868CC2007BF2FD /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				A795F7F52A868CD4007BF2FD /* words.json */,
-				A70A34F22A880B1700A2671C /* numbers.json */,
+				A70A34F22A880B1700A2671C /* numbersData.json */,
 				A70A34F42A880B3100A2671C /* phrases.json */,
+				A795F7F52A868CD4007BF2FD /* words.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -315,6 +315,8 @@
 			files = (
 				A7112D092A862AAC00091ECC /* Preview Assets.xcassets in Resources */,
 				A795F7F92A868F96007BF2FD /* words.json in Resources */,
+				A7BCB0932A8D2A700053415E /* numbersData.json in Resources */,
+				A7BCB0942A8D2AA80053415E /* phrases.json in Resources */,
 				A7112D052A862AAC00091ECC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +334,6 @@
 				A7112D032A862AAB00091ECC /* AppView.swift in Sources */,
 				A795F7EC2A866726007BF2FD /* CellCard.swift in Sources */,
 				A795F7BC2A863CBB007BF2FD /* BaseViewModel.swift in Sources */,
-				A70A34F52A880B3100A2671C /* phrases.json in Sources */,
 				A795F7E82A866582007BF2FD /* Language.swift in Sources */,
 				A75A4F682A87E4F2007AD5AF /* SectionCell.swift in Sources */,
 				A7112D012A862AAB00091ECC /* ThaiDaiApp.swift in Sources */,
@@ -345,7 +346,6 @@
 				A7112D142A862C2200091ECC /* WordsViewModel.swift in Sources */,
 				A70A34F12A8803B300A2671C /* SettingsViewModel.swift in Sources */,
 				A7112D202A863BC400091ECC /* NumbersView.swift in Sources */,
-				A70A34F32A880B1700A2671C /* numbers.json in Sources */,
 				A7112D172A862CD200091ECC /* WordsView.swift in Sources */,
 				A7112D1C2A862E3800091ECC /* View+.swift in Sources */,
 				A795F7BA2A863C9B007BF2FD /* NumbersViewModel.swift in Sources */,

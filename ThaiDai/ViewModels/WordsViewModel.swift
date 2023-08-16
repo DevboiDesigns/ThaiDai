@@ -11,6 +11,7 @@ import SwiftUI
 
 final class WordsViewModel: BaseViewModel {
     @Published var words: [Word] = []
+    private let path = "words.json"
     
     override init() {
         super.init()
@@ -18,13 +19,13 @@ final class WordsViewModel: BaseViewModel {
     }
     
     func reset() {
-        let newWords: [Word] = Bundle.main.decode("words.json")
+        let newWords: [Word] = Bundle.main.decode(path)
         self.save(newWords, key: UserKeys.words)
         self.words = newWords
     }
     
     private func setWords() -> [Word] {
-        getData(.words) ?? Bundle.main.decode("words.json")
+        getData(.words) ?? Bundle.main.decode(path)
     }
     
     func buttonHandler(_ button: CellButtons, _ word: Word) {

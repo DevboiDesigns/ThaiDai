@@ -9,6 +9,7 @@ import SwiftUI
 
 final class PhrasesViewModel: BaseViewModel {
     @Published var phrases: [Word] = []
+    private let path = "phrases.json"
     
     override init() {
         super.init()
@@ -16,6 +17,6 @@ final class PhrasesViewModel: BaseViewModel {
     }
 
     private func setPhrases() -> [Word] {
-        getData(.phrases) ?? Bundle.main.decode("phrases.json")
+        getData(.phrases) ?? Bundle.main.decode(path)
     }
 }

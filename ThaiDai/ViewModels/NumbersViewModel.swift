@@ -9,6 +9,7 @@ import SwiftUI
 
 final class NumbersViewModel: BaseViewModel {
     @Published var numbers: [Word] = []
+    private let path = "numbersData.json"
     
     override init() {
         super.init()
@@ -16,11 +17,11 @@ final class NumbersViewModel: BaseViewModel {
     }
     
     private func setNumbers() -> [Word] {
-        getData(.numbers) ?? Bundle.main.decode("numbers.json")
+        getData(.numbers) ?? Bundle.main.decode(path)
     }
     
     func reset() {
-        let newNums: [Word] = Bundle.main.decode("numbers.json")
+        let newNums: [Word] = Bundle.main.decode(path)
         self.save(newNums, key: UserKeys.numbers)
         self.numbers = newNums
     }
