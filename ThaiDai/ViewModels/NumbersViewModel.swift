@@ -31,12 +31,17 @@ final class NumbersViewModel: BaseViewModel {
         case .edit:
             print("EDIT Selected......\(word) : ID: \(word.id)")
         case .delete:
-            print("DELETE Selected......\(word) : ID: \(word.id)")
+            self.delete(word.id)
         case .save:
-            print("SAVE Selected......\(word) : ID: \(word.id)")
+            self.saveStatus(word, key: .savedWords)
         case .info:
             print("INFO Selected......\(word) : ID: \(word.id)")
         }
+    }
+
+    private func delete(_ id: String) {
+        numbers = numbers.filter { $0.id != id }
+        self.save(self.numbers, key: UserKeys.numbers)
     }
     
 }

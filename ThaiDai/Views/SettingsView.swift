@@ -31,7 +31,8 @@ struct SettingsView: View {
                                 language: $language,
                                 action: settingsVM.buttonHandler,
                                 resetAction: settingsVM.reset,
-                                selectable: false)
+                                selectable: false,
+                                selected: true)
                 }
             }
             .padding()
@@ -40,6 +41,9 @@ struct SettingsView: View {
         }
         .background(Color.appBlack)
         .onAppear { settingsVM.setView() }
+        .onAppear {
+            print("SAVED: \(settingsVM.savedWords)")
+        }
     }
 }
 
