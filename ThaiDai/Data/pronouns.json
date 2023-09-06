@@ -1,0 +1,100 @@
+    [
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "pom/ chan",
+       "english": "I",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "kao",
+       "english": "he, him",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "ther (kao)",
+       "english": "her, she",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "phuag kao",
+       "english": "them",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "puag rao (rao)",
+       "english": "we, us",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "phuag kun",
+       "english": "all of you",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "kun",
+       "english": "you, mr, mrs",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "man",
+       "english": "it",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 2,
+       "thai": "khong pom/chan",
+       "english": "my",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 2,
+       "thai": "khong kun",
+       "english": "yours",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 2,
+       "thai": "khong kao/ther",
+       "english": "his/her",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 2,
+       "thai": "khong phuag kao",
+       "english": "theirs",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 2,
+       "thai": "khong phuag rao",
+       "english": "ours",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 2,
+       "thai": "khong man",
+       "english": "its",
+       "tone": ""
+     }
+    ]

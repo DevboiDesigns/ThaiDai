@@ -1,0 +1,37 @@
+    [
+     {
+       "id": "",
+       "lesson": "",
+       "thai": "",
+       "english": "neutral, mid, no tone",
+       "tone": 1
+     },
+     {
+       "id": "",
+       "lesson": "",
+       "thai": "",
+       "english": "low",
+       "tone": 2
+     },
+     {
+       "id": "",
+       "lesson": "",
+       "thai": "",
+       "english": "falling tone",
+       "tone": 3
+     },
+     {
+       "id": "",
+       "lesson": "",
+       "thai": "",
+       "english": "high",
+       "tone": 4
+     },
+     {
+       "id": "",
+       "lesson": "",
+       "thai": "",
+       "english": "rising",
+       "tone": 5
+     }
+    ]

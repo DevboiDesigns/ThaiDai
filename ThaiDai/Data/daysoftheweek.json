@@ -1,0 +1,51 @@
+    [
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "Wan aatid",
+       "english": "Sunday",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "Wan jan",
+       "english": "Monday",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "Wan ang kaan",
+       "english": "Tuesday",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "Wan pud",
+       "english": "Wednesday",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "Wan pareuhad (kru)",
+       "english": "Thursday",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "Wan suk",
+       "english": "Friday",
+       "tone": ""
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "Wan sao",
+       "english": "Saturday",
+       "tone": ""
+     }
+    ]

@@ -18,6 +18,11 @@
 		A7112D192A862D1E00091ECC /* CellEnglish.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7112D182A862D1E00091ECC /* CellEnglish.swift */; };
 		A7112D1C2A862E3800091ECC /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7112D1B2A862E3800091ECC /* View+.swift */; };
 		A7112D202A863BC400091ECC /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7112D1F2A863BC400091ECC /* NumbersView.swift */; };
+		A71E79B72AA907C100AE4062 /* tenses.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79B52AA907B200AE4062 /* tenses.json */; };
+		A71E79B82AA907C500AE4062 /* tones.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79B32AA9076C00AE4062 /* tones.json */; };
+		A71E79BB2AA907EA00AE4062 /* pronouns.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79B92AA907E000AE4062 /* pronouns.json */; };
+		A71E79BE2AA9080D00AE4062 /* daysoftheweek.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79BC2AA9080000AE4062 /* daysoftheweek.json */; };
+		A71E79C12AA9083F00AE4062 /* adjectives.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79BF2AA9083100AE4062 /* adjectives.json */; };
 		A75A4F662A87E37B007AD5AF /* WordLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F652A87E37B007AD5AF /* WordLevels.swift */; };
 		A75A4F682A87E4F2007AD5AF /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F672A87E4F2007AD5AF /* SectionCell.swift */; };
 		A75A4F6A2A87E954007AD5AF /* LevelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F692A87E954007AD5AF /* LevelsCell.swift */; };
@@ -59,6 +64,11 @@
 		A7112D182A862D1E00091ECC /* CellEnglish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellEnglish.swift; sourceTree = "<group>"; };
 		A7112D1B2A862E3800091ECC /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 		A7112D1F2A863BC400091ECC /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
+		A71E79B32AA9076C00AE4062 /* tones.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tones.json; sourceTree = "<group>"; };
+		A71E79B52AA907B200AE4062 /* tenses.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tenses.json; sourceTree = "<group>"; };
+		A71E79B92AA907E000AE4062 /* pronouns.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pronouns.json; sourceTree = "<group>"; };
+		A71E79BC2AA9080000AE4062 /* daysoftheweek.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = daysoftheweek.json; sourceTree = "<group>"; };
+		A71E79BF2AA9083100AE4062 /* adjectives.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adjectives.json; sourceTree = "<group>"; };
 		A75A4F652A87E37B007AD5AF /* WordLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLevels.swift; sourceTree = "<group>"; };
 		A75A4F672A87E4F2007AD5AF /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
 		A75A4F692A87E954007AD5AF /* LevelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsCell.swift; sourceTree = "<group>"; };
@@ -234,6 +244,11 @@
 				A70A34F22A880B1700A2671C /* numbers.json */,
 				A70A34F42A880B3100A2671C /* phrases.json */,
 				A795F7F52A868CD4007BF2FD /* words.json */,
+				A71E79B32AA9076C00AE4062 /* tones.json */,
+				A71E79B92AA907E000AE4062 /* pronouns.json */,
+				A71E79BC2AA9080000AE4062 /* daysoftheweek.json */,
+				A71E79BF2AA9083100AE4062 /* adjectives.json */,
+				A71E79B52AA907B200AE4062 /* tenses.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -314,8 +329,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7112D092A862AAC00091ECC /* Preview Assets.xcassets in Resources */,
+				A71E79BB2AA907EA00AE4062 /* pronouns.json in Resources */,
+				A71E79BE2AA9080D00AE4062 /* daysoftheweek.json in Resources */,
+				A71E79B72AA907C100AE4062 /* tenses.json in Resources */,
+				A71E79B82AA907C500AE4062 /* tones.json in Resources */,
 				A795F7F92A868F96007BF2FD /* words.json in Resources */,
 				A7BCB0932A8D2A700053415E /* numbers.json in Resources */,
+				A71E79C12AA9083F00AE4062 /* adjectives.json in Resources */,
 				A7BCB0942A8D2AA80053415E /* phrases.json in Resources */,
 				A7112D052A862AAC00091ECC /* Assets.xcassets in Resources */,
 			);
