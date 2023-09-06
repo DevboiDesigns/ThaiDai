@@ -99,7 +99,7 @@
    "id": "",
    "lesson": 3,
    "thai": "mai dai puud",
-   "english": "i did not say"
+   "english": "i did not say it"
  },
  {
    "id": "",
@@ -178,5 +178,71 @@
    "lesson": 4,
    "thai": "mai aao tung",
    "english": "i dont want a plastic bag"
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "mai dai tam",
+   "english": "I did not do it"
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "puud chaa chaa noi",
+   "english": "Speak a little bit slower"
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "gii baht?",
+   "english": "How much baht?"
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "bpai glab",
+   "english": "go and come back (round trip)"
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "Gii mong laew?",
+   "english": "What time is it?"
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "Mii wela",
+   "english": "Have time"
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "aao iig mai?",
+   "english": "Do you want more?"
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "Tam arai yuu?",
+   "english": "What are you doing?"
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "Gin arai yuu?",
+   "english": "What are you eating?"
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "Pom rag kun",
+   "english": "I love you"
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "Arai sod?",
+   "english": "What is fresh?"
  }
 ]

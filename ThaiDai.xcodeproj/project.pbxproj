@@ -23,6 +23,8 @@
 		A71E79BB2AA907EA00AE4062 /* pronouns.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79B92AA907E000AE4062 /* pronouns.json */; };
 		A71E79BE2AA9080D00AE4062 /* daysoftheweek.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79BC2AA9080000AE4062 /* daysoftheweek.json */; };
 		A71E79C12AA9083F00AE4062 /* adjectives.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79BF2AA9083100AE4062 /* adjectives.json */; };
+		A71E79C42AA9086D00AE4062 /* verbs.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79C22AA9086000AE4062 /* verbs.json */; };
+		A71E79C72AA9089200AE4062 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79C52AA9088700AE4062 /* questions.json */; };
 		A75A4F662A87E37B007AD5AF /* WordLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F652A87E37B007AD5AF /* WordLevels.swift */; };
 		A75A4F682A87E4F2007AD5AF /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F672A87E4F2007AD5AF /* SectionCell.swift */; };
 		A75A4F6A2A87E954007AD5AF /* LevelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F692A87E954007AD5AF /* LevelsCell.swift */; };
@@ -69,6 +71,8 @@
 		A71E79B92AA907E000AE4062 /* pronouns.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pronouns.json; sourceTree = "<group>"; };
 		A71E79BC2AA9080000AE4062 /* daysoftheweek.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = daysoftheweek.json; sourceTree = "<group>"; };
 		A71E79BF2AA9083100AE4062 /* adjectives.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adjectives.json; sourceTree = "<group>"; };
+		A71E79C22AA9086000AE4062 /* verbs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = verbs.json; sourceTree = "<group>"; };
+		A71E79C52AA9088700AE4062 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		A75A4F652A87E37B007AD5AF /* WordLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLevels.swift; sourceTree = "<group>"; };
 		A75A4F672A87E4F2007AD5AF /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
 		A75A4F692A87E954007AD5AF /* LevelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsCell.swift; sourceTree = "<group>"; };
@@ -248,6 +252,8 @@
 				A71E79B92AA907E000AE4062 /* pronouns.json */,
 				A71E79BC2AA9080000AE4062 /* daysoftheweek.json */,
 				A71E79BF2AA9083100AE4062 /* adjectives.json */,
+				A71E79C22AA9086000AE4062 /* verbs.json */,
+				A71E79C52AA9088700AE4062 /* questions.json */,
 				A71E79B52AA907B200AE4062 /* tenses.json */,
 			);
 			path = Data;
@@ -328,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A71E79C42AA9086D00AE4062 /* verbs.json in Resources */,
 				A7112D092A862AAC00091ECC /* Preview Assets.xcassets in Resources */,
 				A71E79BB2AA907EA00AE4062 /* pronouns.json in Resources */,
 				A71E79BE2AA9080D00AE4062 /* daysoftheweek.json in Resources */,
@@ -336,6 +343,7 @@
 				A795F7F92A868F96007BF2FD /* words.json in Resources */,
 				A7BCB0932A8D2A700053415E /* numbers.json in Resources */,
 				A71E79C12AA9083F00AE4062 /* adjectives.json in Resources */,
+				A71E79C72AA9089200AE4062 /* questions.json in Resources */,
 				A7BCB0942A8D2AA80053415E /* phrases.json in Resources */,
 				A7112D052A862AAC00091ECC /* Assets.xcassets in Resources */,
 			);
