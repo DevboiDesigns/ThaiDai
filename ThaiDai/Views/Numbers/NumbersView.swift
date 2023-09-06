@@ -35,6 +35,11 @@ struct NumbersView: View {
                             language: $language,
                             action: numbersVM.buttonHandler,
                             resetAction: numbersVM.reset)
+                SectionView(words: lesson(4),
+                            title: "1st-*",
+                            language: $language,
+                            action: numbersVM.buttonHandler,
+                            resetAction: numbersVM.reset)
             }
 
         }

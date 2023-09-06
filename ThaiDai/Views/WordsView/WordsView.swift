@@ -22,10 +22,21 @@ struct WordsView: View {
                 ZStack {
                     if !selected {
                         VStack {
-                            LevelsCell(level: .one, toggleAction: select, resetAction: wordVM.reset)
-                            LevelsCell(level: .two, toggleAction: select, resetAction: wordVM.reset)
-                            LevelsCell(level: .three, toggleAction: select, resetAction: wordVM.reset)
-                            LevelsCell(level: .four, toggleAction: select, resetAction: wordVM.reset)
+                            Group {
+                                LevelsCell(level: .one, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .two, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .three, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .four, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .five, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .six, toggleAction: select, resetAction: wordVM.reset)
+                            }
+                            Group {
+                                LevelsCell(level: .seven, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .eight, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .nine, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .ten, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .eleven, toggleAction: select, resetAction: wordVM.reset)
+                            }
                         }
                     } else {
                         LevelsSectionView(words: wordVM.words.filter { $0.lesson == level.level },
