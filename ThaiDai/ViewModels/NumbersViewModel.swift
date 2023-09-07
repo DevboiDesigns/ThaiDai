@@ -32,43 +32,9 @@ final class NumbersViewModel: BaseViewModel {
     func reset(_ level: Int, type: UserKeys) {
         switch type {
         case .numbers:
-            let currentNumbers = getData(.numbers)
-            if var currentNumbers = currentNumbers  {
-                currentNumbers = currentNumbers.filter { $0.lesson != level }
-                var resetLesson: [Word] = Bundle.main.decode(numbersPath)
-                resetLesson = resetLesson.filter { $0.lesson == level }
-                currentNumbers.append(contentsOf: resetLesson)
-                self.numbers = currentNumbers
-                self.save(currentNumbers, key: .numbers)
-            } else {
-                var currentNumbers: [Word] = Bundle.main.decode(numbersPath) ?? []
-                currentNumbers = currentNumbers.filter { $0.lesson != level }
-                var resetLesson: [Word] = Bundle.main.decode(numbersPath)
-                resetLesson = resetLesson.filter { $0.lesson == level }
-                currentNumbers.append(contentsOf: resetLesson)
-                self.numbers = currentNumbers
-                self.save(currentNumbers, key: .numbers)
-            }
-            
+            self.numbers = self.resetHandler(level: level, path: numbersPath, key: .numbers)
         case .daysOfWeek:
-            let newDaysOfWeek = getData(.daysOfWeek)
-            if var newDaysOfWeek = newDaysOfWeek {
-                newDaysOfWeek = newDaysOfWeek.filter { $0.lesson != level }
-                var resetLesson: [Word] = Bundle.main.decode(daysPath)
-                resetLesson = resetLesson.filter { $0.lesson == level }
-                newDaysOfWeek.append(contentsOf: resetLesson)
-                self.daysOfTheWeek = newDaysOfWeek
-                self.save(newDaysOfWeek, key: .daysOfWeek)
-                
-            } else {
-                var newDaysOfWeek: [Word] = Bundle.main.decode(daysPath)
-                newDaysOfWeek = newDaysOfWeek.filter { $0.lesson != level }
-                var resetLesson: [Word] = Bundle.main.decode(daysPath)
-                resetLesson = resetLesson.filter { $0.lesson == level }
-                newDaysOfWeek.append(contentsOf: resetLesson)
-                self.daysOfTheWeek = newDaysOfWeek
-                self.save(newDaysOfWeek, key: .daysOfWeek)
-            }
+            self.daysOfTheWeek = self.resetHandler(level: level, path: daysPath, key: .daysOfWeek)
         default:
             break
         }

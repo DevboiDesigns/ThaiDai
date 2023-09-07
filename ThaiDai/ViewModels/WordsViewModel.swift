@@ -41,22 +41,7 @@ final class WordsViewModel: BaseViewModel {
     }
 
     func reset(_ level: Int, type: UserKeys) {
-        var allWords: [Word] = []
-        var newWords: [Word] = Bundle.main.decode(path)
-        newWords = newWords.filter { $0.lesson == level }
-        let oldWords = self.getData(.words)
-        if var oldWords = oldWords {
-            oldWords = oldWords.filter { $0.lesson != level }
-            allWords.append(contentsOf: oldWords)
-            allWords.append(contentsOf: newWords)
-        } else {
-            var oldWords: [Word] = Bundle.main.decode(path)
-            oldWords = oldWords.filter { $0.lesson != level }
-            allWords.append(contentsOf: oldWords)
-            allWords.append(contentsOf: newWords)
-        }
-        self.save(allWords, key: UserKeys.words)
-        self.words = allWords
+        self.words = self.resetHandler(level: level, path: path, key: .words)
     }
 
 }

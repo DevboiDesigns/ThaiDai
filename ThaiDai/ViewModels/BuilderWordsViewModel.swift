@@ -38,13 +38,16 @@ final class BuilderWordsViewModel: BaseViewModel {
     }
     
     func reset(_ level: Int, type: UserKeys) {
-        let newAdj: [Word] = Bundle.main.decode(adjectivesPath)
-        self.adjectives = newAdj
-        let newPron: [Word] = Bundle.main.decode(pronounsPath)
-        self.pronouns = newPron
-        let newVerbs: [Word] = Bundle.main.decode(verbsPath)
-        self.verbs = newVerbs
-        self.saveAll(adjectives: newAdj, pronouns: newPron, verbs: newVerbs)
+        switch type {
+        case .adjectives:
+            self.adjectives = resetHandler(level: level, path: adjectivesPath, key: .adjectives)
+        case .pronouns:
+            self.pronouns = resetHandler(level: level, path: pronounsPath, key: .pronouns)
+        case .verbs:
+            self.verbs = resetHandler(level: level, path: verbsPath, key: .verbs)
+        default:
+            break
+        }
     }
     
     func buttonHandler(_ button: CellButtons, _ word: Word) {

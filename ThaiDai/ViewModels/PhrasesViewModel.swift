@@ -23,11 +23,14 @@ final class PhrasesViewModel: BaseViewModel {
     }
     
     func reset(_ level: Int, type: UserKeys) {
-        let newPhrases: [Word] = Bundle.main.decode(phrasesPath)
-        let newQuestions: [Word] = Bundle.main.decode(questionsPath)
-        self.saveAll(phrases: newPhrases, questions: newQuestions)
-        self.phrases = newPhrases
-        self.questions = newQuestions
+        switch type {
+        case .phrases:
+            self.phrases = self.resetHandler(level: level, path: phrasesPath, key: .phrases)
+        case .questions:
+            self.questions = self.resetHandler(level: level, path: questionsPath, key: .questions)
+        default:
+            break
+        }
     }
 
     private func setPhrases() -> ([Word], [Word]) {
