@@ -49,10 +49,18 @@ struct NumbersView: View {
                     } else {
                         VStack {
                             ImageHeader
+                            HStack {
+                                Spacer()
+                                Text("Courtesy of Oleg Radchenko")
+                                    .font(.caption)
+                                    .foregroundColor(.white)
+                                    .opacity(0.5)
+                            }
                             Image("thai_time")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(maxWidth: .infinity)
+   
                         }
                     }
                     
