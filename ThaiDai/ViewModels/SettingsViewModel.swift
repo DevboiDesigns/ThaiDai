@@ -20,7 +20,7 @@ final class SettingsViewModel: BaseViewModel {
         savedWords = self.getData(.savedWords) ?? savedWords
     }
     
-    func reset() {
+    func reset(_ level: Int) {
         UserDefaults.standard.removeObject(forKey: UserKeys.savedWords.rawValue)
         savedWords = []
     }

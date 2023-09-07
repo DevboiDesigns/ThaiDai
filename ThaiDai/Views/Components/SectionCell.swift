@@ -10,9 +10,10 @@ import SwiftUI
 struct SectionCell: View {
     
     let title: String
+    let level: Int
     @Binding var language: Language
     let toggleAction: () -> Void
-    let resetAction: () -> Void
+    let resetAction: (Int) -> Void
     
     var body: some View {
         VStack {
@@ -23,7 +24,7 @@ struct SectionCell: View {
                 Spacer()
                 Text("Reset")
                     .appCellFont(.appPurple, size: .footnote)
-                    .onTapGesture { resetAction() }
+                    .onTapGesture { resetAction(level) }
                     .padding(.trailing)
                 LanguageIcon
             }

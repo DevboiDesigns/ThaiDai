@@ -12,7 +12,7 @@ struct LevelsSectionView: View {
     let level: WordLevels
     @Binding var language: Language
     let action: (CellButtons, Word) -> Void
-    let resetAction: () -> Void
+    let resetAction: (Int) -> Void
     let toggleAction: (WordLevels) -> Void
     var selectable: Bool = true
     @State private var selected = true

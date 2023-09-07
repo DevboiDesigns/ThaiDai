@@ -11,7 +11,7 @@ struct LevelsCell: View {
     
     let level: WordLevels
     let toggleAction: (WordLevels) -> Void
-    let resetAction: () -> Void
+    let resetAction: (Int) -> Void
     
     var body: some View {
         VStack {
@@ -22,7 +22,7 @@ struct LevelsCell: View {
                   Spacer()
                 Text("Reset")
                     .appCellFont(.appPurple, size: .footnote)
-                    .onTapGesture { resetAction() }
+                    .onTapGesture { resetAction(level.level) }
             }
             .padding(.horizontal)
             Divider()

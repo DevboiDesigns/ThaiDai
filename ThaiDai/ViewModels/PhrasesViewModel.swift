@@ -22,7 +22,7 @@ final class PhrasesViewModel: BaseViewModel {
         self.questions = questions
     }
     
-    func reset() {
+    func reset(_ level: Int) {
         let newPhrases: [Word] = Bundle.main.decode(phrasesPath)
         let newQuestions: [Word] = Bundle.main.decode(questionsPath)
         self.saveAll(phrases: newPhrases, questions: newQuestions)

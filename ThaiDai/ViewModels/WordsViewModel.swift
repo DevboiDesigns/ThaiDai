@@ -18,12 +18,6 @@ final class WordsViewModel: BaseViewModel {
         words = setWords()
     }
     
-    func reset() {
-        let newWords: [Word] = Bundle.main.decode(path)
-        self.save(newWords, key: UserKeys.words)
-        self.words = newWords
-    }
-    
     private func setWords() -> [Word] {
         getData(.words) ?? Bundle.main.decode(path)
     }
@@ -45,7 +39,25 @@ final class WordsViewModel: BaseViewModel {
         words = words.filter { $0.id != id }
         self.save(self.words, key: UserKeys.words)
     }
-    
+
+    func reset(_ level: Int) {
+        var allWords: [Word] = []
+        var newWords: [Word] = Bundle.main.decode(path)
+        newWords = newWords.filter { $0.lesson == level }
+        let oldWords = self.getData(.words)
+        if var oldWords = oldWords {
+            oldWords = oldWords.filter { $0.lesson != level }
+            allWords.append(contentsOf: oldWords)
+            allWords.append(contentsOf: newWords)
+        } else {
+            var oldWords: [Word] = Bundle.main.decode(path)
+            oldWords = oldWords.filter { $0.lesson != level }
+            allWords.append(contentsOf: oldWords)
+            allWords.append(contentsOf: newWords)
+        }
+        self.save(allWords, key: UserKeys.words)
+        self.words = allWords
+    }
 
 }
     

@@ -28,9 +28,12 @@ final class NumbersViewModel: BaseViewModel {
         return (numbers, daysOfWeek)
     }
     
-    func reset() {
-        let newNumbers: [Word] = Bundle.main.decode(numbersPath)
-        let newDaysOfWeek: [Word] = Bundle.main.decode(daysPath)
+    func reset(_ level: Int) {
+        var newNumbers: [Word] = Bundle.main.decode(numbersPath)
+        newNumbers = newNumbers.filter { $0.lesson == level }
+        var newDaysOfWeek: [Word] = Bundle.main.decode(daysPath)
+        newDaysOfWeek = newDaysOfWeek.filter { $0.lesson == level }
+        
         self.saveAll(numbers: newNumbers, daysOfWeek: newDaysOfWeek)
         self.numbers = newNumbers
         self.daysOfTheWeek = newDaysOfWeek
