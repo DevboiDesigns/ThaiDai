@@ -12,9 +12,6 @@ final class TonesViewModel: BaseViewModel {
     @Published var tones: [Word] = []
     @Published var tenses: [Word] = []
     
-    private let tonesPath = UserKeys.tones.fileName
-    private let tensesPath = UserKeys.tenses.fileName
-    
     override init() {
         super.init()
         let (tones, tenses) = setWords()
@@ -55,9 +52,9 @@ final class TonesViewModel: BaseViewModel {
     func reset(_ level: Int, type: UserKeys) {
         switch type {
         case .tones:
-            self.tones = resetHandler(level: level, path: tonesPath, key: .tones)
+            self.tones = resetHandler(level: level, key: .tones)
         case .tenses:
-            self.tenses = resetHandler(level: level, path: tensesPath, key: .tenses)
+            self.tenses = resetHandler(level: level, key: .tenses)
         default:
             break
         }

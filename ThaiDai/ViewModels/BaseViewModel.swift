@@ -50,7 +50,7 @@ class BaseViewModel: ObservableObject {
 
 extension BaseViewModel {
     //MARK: RESET HANDLER
-    func resetHandler(level: Int, path: String, key: UserKeys) -> [Word] {
+    func resetHandler(level: Int, key: UserKeys) -> [Word] {
         let data: [Word] = getData(key) ?? Bundle.main.decode(key)
         var words = data.filter { $0.lesson != level }
         var resetLesson: [Word] = Bundle.main.decode(key)

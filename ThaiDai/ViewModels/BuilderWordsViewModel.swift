@@ -13,10 +13,6 @@ final class BuilderWordsViewModel: BaseViewModel {
     @Published var pronouns: [Word] = []
     @Published var verbs: [Word] = []
     
-    private let adjectivesPath = "adjectives.json"
-    private let pronounsPath = "pronouns.json"
-    private let verbsPath = "verbs.json"
-    
     override init() {
         super.init()
         setView()
@@ -40,11 +36,11 @@ final class BuilderWordsViewModel: BaseViewModel {
     func reset(_ level: Int, type: UserKeys) {
         switch type {
         case .adjectives:
-            self.adjectives = resetHandler(level: level, path: adjectivesPath, key: .adjectives)
+            self.adjectives = resetHandler(level: level, key: .adjectives)
         case .pronouns:
-            self.pronouns = resetHandler(level: level, path: pronounsPath, key: .pronouns)
+            self.pronouns = resetHandler(level: level, key: .pronouns)
         case .verbs:
-            self.verbs = resetHandler(level: level, path: verbsPath, key: .verbs)
+            self.verbs = resetHandler(level: level, key: .verbs)
         default:
             break
         }

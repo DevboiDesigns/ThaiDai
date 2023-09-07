@@ -12,9 +12,6 @@ final class PhrasesViewModel: BaseViewModel {
     @Published var phrases: [Word] = []
     @Published var questions: [Word] = []
     
-    private let phrasesPath = "phrases.json"
-    private let questionsPath = "questions.json"
-    
     override init() {
         super.init()
         let (phrases, questions) = setPhrases()
@@ -25,9 +22,9 @@ final class PhrasesViewModel: BaseViewModel {
     func reset(_ level: Int, type: UserKeys) {
         switch type {
         case .phrases:
-            self.phrases = self.resetHandler(level: level, path: phrasesPath, key: .phrases)
+            self.phrases = self.resetHandler(level: level, key: .phrases)
         case .questions:
-            self.questions = self.resetHandler(level: level, path: questionsPath, key: .questions)
+            self.questions = self.resetHandler(level: level, key: .questions)
         default:
             break
         }

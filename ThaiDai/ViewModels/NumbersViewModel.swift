@@ -12,9 +12,6 @@ final class NumbersViewModel: BaseViewModel {
     @Published var numbers: [Word] = []
     @Published var daysOfTheWeek: [Word] = []
     
-    private let numbersPath = "numbers.json"
-    private let daysPath = "daysoftheweek.json"
-    
     override init() {
         super.init()
         let (numbers, daysOfWeek) = setNumbers()
@@ -32,9 +29,9 @@ final class NumbersViewModel: BaseViewModel {
     func reset(_ level: Int, type: UserKeys) {
         switch type {
         case .numbers:
-            self.numbers = self.resetHandler(level: level, path: numbersPath, key: .numbers)
+            self.numbers = self.resetHandler(level: level, key: .numbers)
         case .daysOfWeek:
-            self.daysOfTheWeek = self.resetHandler(level: level, path: daysPath, key: .daysOfWeek)
+            self.daysOfTheWeek = self.resetHandler(level: level, key: .daysOfWeek)
         default:
             break
         }

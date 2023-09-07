@@ -11,7 +11,6 @@ import SwiftUI
 
 final class WordsViewModel: BaseViewModel {
     @Published var words: [Word] = []
-    private let path = "words.json"
     
     override init() {
         super.init()
@@ -41,7 +40,7 @@ final class WordsViewModel: BaseViewModel {
     }
 
     func reset(_ level: Int, type: UserKeys) {
-        self.words = self.resetHandler(level: level, path: path, key: .words)
+        self.words = self.resetHandler(level: level, key: .words)
     }
 
 }
