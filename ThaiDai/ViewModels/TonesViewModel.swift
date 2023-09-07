@@ -23,8 +23,8 @@ final class TonesViewModel: BaseViewModel {
     }
     
     private func setWords() -> ([Word], [Word]) {
-        let tones: [Word] = getData(.tones) ?? Bundle.main.decode(tonesPath)
-        let tenses: [Word] = getData(.tenses) ?? Bundle.main.decode(tensesPath)
+        let tones: [Word] = getData(.tones) ?? Bundle.main.decode(.tones)
+        let tenses: [Word] = getData(.tenses) ?? Bundle.main.decode(.tenses)
         return (tones, tenses)
     }
     

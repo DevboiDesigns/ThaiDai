@@ -19,7 +19,7 @@ final class WordsViewModel: BaseViewModel {
     }
     
     private func setWords() -> [Word] {
-        getData(.words) ?? Bundle.main.decode(path)
+        getData(.words) ?? Bundle.main.decode(.words)
     }
     
     func buttonHandler(_ button: CellButtons, _ word: Word) {

@@ -51,9 +51,9 @@ class BaseViewModel: ObservableObject {
 extension BaseViewModel {
     //MARK: RESET HANDLER
     func resetHandler(level: Int, path: String, key: UserKeys) -> [Word] {
-        let data: [Word] = getData(key) ?? Bundle.main.decode(path)
+        let data: [Word] = getData(key) ?? Bundle.main.decode(key)
         var words = data.filter { $0.lesson != level }
-        var resetLesson: [Word] = Bundle.main.decode(path)
+        var resetLesson: [Word] = Bundle.main.decode(key)
         resetLesson = resetLesson.filter { $0.lesson == level }
         words.append(contentsOf: resetLesson)
         self.save(words, key: key)

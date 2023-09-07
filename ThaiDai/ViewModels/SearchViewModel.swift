@@ -20,7 +20,7 @@ final class SearchViewModel: BaseViewModel {
         var allWords: [Word] = []
         UserKeys.allCases.forEach { wordType in
             if wordType != .savedWords {
-                let words: [Word] = Bundle.main.decode(wordType.fileName)
+                let words: [Word] = Bundle.main.decode(wordType)
                 allWords.append(contentsOf: words)
             }
         }

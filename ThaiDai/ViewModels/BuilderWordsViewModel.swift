@@ -31,9 +31,9 @@ final class BuilderWordsViewModel: BaseViewModel {
     }
     
     private func setBuilderWords() -> ([Word], [Word], [Word]) {
-        let adjectives =  getData(.adjectives) ?? Bundle.main.decode(adjectivesPath)
-        let pronouns = getData(.pronouns) ?? Bundle.main.decode(pronounsPath)
-        let verbs = getData(.verbs) ?? Bundle.main.decode(verbsPath)
+        let adjectives =  getData(.adjectives) ?? Bundle.main.decode(.adjectives)
+        let pronouns = getData(.pronouns) ?? Bundle.main.decode(.pronouns)
+        let verbs = getData(.verbs) ?? Bundle.main.decode(.verbs)
         return (adjectives, pronouns, verbs)
     }
     

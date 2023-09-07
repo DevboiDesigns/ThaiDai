@@ -34,8 +34,8 @@ final class PhrasesViewModel: BaseViewModel {
     }
 
     private func setPhrases() -> ([Word], [Word]) {
-        let phrases = getData(.phrases) ?? Bundle.main.decode(phrasesPath)
-        let questions = getData(.questions) ?? Bundle.main.decode(questionsPath)
+        let phrases = getData(.phrases) ?? Bundle.main.decode(.phrases)
+        let questions = getData(.questions) ?? Bundle.main.decode(.questions)
         return (phrases, questions)
     }
     

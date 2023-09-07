@@ -8,16 +8,16 @@
 import Foundation
 
 extension Bundle {
-    func decode<T: Codable>(_ file: String) -> T {
-        guard let url = self.url(forResource: file, withExtension: nil) else {
-            fatalError("Failed to locate \(file) in Bundle")
+    func decode<T: Codable>(_ key: UserKeys) -> T {
+        guard let url = self.url(forResource: key.fileName, withExtension: nil) else {
+            fatalError("Failed to locate \(key.fileName) in Bundle")
         }
         guard let data = try? Data(contentsOf: url) else {
-            fatalError("Failed to load \(file) in Bundle")
+            fatalError("Failed to load \(key.fileName) in Bundle")
         }
         let decoder = JSONDecoder()
         guard let loaded = try? decoder.decode(T.self, from: data) else {
-            fatalError("Failed to decode \(file) from bundle")
+            fatalError("Failed to decode \(key.fileName) from bundle")
         }
         return loaded
     }
