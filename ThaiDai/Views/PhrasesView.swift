@@ -11,7 +11,7 @@ struct PhrasesView: View {
     @StateObject private var phrasesVM = PhrasesViewModel()
     @State private var language: Language = .english
     
-    private func lesson(_ lesson: Int, type: PhraseType) -> [Word] {
+    private func lesson(_ lesson: Int, type: PhraseViewState) -> [Word] {
         switch type {
         case .phrase:
             return phrasesVM.phrases.filter { $0.lesson == lesson }
@@ -29,27 +29,21 @@ struct PhrasesView: View {
             HeaderBar(language: $language, title: "Phrases")
             
             ScrollView {
-                SectionView(words: lesson(1, type: .phrase),
-                            title: title(1), type: .phrases,
-                            action: phrasesVM.buttonHandler,
-                            resetAction: phrasesVM.reset)
-                SectionView(words: lesson(2, type: .phrase),
-                            title: title(2), type: .phrases,
-                            action: phrasesVM.buttonHandler,
-                            resetAction: phrasesVM.reset)
-                SectionView(words: lesson(3, type: .phrase),
-                            title: title(3), type: .phrases,
-                            action: phrasesVM.buttonHandler,
-                            resetAction: phrasesVM.reset)
-                SectionView(words: lesson(4, type: .phrase),
-                            title: title(4), type: .phrases,
-                            action: phrasesVM.buttonHandler,
-                            resetAction: phrasesVM.reset)
+                ForEach(PhraseLevels.allCases) { level in
+                    SectionView(words: lesson(level.level, type: .phrase),
+                                title: level.title,
+                                type: .phrases,
+                                action: phrasesVM.buttonHandler,
+                                resetAction: phrasesVM.reset)
+                }
                 
-                SectionView(words: lesson(1, type: .question),
-                            title: "Questions", type: .questions,
-                            action: phrasesVM.buttonHandler,
-                            resetAction: phrasesVM.reset)
+                ForEach(QuestionLevels.allCases) { level in
+                    SectionView(words: lesson(level.level, type: .question),
+                                title: level.title,
+                                type: .questions,
+                                action: phrasesVM.buttonHandler,
+                                resetAction: phrasesVM.reset)
+                }
             }
         }
         .mainBackground()
