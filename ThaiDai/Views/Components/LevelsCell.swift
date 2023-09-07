@@ -10,14 +10,14 @@ import SwiftUI
 struct LevelsCell: View {
     
     let level: WordLevels
-    let type: UserKeys
+    let type: FileKeys
     let toggleAction: (WordLevels) -> Void
-    let resetAction: (Int, UserKeys) -> Void
+    let resetAction: (Int, FileKeys) -> Void
     
     var body: some View {
         VStack {
             HStack(alignment: .bottom, spacing: 24) {
-                Text(level.name)
+                Text(level.title)
                     .appSectionFont()
                     .onTapGesture { toggleAction(level) }
                   Spacer()

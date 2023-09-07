@@ -14,7 +14,7 @@ enum WordLevels: CaseIterable, Identifiable {
         UUID().uuidString
     }
     
-    var name: String {
+    var title: String {
         switch self {
         case .one:
             return "Level 1"

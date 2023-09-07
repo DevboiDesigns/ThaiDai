@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-enum UserKeys: String, CaseIterable {
+enum FileKeys: String, CaseIterable {
+    
     case words = "co.thaidai.words"
     case numbers = "co.thaidai.numbers"
     case phrases = "co.thaidai.phrases"

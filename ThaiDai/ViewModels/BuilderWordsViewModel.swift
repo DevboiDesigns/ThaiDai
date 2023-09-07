@@ -20,7 +20,6 @@ final class BuilderWordsViewModel: BaseViewModel {
     
     private func setView() {
         let (adjectives, pronouns, verbs) = setBuilderWords()
-        print(adjectives)
         self.adjectives = adjectives
         self.pronouns = pronouns
         self.verbs = verbs
@@ -33,7 +32,7 @@ final class BuilderWordsViewModel: BaseViewModel {
         return (adjectives, pronouns, verbs)
     }
     
-    func reset(_ level: Int, type: UserKeys) {
+    func reset(_ level: Int, type: FileKeys) {
         switch type {
         case .adjectives:
             self.adjectives = resetHandler(level: level, key: .adjectives)
