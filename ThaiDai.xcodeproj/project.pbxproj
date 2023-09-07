@@ -195,12 +195,11 @@
 		A7112D152A862CC300091ECC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A743BD972AA9961C00526271 /* SearchView.swift */,
-				A797CD602A87BE1600AC790B /* SettingsView.swift */,
 				A743BD8C2AA97D9A00526271 /* BuilderWords */,
 				A795F7ED2A866C2C007BF2FD /* Components */,
 				A7112D1E2A863B8B00091ECC /* Numbers */,
 				A795F7BF2A863DF5007BF2FD /* PhrasesView */,
+				A7607F122AA9C44E00C5FAB5 /* SettingsView */,
 				A7607F0D2AA9BEFE00C5FAB5 /* TonesView */,
 				A7112D1D2A862EE700091ECC /* WordsView */,
 			);
@@ -248,6 +247,15 @@
 				A7607F0E2AA9BF1000C5FAB5 /* TonesView.swift */,
 			);
 			path = TonesView;
+			sourceTree = "<group>";
+		};
+		A7607F122AA9C44E00C5FAB5 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				A743BD972AA9961C00526271 /* SearchView.swift */,
+				A797CD602A87BE1600AC790B /* SettingsView.swift */,
+			);
+			path = SettingsView;
 			sourceTree = "<group>";
 		};
 		A795F7BF2A863DF5007BF2FD /* PhrasesView */ = {
