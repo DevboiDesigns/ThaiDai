@@ -11,8 +11,17 @@ struct PhrasesView: View {
     @StateObject private var phrasesVM = PhrasesViewModel()
     @State private var language: Language = .english
     
-    private func lesson(_ lesson: Int) -> [Word] {
-        phrasesVM.phrases.filter { $0.lesson == lesson}
+    private func lesson(_ lesson: Int, type: PhraseType) -> [Word] {
+        switch type {
+        case .phrase:
+            return phrasesVM.phrases.filter { $0.lesson == lesson }
+        case .question:
+            return phrasesVM.questions.filter { $0.lesson == lesson }
+        }
+    }
+    
+    private func title(_ lesson: Int) -> String {
+        "Phrases \(lesson)"
     }
     
     var body: some View {
@@ -20,16 +29,22 @@ struct PhrasesView: View {
             HeaderBar(language: $language, title: "Phrases")
             
             ScrollView {
-                SectionView(words: lesson(1), title: "Level 1", language: $language,
+                SectionView(words: lesson(1, type: .phrase), title: title(1), language: $language,
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
-                SectionView(words: lesson(2), title: "Level 2", language: $language,
+                SectionView(words: lesson(2, type: .phrase), title: title(2), language: $language,
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
-                SectionView(words: lesson(3), title: "Level 3", language: $language,
+                SectionView(words: lesson(3, type: .phrase), title: title(3), language: $language,
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
-                SectionView(words: lesson(4), title: "Level 4", language: $language,
+                SectionView(words: lesson(4, type: .phrase), title: title(4), language: $language,
+                            action: phrasesVM.buttonHandler,
+                            resetAction: phrasesVM.reset)
+                
+                SectionView(words: lesson(1, type: .question),
+                            title: "Questions",
+                            language: $language,
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
             }
