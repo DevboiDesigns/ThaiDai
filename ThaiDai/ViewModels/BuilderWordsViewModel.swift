@@ -42,7 +42,7 @@ final class BuilderWordsViewModel: BaseViewModel {
         self.adjectives = newAdj
         let newPron: [Word] = Bundle.main.decode(pronounsPath)
         self.pronouns = newPron
-        let newVerbs: [Word] = Bundle.main.decode(pronounsPath)
+        let newVerbs: [Word] = Bundle.main.decode(verbsPath)
         self.verbs = newVerbs
         self.saveAll(adjectives: newAdj, pronouns: newPron, verbs: newVerbs)
     }

@@ -20,7 +20,6 @@
 		A7112D202A863BC400091ECC /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7112D1F2A863BC400091ECC /* NumbersView.swift */; };
 		A71E79B72AA907C100AE4062 /* tenses.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79B52AA907B200AE4062 /* tenses.json */; };
 		A71E79B82AA907C500AE4062 /* tones.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79B32AA9076C00AE4062 /* tones.json */; };
-		A71E79BB2AA907EA00AE4062 /* pronouns.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79B92AA907E000AE4062 /* pronouns.json */; };
 		A71E79BE2AA9080D00AE4062 /* daysoftheweek.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79BC2AA9080000AE4062 /* daysoftheweek.json */; };
 		A71E79C42AA9086D00AE4062 /* verbs.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79C22AA9086000AE4062 /* verbs.json */; };
 		A71E79C72AA9089200AE4062 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79C52AA9088700AE4062 /* questions.json */; };
@@ -28,6 +27,7 @@
 		A743BD902AA97E1500526271 /* BuilderWordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743BD8F2AA97E1500526271 /* BuilderWordsViewModel.swift */; };
 		A743BD912AA9808500526271 /* adjectives.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79BF2AA9083100AE4062 /* adjectives.json */; };
 		A743BD932AA987BB00526271 /* BuilderWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743BD922AA987BB00526271 /* BuilderWords.swift */; };
+		A743BD942AA9887F00526271 /* pronouns.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79B92AA907E000AE4062 /* pronouns.json */; };
 		A75A4F662A87E37B007AD5AF /* WordLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F652A87E37B007AD5AF /* WordLevels.swift */; };
 		A75A4F682A87E4F2007AD5AF /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F672A87E4F2007AD5AF /* SectionCell.swift */; };
 		A75A4F6A2A87E954007AD5AF /* LevelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F692A87E954007AD5AF /* LevelsCell.swift */; };
@@ -353,10 +353,10 @@
 			files = (
 				A71E79C42AA9086D00AE4062 /* verbs.json in Resources */,
 				A7112D092A862AAC00091ECC /* Preview Assets.xcassets in Resources */,
-				A71E79BB2AA907EA00AE4062 /* pronouns.json in Resources */,
 				A71E79BE2AA9080D00AE4062 /* daysoftheweek.json in Resources */,
 				A71E79B72AA907C100AE4062 /* tenses.json in Resources */,
 				A71E79B82AA907C500AE4062 /* tones.json in Resources */,
+				A743BD942AA9887F00526271 /* pronouns.json in Resources */,
 				A795F7F92A868F96007BF2FD /* words.json in Resources */,
 				A7BCB0932A8D2A700053415E /* numbers.json in Resources */,
 				A71E79C72AA9089200AE4062 /* questions.json in Resources */,
