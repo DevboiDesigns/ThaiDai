@@ -38,47 +38,11 @@ struct NumbersView: View {
                                 resetAction: numbersVM.reset)
                 }
                 
-                ZStack {
-                    if !showTimeImage {
-                        ImageHeader
-                    } else {
-                        VStack {
-                            ImageHeader
-                            HStack {
-                                Spacer()
-                                Text("Courtesy of Oleg Radchenko")
-                                    .font(.caption)
-                                    .foregroundColor(.white)
-                                    .opacity(0.5)
-                            }
-                            Image("thai_time")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(maxWidth: .infinity)
-                            
-                        }
-                    }
-                    
-                }
-                .padding(.horizontal)
+                TimeImage(showTimeImage: $showTimeImage)
                 
             }
-            
         }
         .mainBackground()
-    }
-    
-    private var ImageHeader: some View {
-        HStack {
-            Text("Time")
-                .appSectionFont()
-                .onTapGesture {
-                    withAnimation(.easeInOut) {
-                        self.showTimeImage.toggle()
-                    }
-                }
-            Spacer()
-        }
     }
 }
 

@@ -61,6 +61,7 @@
 		A7D43DF42AAA434F002F68BE /* NumbersLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D43DF32AAA434F002F68BE /* NumbersLevels.swift */; };
 		A7D43DF62AAA4366002F68BE /* DateLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D43DF52AAA4366002F68BE /* DateLevels.swift */; };
 		A7D43DF82AAA43F8002F68BE /* BuilderViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D43DF72AAA43F8002F68BE /* BuilderViewState.swift */; };
+		A7D43DFA2AAA46DE002F68BE /* TimeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D43DF92AAA46DE002F68BE /* TimeImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +121,7 @@
 		A7D43DF32AAA434F002F68BE /* NumbersLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersLevels.swift; sourceTree = "<group>"; };
 		A7D43DF52AAA4366002F68BE /* DateLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLevels.swift; sourceTree = "<group>"; };
 		A7D43DF72AAA43F8002F68BE /* BuilderViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderViewState.swift; sourceTree = "<group>"; };
+		A7D43DF92AAA46DE002F68BE /* TimeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,13 +256,14 @@
 		A795F7ED2A866C2C007BF2FD /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				A797CD7F2A87C52300AC790B /* SwipeDelete */,
-				A795F7E42A86650C007BF2FD /* WordCell */,
-				A795F7EE2A866C39007BF2FD /* SectionView.swift */,
+				A795F7F02A867EF7007BF2FD /* HeaderBar.swift */,
+				A75A4F692A87E954007AD5AF /* LevelsCell.swift */,
 				A75A4F6B2A87ECCD007AD5AF /* LevelsSectionView.swift */,
 				A75A4F672A87E4F2007AD5AF /* SectionCell.swift */,
-				A75A4F692A87E954007AD5AF /* LevelsCell.swift */,
-				A795F7F02A867EF7007BF2FD /* HeaderBar.swift */,
+				A795F7EE2A866C39007BF2FD /* SectionView.swift */,
+				A7D43DF92AAA46DE002F68BE /* TimeImage.swift */,
+				A797CD7F2A87C52300AC790B /* SwipeDelete */,
+				A795F7E42A86650C007BF2FD /* WordCell */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				A797CD612A87BE1600AC790B /* SettingsView.swift in Sources */,
 				A795F7E62A86655D007BF2FD /* CellThai.swift in Sources */,
 				A797CD5F2A87BBB200AC790B /* Color+.swift in Sources */,
+				A7D43DFA2AAA46DE002F68BE /* TimeImage.swift in Sources */,
 				A743BD932AA987BB00526271 /* BuilderWords.swift in Sources */,
 				A7112D032A862AAB00091ECC /* AppView.swift in Sources */,
 				A743BD982AA9961C00526271 /* SearchView.swift in Sources */,

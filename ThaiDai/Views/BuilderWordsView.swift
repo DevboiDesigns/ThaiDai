@@ -27,7 +27,6 @@ struct BuilderWordsView: View {
     var body: some View {
         VStack {
             HeaderBar(language: $language, title: "Builder Words")
-            
             ScrollView(showsIndicators: false) {
                 ForEach(BuilderWords.allCases) { type in
                     SectionView(words: lesson(1, type: type),
@@ -40,9 +39,3 @@ struct BuilderWordsView: View {
         .mainBackground()
     }
 }
-
-//struct BuilderWords_Previews: PreviewProvider {
-//    static var previews: some View {
-//        BuilderWords()
-//    }
-//}
