@@ -25,8 +25,14 @@ struct SearchView: View {
                 Text("Search...")
                     .appSectionFont()
             }
-            .padding(.bottom)
+            .padding(.vertical)
             .padding(.horizontal)
+            .foregroundColor(.white)
+            .background(Color.appPurple)
+            .cornerRadius(8)
+            .padding(.vertical)
+            .padding(.horizontal)
+        
             
             ScrollView(showsIndicators: false) {
                 ForEach(searchForText(queryText)) { word in

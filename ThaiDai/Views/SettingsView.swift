@@ -49,6 +49,7 @@ struct SettingsView: View {
                     Image(systemName: "magnifyingglass.circle")
                         .resizable()
                         .scaledToFit()
+                        .font(.title2)
                 }
 
             }

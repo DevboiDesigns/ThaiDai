@@ -142,17 +142,17 @@
 		A7112CFF2A862AAB00091ECC /* ThaiDai */ = {
 			isa = PBXGroup;
 			children = (
-				A7112D002A862AAB00091ECC /* ThaiDaiApp.swift */,
+				A7112D062A862AAC00091ECC /* ThaiDai.entitlements */,
 				A7112D022A862AAB00091ECC /* AppView.swift */,
-				A7112D152A862CC300091ECC /* Views */,
-				A7112D122A862BFB00091ECC /* ViewModels */,
-				A7112D0F2A862BDF00091ECC /* Models */,
-				A797CD842A87CF3100AC790B /* Utils */,
+				A7112D002A862AAB00091ECC /* ThaiDaiApp.swift */,
+				A7112D042A862AAC00091ECC /* Assets.xcassets */,
 				A795F7F42A868CC2007BF2FD /* Data */,
 				A7112D1A2A862E2D00091ECC /* Ext */,
-				A7112D042A862AAC00091ECC /* Assets.xcassets */,
-				A7112D062A862AAC00091ECC /* ThaiDai.entitlements */,
+				A7112D0F2A862BDF00091ECC /* Models */,
 				A7112D072A862AAC00091ECC /* Preview Content */,
+				A797CD842A87CF3100AC790B /* Utils */,
+				A7112D122A862BFB00091ECC /* ViewModels */,
+				A7112D152A862CC300091ECC /* Views */,
 			);
 			path = ThaiDai;
 			sourceTree = "<group>";
@@ -195,13 +195,13 @@
 		A7112D152A862CC300091ECC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A7607F0D2AA9BEFE00C5FAB5 /* TonesView */,
-				A797CD602A87BE1600AC790B /* SettingsView.swift */,
 				A743BD972AA9961C00526271 /* SearchView.swift */,
+				A797CD602A87BE1600AC790B /* SettingsView.swift */,
+				A743BD8C2AA97D9A00526271 /* BuilderWords */,
 				A795F7ED2A866C2C007BF2FD /* Components */,
 				A7112D1E2A863B8B00091ECC /* Numbers */,
 				A795F7BF2A863DF5007BF2FD /* PhrasesView */,
-				A743BD8C2AA97D9A00526271 /* BuilderWords */,
+				A7607F0D2AA9BEFE00C5FAB5 /* TonesView */,
 				A7112D1D2A862EE700091ECC /* WordsView */,
 			);
 			path = Views;
