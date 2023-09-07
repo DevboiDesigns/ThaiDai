@@ -7,8 +7,12 @@
 
 import Foundation
 
-enum WordLevels {
+enum WordLevels: CaseIterable, Identifiable {
     case one, two, three, four, five, six, seven, eight, nine, ten, eleven
+    
+    var id: String {
+        UUID().uuidString
+    }
     
     var name: String {
         switch self {
