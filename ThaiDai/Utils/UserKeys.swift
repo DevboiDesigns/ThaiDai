@@ -15,5 +15,8 @@ enum UserKeys: String {
     case pronouns = "co.thaidai.pronouns"
     case verbs = "co.thaidai.verbs"
     case questions = "co.thaidai.questions"
+    case daysOfWeek = "co.thaidai.daysOfTheWeek"
+    
+    
     case savedWords = "co.thaidai.savedWords"
 }

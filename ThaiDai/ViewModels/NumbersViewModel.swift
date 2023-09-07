@@ -9,21 +9,29 @@ import SwiftUI
 
 final class NumbersViewModel: BaseViewModel {
     @Published var numbers: [Word] = []
-    private let path = "numbers.json"
+    @Published var daysOfTheWeek: [Word] = []
+    private let numbersPath = "numbers.json"
+    private let daysPath = "daysoftheweek.json"
     
     override init() {
         super.init()
-        numbers = setNumbers()
+        let (numbers, daysOfWeek) = setNumbers()
+        self.numbers = numbers
+        self.daysOfTheWeek = daysOfWeek
     }
     
-    private func setNumbers() -> [Word] {
-        getData(.numbers) ?? Bundle.main.decode(path)
+    private func setNumbers() -> ([Word], [Word]) {
+        let numbers = getData(.numbers) ?? Bundle.main.decode(numbersPath)
+        let daysOfWeek = getData(.daysOfWeek) ?? Bundle.main.decode(daysPath)
+        return (numbers, daysOfWeek)
     }
     
     func reset() {
-        let newNums: [Word] = Bundle.main.decode(path)
-        self.save(newNums, key: UserKeys.numbers)
-        self.numbers = newNums
+        let newNumbers: [Word] = Bundle.main.decode(numbersPath)
+        let newDaysOfWeek: [Word] = Bundle.main.decode(daysPath)
+        self.saveAll(numbers: newNumbers, daysOfWeek: newDaysOfWeek)
+        self.numbers = newNumbers
+        self.daysOfTheWeek = newDaysOfWeek
     }
     
     func buttonHandler(_ button: CellButtons, _ word: Word) {
@@ -41,7 +49,13 @@ final class NumbersViewModel: BaseViewModel {
 
     private func delete(_ id: String) {
         numbers = numbers.filter { $0.id != id }
-        self.save(self.numbers, key: UserKeys.numbers)
+        daysOfTheWeek = daysOfTheWeek.filter { $0.id != id }
+        self.saveAll(numbers: numbers, daysOfWeek: daysOfTheWeek)
+    }
+    
+    private func saveAll(numbers: [Word], daysOfWeek: [Word]) {
+        self.save(numbers, key: .numbers)
+        self.save(daysOfWeek, key: .daysOfWeek)
     }
     
 }

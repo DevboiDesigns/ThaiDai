@@ -43,6 +43,12 @@ struct NumbersView: View {
                             action: numbersVM.buttonHandler,
                             resetAction: numbersVM.reset)
                 
+                SectionView(words: numbersVM.daysOfTheWeek,
+                            title: "Days Of The Week",
+                            language: $language,
+                            action: numbersVM.buttonHandler,
+                            resetAction: numbersVM.reset)
+                
                 ZStack {
                     if !showTimeImage {
                        ImageHeader
