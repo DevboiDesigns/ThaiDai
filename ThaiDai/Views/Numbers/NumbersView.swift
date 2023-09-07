@@ -11,6 +11,8 @@ struct NumbersView: View {
     @StateObject private var numbersVM = NumbersViewModel()
     @State private var language: Language = .english
     
+    @State private var showTimeImage = false
+    
     private func lesson(_ lesson: Int) -> [Word] {
         numbersVM.numbers.filter { $0.lesson == lesson}
     }
@@ -40,10 +42,40 @@ struct NumbersView: View {
                             language: $language,
                             action: numbersVM.buttonHandler,
                             resetAction: numbersVM.reset)
+                
+                ZStack {
+                    if !showTimeImage {
+                       ImageHeader
+                    } else {
+                        VStack {
+                            ImageHeader
+                            Image("thai_time")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(maxWidth: .infinity)
+                        }
+                    }
+                    
+                }
+                .padding(.horizontal)
+
             }
 
         }
         .mainBackground()
+    }
+    
+    private var ImageHeader: some View {
+        HStack {
+            Text("Time")
+                .appSectionFont()
+                .onTapGesture {
+                    withAnimation(.easeInOut) {
+                        self.showTimeImage.toggle()
+                    }
+                }
+            Spacer()
+        }
     }
 }
 
