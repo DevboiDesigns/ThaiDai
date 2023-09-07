@@ -10,9 +10,10 @@ import SwiftUI
 struct LevelsSectionView: View {
     let words: [Word]
     let level: WordLevels
+    let type: UserKeys
     @Binding var language: Language
     let action: (CellButtons, Word) -> Void
-    let resetAction: (Int) -> Void
+    let resetAction: (Int, UserKeys) -> Void
     let toggleAction: (WordLevels) -> Void
     var selectable: Bool = true
     @State private var selected = true
@@ -20,7 +21,7 @@ struct LevelsSectionView: View {
         ZStack {
             if selected {
                 VStack {
-                    LevelsCell(level: level, toggleAction: toggleAction, resetAction: resetAction)
+                    LevelsCell(level: level, type: type, toggleAction: toggleAction, resetAction: resetAction)
    
                     ForEach(words) { word in
                         CellCard(word: word, language: $language)
@@ -31,7 +32,7 @@ struct LevelsSectionView: View {
                 }
             } else {
                 VStack {
-                    LevelsCell(level: level, toggleAction: toggleAction, resetAction: resetAction)
+                    LevelsCell(level: level, type: type, toggleAction: toggleAction, resetAction: resetAction)
                 }
             }
         }

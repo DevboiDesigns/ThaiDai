@@ -23,24 +23,24 @@ struct NumbersView: View {
             
             ScrollView(showsIndicators: false) {
                 SectionView(words: lesson(1),
-                            title: "0-9",
+                            title: "0-9", type: .numbers,
                             action: numbersVM.buttonHandler,
                             resetAction: numbersVM.reset)
                 SectionView(words: lesson(2),
-                            title: "10-99",
+                            title: "10-99", type: .numbers,
                             action: numbersVM.buttonHandler,
                             resetAction: numbersVM.reset)
                 SectionView(words: lesson(3),
-                            title: "100-*",
+                            title: "100-*", type: .numbers,
                             action: numbersVM.buttonHandler,
                             resetAction: numbersVM.reset)
                 SectionView(words: lesson(4),
-                            title: "1st-*",
+                            title: "1st-*", type: .numbers,
                             action: numbersVM.buttonHandler,
                             resetAction: numbersVM.reset)
                 
                 SectionView(words: numbersVM.daysOfTheWeek,
-                            title: "Days Of The Week",
+                            title: "Days Of The Week", type: .daysOfWeek,
                             action: numbersVM.buttonHandler,
                             resetAction: numbersVM.reset)
                 

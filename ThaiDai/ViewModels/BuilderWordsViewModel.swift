@@ -37,7 +37,7 @@ final class BuilderWordsViewModel: BaseViewModel {
         return (adjectives, pronouns, verbs)
     }
     
-    func reset(_ level: Int) {
+    func reset(_ level: Int, type: UserKeys) {
         let newAdj: [Word] = Bundle.main.decode(adjectivesPath)
         self.adjectives = newAdj
         let newPron: [Word] = Bundle.main.decode(pronounsPath)

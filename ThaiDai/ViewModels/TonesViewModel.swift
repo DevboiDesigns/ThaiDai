@@ -52,7 +52,7 @@ final class TonesViewModel: BaseViewModel {
         self.save(tenses, key: .tenses)
     }
     
-    func reset(_ level: Int) {
+    func reset(_ level: Int, type: UserKeys) {
         let newTones: [Word] = Bundle.main.decode(tonesPath)
         let newTenses: [Word] = Bundle.main.decode(tensesPath)
         self.saveAll(tones: newTones, tenses: newTenses)

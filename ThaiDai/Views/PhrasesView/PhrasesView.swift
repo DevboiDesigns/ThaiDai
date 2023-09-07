@@ -30,24 +30,24 @@ struct PhrasesView: View {
             
             ScrollView {
                 SectionView(words: lesson(1, type: .phrase),
-                            title: title(1),
+                            title: title(1), type: .phrases,
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
                 SectionView(words: lesson(2, type: .phrase),
-                            title: title(2),
+                            title: title(2), type: .phrases,
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
                 SectionView(words: lesson(3, type: .phrase),
-                            title: title(3),
+                            title: title(3), type: .phrases,
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
                 SectionView(words: lesson(4, type: .phrase),
-                            title: title(4),
+                            title: title(4), type: .phrases,
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
                 
                 SectionView(words: lesson(1, type: .question),
-                            title: "Questions",
+                            title: "Questions", type: .questions,
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
             }

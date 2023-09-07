@@ -30,17 +30,17 @@ struct BuilderWordsView: View {
             
             ScrollView(showsIndicators: false) {
                 SectionView(words: lesson(1, type: .adjectives),
-                            title: "Adjectives",
+                            title: "Adjectives", type: .adjectives,
                             action: builderVM.buttonHandler,
                             resetAction: builderVM.reset)
                 
                 SectionView(words: lesson(1, type: .pronouns),
-                            title: "Pronouns",
+                            title: "Pronouns", type: .pronouns,
                             action: builderVM.buttonHandler,
                             resetAction: builderVM.reset)
                 
                 SectionView(words: lesson(1, type: .verbs),
-                            title: "Verbs",
+                            title: "Verbs", type: .verbs,
                             action: builderVM.buttonHandler,
                             resetAction: builderVM.reset)
 

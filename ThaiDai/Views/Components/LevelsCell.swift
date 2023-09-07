@@ -10,8 +10,9 @@ import SwiftUI
 struct LevelsCell: View {
     
     let level: WordLevels
+    let type: UserKeys
     let toggleAction: (WordLevels) -> Void
-    let resetAction: (Int) -> Void
+    let resetAction: (Int, UserKeys) -> Void
     
     var body: some View {
         VStack {
@@ -22,7 +23,7 @@ struct LevelsCell: View {
                   Spacer()
                 Text("Reset")
                     .appCellFont(.appPurple, size: .footnote)
-                    .onTapGesture { resetAction(level.level) }
+                    .onTapGesture { resetAction(level.level, type) }
             }
             .padding(.horizontal)
             Divider()

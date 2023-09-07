@@ -27,7 +27,7 @@ struct SettingsView: View {
             VStack {
                 ScrollView(showsIndicators: false) {
                     SectionView(words: settingsVM.savedWords,
-                                title: "Saved Words",
+                                title: "Saved Words", type: .savedWords,
                                 action: settingsVM.buttonHandler,
                                 resetAction: settingsVM.reset,
                                 selectable: false,

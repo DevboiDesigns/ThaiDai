@@ -40,7 +40,7 @@ final class WordsViewModel: BaseViewModel {
         self.save(self.words, key: UserKeys.words)
     }
 
-    func reset(_ level: Int) {
+    func reset(_ level: Int, type: UserKeys) {
         var allWords: [Word] = []
         var newWords: [Word] = Bundle.main.decode(path)
         newWords = newWords.filter { $0.lesson == level }

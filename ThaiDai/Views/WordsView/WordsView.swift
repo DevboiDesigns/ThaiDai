@@ -23,29 +23,29 @@ struct WordsView: View {
                     if !selected {
                         VStack {
                             Group {
-                                LevelsCell(level: .one, toggleAction: select, resetAction: wordVM.reset)
-                                LevelsCell(level: .two, toggleAction: select, resetAction: wordVM.reset)
-                                LevelsCell(level: .three, toggleAction: select, resetAction: wordVM.reset)
-                                LevelsCell(level: .four, toggleAction: select, resetAction: wordVM.reset)
-                                LevelsCell(level: .five, toggleAction: select, resetAction: wordVM.reset)
-                                LevelsCell(level: .six, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .one, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .two, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .three, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .four, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .five, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .six, type: .words, toggleAction: select, resetAction: wordVM.reset)
                             }
                             Group {
-                                LevelsCell(level: .seven, toggleAction: select, resetAction: wordVM.reset)
-                                LevelsCell(level: .eight, toggleAction: select, resetAction: wordVM.reset)
-                                LevelsCell(level: .nine, toggleAction: select, resetAction: wordVM.reset)
-                                LevelsCell(level: .ten, toggleAction: select, resetAction: wordVM.reset)
-                                LevelsCell(level: .eleven, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .seven, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .eight, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .nine, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .ten, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .eleven, type: .words, toggleAction: select, resetAction: wordVM.reset)
                             }
                         }
                     } else {
                         LevelsSectionView(words: wordVM.words.filter { $0.lesson == level.level },
-                                    level: level,
-                                    language: $language,
-                                    action: wordVM.buttonHandler,
-                                    resetAction: wordVM.reset,
-                                    toggleAction: select,
-                                    selectable: false)
+                                          level: level, type: .words,
+                                          language: $language,
+                                          action: wordVM.buttonHandler,
+                                          resetAction: wordVM.reset,
+                                          toggleAction: select,
+                                          selectable: false)
                     }
                 }
             }

@@ -25,18 +25,53 @@ final class NumbersViewModel: BaseViewModel {
     private func setNumbers() -> ([Word], [Word]) {
         let numbers = getData(.numbers) ?? Bundle.main.decode(numbersPath)
         let daysOfWeek = getData(.daysOfWeek) ?? Bundle.main.decode(daysPath)
+        print(numbers)
         return (numbers, daysOfWeek)
     }
     
-    func reset(_ level: Int) {
-        var newNumbers: [Word] = Bundle.main.decode(numbersPath)
-        newNumbers = newNumbers.filter { $0.lesson == level }
-        var newDaysOfWeek: [Word] = Bundle.main.decode(daysPath)
-        newDaysOfWeek = newDaysOfWeek.filter { $0.lesson == level }
-        
-        self.saveAll(numbers: newNumbers, daysOfWeek: newDaysOfWeek)
-        self.numbers = newNumbers
-        self.daysOfTheWeek = newDaysOfWeek
+    func reset(_ level: Int, type: UserKeys) {
+        switch type {
+        case .numbers:
+            let currentNumbers = getData(.numbers)
+            if var currentNumbers = currentNumbers  {
+                currentNumbers = currentNumbers.filter { $0.lesson != level }
+                var resetLesson: [Word] = Bundle.main.decode(numbersPath)
+                resetLesson = resetLesson.filter { $0.lesson == level }
+                currentNumbers.append(contentsOf: resetLesson)
+                self.numbers = currentNumbers
+                self.save(currentNumbers, key: .numbers)
+            } else {
+                var currentNumbers: [Word] = Bundle.main.decode(numbersPath) ?? []
+                currentNumbers = currentNumbers.filter { $0.lesson != level }
+                var resetLesson: [Word] = Bundle.main.decode(numbersPath)
+                resetLesson = resetLesson.filter { $0.lesson == level }
+                currentNumbers.append(contentsOf: resetLesson)
+                self.numbers = currentNumbers
+                self.save(currentNumbers, key: .numbers)
+            }
+            
+        case .daysOfWeek:
+            let newDaysOfWeek = getData(.daysOfWeek)
+            if var newDaysOfWeek = newDaysOfWeek {
+                newDaysOfWeek = newDaysOfWeek.filter { $0.lesson != level }
+                var resetLesson: [Word] = Bundle.main.decode(daysPath)
+                resetLesson = resetLesson.filter { $0.lesson == level }
+                newDaysOfWeek.append(contentsOf: resetLesson)
+                self.daysOfTheWeek = newDaysOfWeek
+                self.save(newDaysOfWeek, key: .daysOfWeek)
+                
+            } else {
+                var newDaysOfWeek: [Word] = Bundle.main.decode(daysPath)
+                newDaysOfWeek = newDaysOfWeek.filter { $0.lesson != level }
+                var resetLesson: [Word] = Bundle.main.decode(daysPath)
+                resetLesson = resetLesson.filter { $0.lesson == level }
+                newDaysOfWeek.append(contentsOf: resetLesson)
+                self.daysOfTheWeek = newDaysOfWeek
+                self.save(newDaysOfWeek, key: .daysOfWeek)
+            }
+        default:
+            break
+        }
     }
     
     func buttonHandler(_ button: CellButtons, _ word: Word) {
@@ -61,6 +96,8 @@ final class NumbersViewModel: BaseViewModel {
     private func saveAll(numbers: [Word], daysOfWeek: [Word]) {
         self.save(numbers, key: .numbers)
         self.save(daysOfWeek, key: .daysOfWeek)
+        self.numbers = numbers
+        self.daysOfTheWeek = daysOfWeek
     }
     
 }
