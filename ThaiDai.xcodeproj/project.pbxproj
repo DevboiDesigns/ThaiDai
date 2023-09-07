@@ -22,9 +22,12 @@
 		A71E79B82AA907C500AE4062 /* tones.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79B32AA9076C00AE4062 /* tones.json */; };
 		A71E79BB2AA907EA00AE4062 /* pronouns.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79B92AA907E000AE4062 /* pronouns.json */; };
 		A71E79BE2AA9080D00AE4062 /* daysoftheweek.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79BC2AA9080000AE4062 /* daysoftheweek.json */; };
-		A71E79C12AA9083F00AE4062 /* adjectives.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79BF2AA9083100AE4062 /* adjectives.json */; };
 		A71E79C42AA9086D00AE4062 /* verbs.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79C22AA9086000AE4062 /* verbs.json */; };
 		A71E79C72AA9089200AE4062 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79C52AA9088700AE4062 /* questions.json */; };
+		A743BD8E2AA97DEB00526271 /* BuilderWordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743BD8D2AA97DEB00526271 /* BuilderWordsView.swift */; };
+		A743BD902AA97E1500526271 /* BuilderWordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743BD8F2AA97E1500526271 /* BuilderWordsViewModel.swift */; };
+		A743BD912AA9808500526271 /* adjectives.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79BF2AA9083100AE4062 /* adjectives.json */; };
+		A743BD932AA987BB00526271 /* BuilderWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743BD922AA987BB00526271 /* BuilderWords.swift */; };
 		A75A4F662A87E37B007AD5AF /* WordLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F652A87E37B007AD5AF /* WordLevels.swift */; };
 		A75A4F682A87E4F2007AD5AF /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F672A87E4F2007AD5AF /* SectionCell.swift */; };
 		A75A4F6A2A87E954007AD5AF /* LevelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F692A87E954007AD5AF /* LevelsCell.swift */; };
@@ -73,6 +76,9 @@
 		A71E79BF2AA9083100AE4062 /* adjectives.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = adjectives.json; sourceTree = "<group>"; };
 		A71E79C22AA9086000AE4062 /* verbs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = verbs.json; sourceTree = "<group>"; };
 		A71E79C52AA9088700AE4062 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		A743BD8D2AA97DEB00526271 /* BuilderWordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderWordsView.swift; sourceTree = "<group>"; };
+		A743BD8F2AA97E1500526271 /* BuilderWordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderWordsViewModel.swift; sourceTree = "<group>"; };
+		A743BD922AA987BB00526271 /* BuilderWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderWords.swift; sourceTree = "<group>"; };
 		A75A4F652A87E37B007AD5AF /* WordLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLevels.swift; sourceTree = "<group>"; };
 		A75A4F672A87E4F2007AD5AF /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
 		A75A4F692A87E954007AD5AF /* LevelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsCell.swift; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 				A7112D102A862BE900091ECC /* Word.swift */,
 				A795F7E72A866582007BF2FD /* Language.swift */,
 				A75A4F652A87E37B007AD5AF /* WordLevels.swift */,
+				A743BD922AA987BB00526271 /* BuilderWords.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -167,6 +174,7 @@
 				A795F7C22A863E0E007BF2FD /* PhrasesViewModel.swift */,
 				A795F7BB2A863CBB007BF2FD /* BaseViewModel.swift */,
 				A70A34F02A8803B300A2671C /* SettingsViewModel.swift */,
+				A743BD8F2AA97E1500526271 /* BuilderWordsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -174,11 +182,12 @@
 		A7112D152A862CC300091ECC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A795F7ED2A866C2C007BF2FD /* Components */,
-				A795F7BF2A863DF5007BF2FD /* PhrasesView */,
-				A7112D1E2A863B8B00091ECC /* Numbers */,
-				A7112D1D2A862EE700091ECC /* WordsView */,
 				A797CD602A87BE1600AC790B /* SettingsView.swift */,
+				A795F7ED2A866C2C007BF2FD /* Components */,
+				A7112D1E2A863B8B00091ECC /* Numbers */,
+				A795F7BF2A863DF5007BF2FD /* PhrasesView */,
+				A743BD8C2AA97D9A00526271 /* BuilderWords */,
+				A7112D1D2A862EE700091ECC /* WordsView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +217,14 @@
 				A7112D1F2A863BC400091ECC /* NumbersView.swift */,
 			);
 			path = Numbers;
+			sourceTree = "<group>";
+		};
+		A743BD8C2AA97D9A00526271 /* BuilderWords */ = {
+			isa = PBXGroup;
+			children = (
+				A743BD8D2AA97DEB00526271 /* BuilderWordsView.swift */,
+			);
+			path = BuilderWords;
 			sourceTree = "<group>";
 		};
 		A795F7BF2A863DF5007BF2FD /* PhrasesView */ = {
@@ -342,8 +359,8 @@
 				A71E79B82AA907C500AE4062 /* tones.json in Resources */,
 				A795F7F92A868F96007BF2FD /* words.json in Resources */,
 				A7BCB0932A8D2A700053415E /* numbers.json in Resources */,
-				A71E79C12AA9083F00AE4062 /* adjectives.json in Resources */,
 				A71E79C72AA9089200AE4062 /* questions.json in Resources */,
+				A743BD912AA9808500526271 /* adjectives.json in Resources */,
 				A7BCB0942A8D2AA80053415E /* phrases.json in Resources */,
 				A7112D052A862AAC00091ECC /* Assets.xcassets in Resources */,
 			);
@@ -359,6 +376,7 @@
 				A797CD612A87BE1600AC790B /* SettingsView.swift in Sources */,
 				A795F7E62A86655D007BF2FD /* CellThai.swift in Sources */,
 				A797CD5F2A87BBB200AC790B /* Color+.swift in Sources */,
+				A743BD932AA987BB00526271 /* BuilderWords.swift in Sources */,
 				A7112D032A862AAB00091ECC /* AppView.swift in Sources */,
 				A795F7EC2A866726007BF2FD /* CellCard.swift in Sources */,
 				A795F7BC2A863CBB007BF2FD /* BaseViewModel.swift in Sources */,
@@ -376,8 +394,10 @@
 				A7112D202A863BC400091ECC /* NumbersView.swift in Sources */,
 				A7112D172A862CD200091ECC /* WordsView.swift in Sources */,
 				A7112D1C2A862E3800091ECC /* View+.swift in Sources */,
+				A743BD8E2AA97DEB00526271 /* BuilderWordsView.swift in Sources */,
 				A795F7BA2A863C9B007BF2FD /* NumbersViewModel.swift in Sources */,
 				A795F7EF2A866C39007BF2FD /* SectionView.swift in Sources */,
+				A743BD902AA97E1500526271 /* BuilderWordsViewModel.swift in Sources */,
 				A75A4F6C2A87ECCD007AD5AF /* LevelsSectionView.swift in Sources */,
 				A7112D192A862D1E00091ECC /* CellEnglish.swift in Sources */,
 				A797CD862A87CF4200AC790B /* UserKeys.swift in Sources */,

@@ -24,17 +24,23 @@ struct AppView: View {
                         Text("Words")
                     }.tag(0)
                 
+                BuilderWordsView()
+                    .tabItem {
+                        Image(systemName: "bubble.left.and.bubble.right")
+                        Text("Builder Words")
+                    }.tag(1)
+                
                 NumbersView()
                     .tabItem {
                         Image(systemName: "list.number")
                         Text("Numbers")
-                    }.tag(1)
+                    }.tag(2)
                 
                 PhrasesView()
                     .tabItem {
                         Image(systemName: "text.word.spacing")
                         Text("Phrases")
-                    }.tag(2)
+                    }.tag(3)
             }
         }
         .tint(.appWhite)
