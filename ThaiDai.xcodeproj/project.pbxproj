@@ -35,6 +35,8 @@
 		A75A4F682A87E4F2007AD5AF /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F672A87E4F2007AD5AF /* SectionCell.swift */; };
 		A75A4F6A2A87E954007AD5AF /* LevelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F692A87E954007AD5AF /* LevelsCell.swift */; };
 		A75A4F6C2A87ECCD007AD5AF /* LevelsSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F6B2A87ECCD007AD5AF /* LevelsSectionView.swift */; };
+		A7607F0F2AA9BF1000C5FAB5 /* TonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7607F0E2AA9BF1000C5FAB5 /* TonesView.swift */; };
+		A7607F112AA9BF2400C5FAB5 /* TonesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7607F102AA9BF2400C5FAB5 /* TonesViewModel.swift */; };
 		A795F7BA2A863C9B007BF2FD /* NumbersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A795F7B92A863C9B007BF2FD /* NumbersViewModel.swift */; };
 		A795F7BC2A863CBB007BF2FD /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A795F7BB2A863CBB007BF2FD /* BaseViewModel.swift */; };
 		A795F7C12A863E03007BF2FD /* PhrasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A795F7C02A863E03007BF2FD /* PhrasesView.swift */; };
@@ -89,6 +91,8 @@
 		A75A4F672A87E4F2007AD5AF /* SectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCell.swift; sourceTree = "<group>"; };
 		A75A4F692A87E954007AD5AF /* LevelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsCell.swift; sourceTree = "<group>"; };
 		A75A4F6B2A87ECCD007AD5AF /* LevelsSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsSectionView.swift; sourceTree = "<group>"; };
+		A7607F0E2AA9BF1000C5FAB5 /* TonesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TonesView.swift; sourceTree = "<group>"; };
+		A7607F102AA9BF2400C5FAB5 /* TonesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TonesViewModel.swift; sourceTree = "<group>"; };
 		A795F7B92A863C9B007BF2FD /* NumbersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewModel.swift; sourceTree = "<group>"; };
 		A795F7BB2A863CBB007BF2FD /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		A795F7C02A863E03007BF2FD /* PhrasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesView.swift; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 				A70A34F02A8803B300A2671C /* SettingsViewModel.swift */,
 				A743BD8F2AA97E1500526271 /* BuilderWordsViewModel.swift */,
 				A743BD992AA9965D00526271 /* SearchViewModel.swift */,
+				A7607F102AA9BF2400C5FAB5 /* TonesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 		A7112D152A862CC300091ECC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A7607F0D2AA9BEFE00C5FAB5 /* TonesView */,
 				A797CD602A87BE1600AC790B /* SettingsView.swift */,
 				A743BD972AA9961C00526271 /* SearchView.swift */,
 				A795F7ED2A866C2C007BF2FD /* Components */,
@@ -234,6 +240,14 @@
 				A743BD8D2AA97DEB00526271 /* BuilderWordsView.swift */,
 			);
 			path = BuilderWords;
+			sourceTree = "<group>";
+		};
+		A7607F0D2AA9BEFE00C5FAB5 /* TonesView */ = {
+			isa = PBXGroup;
+			children = (
+				A7607F0E2AA9BF1000C5FAB5 /* TonesView.swift */,
+			);
+			path = TonesView;
 			sourceTree = "<group>";
 		};
 		A795F7BF2A863DF5007BF2FD /* PhrasesView */ = {
@@ -412,9 +426,11 @@
 				A743BD902AA97E1500526271 /* BuilderWordsViewModel.swift in Sources */,
 				A75A4F6C2A87ECCD007AD5AF /* LevelsSectionView.swift in Sources */,
 				A7112D192A862D1E00091ECC /* CellEnglish.swift in Sources */,
+				A7607F0F2AA9BF1000C5FAB5 /* TonesView.swift in Sources */,
 				A797CD862A87CF4200AC790B /* UserKeys.swift in Sources */,
 				A795F7C12A863E03007BF2FD /* PhrasesView.swift in Sources */,
 				A797CD812A87C54B00AC790B /* SwipeContainerCell.swift in Sources */,
+				A7607F112AA9BF2400C5FAB5 /* TonesViewModel.swift in Sources */,
 				A75A4F6A2A87E954007AD5AF /* LevelsCell.swift in Sources */,
 				A7112D112A862BE900091ECC /* Word.swift in Sources */,
 			);

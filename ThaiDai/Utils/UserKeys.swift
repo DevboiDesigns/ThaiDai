@@ -16,7 +16,8 @@ enum UserKeys: String, CaseIterable {
     case verbs = "co.thaidai.verbs"
     case questions = "co.thaidai.questions"
     case daysOfWeek = "co.thaidai.daysOfTheWeek"
-    
+    case tones = "co.thaidai.tones"
+    case tenses = "co.thaidai.tenses"
     
     case savedWords = "co.thaidai.savedWords"
     
@@ -40,6 +41,10 @@ enum UserKeys: String, CaseIterable {
         case .daysOfWeek:
             return "daysoftheweek.json"
         case .savedWords:
+            return "\(self).json"
+        case .tones:
+            return "\(self).json"
+        case .tenses:
             return "\(self).json"
         }
     }

@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 struct AppView: View {
     @State private var selection = 0
     
@@ -18,29 +20,38 @@ struct AppView: View {
     var body: some View {
         NavigationStack {
             TabView(selection: $selection) {
+                TonesView()
+                    .tabItem {
+                        Text("Tones")
+                    }
+                    .tag(0)
                 WordsView()
                     .tabItem {
                         Image(systemName: "textformat.abc")
                         Text("Words")
-                    }.tag(0)
+                    }
+                    .tag(1)
                 
                 BuilderWordsView()
                     .tabItem {
                         Image(systemName: "bubble.left.and.bubble.right")
                         Text("Builder Words")
-                    }.tag(1)
+                    }
+                    .tag(2)
                 
                 NumbersView()
                     .tabItem {
                         Image(systemName: "list.number")
                         Text("Numbers")
-                    }.tag(2)
+                    }
+                    .tag(3)
                 
                 PhrasesView()
                     .tabItem {
                         Image(systemName: "text.word.spacing")
                         Text("Phrases")
-                    }.tag(3)
+                    }
+                    .tag(4)
             }
         }
         .tint(.appWhite)
