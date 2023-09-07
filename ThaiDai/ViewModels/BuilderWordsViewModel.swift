@@ -12,10 +12,10 @@ final class BuilderWordsViewModel: BaseViewModel {
     @Published var adjectives: [Word] = []
     @Published var pronouns: [Word] = []
     @Published var verbs: [Word] = []
+    
     private let adjectivesPath = "adjectives.json"
     private let pronounsPath = "pronouns.json"
     private let verbsPath = "verbs.json"
-    
     
     override init() {
         super.init()

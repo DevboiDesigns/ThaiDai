@@ -8,8 +8,10 @@
 import SwiftUI
 
 final class NumbersViewModel: BaseViewModel {
+    
     @Published var numbers: [Word] = []
     @Published var daysOfTheWeek: [Word] = []
+    
     private let numbersPath = "numbers.json"
     private let daysPath = "daysoftheweek.json"
     

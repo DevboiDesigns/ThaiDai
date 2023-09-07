@@ -8,8 +8,10 @@
 import SwiftUI
 
 final class PhrasesViewModel: BaseViewModel {
+    
     @Published var phrases: [Word] = []
     @Published var questions: [Word] = []
+    
     private let phrasesPath = "phrases.json"
     private let questionsPath = "questions.json"
     

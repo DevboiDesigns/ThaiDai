@@ -41,8 +41,17 @@ struct SettingsView: View {
         }
         .background(Color.appBlack)
         .onAppear { settingsVM.setView() }
-        .onAppear {
-            print("SAVED: \(settingsVM.savedWords)")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavigationLink {
+                    SearchView()
+                } label: {
+                    Image(systemName: "magnifyingglass.circle")
+                        .resizable()
+                        .scaledToFit()
+                }
+
+            }
         }
     }
 }

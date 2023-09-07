@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct BuilderWordsView: View {
+    
     @StateObject private var builderVM = BuilderWordsViewModel()
+    
     @State private var language: Language = .english
     
     private func lesson(_ lesson: Int, type: BuilderWords) -> [Word] {

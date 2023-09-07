@@ -20,7 +20,6 @@ struct SectionView: View {
             if selected {
                 VStack {
                     SectionCell(title: title, toggleAction: toggleView, resetAction: resetAction)
-                    
                     ForEach(words) { word in
                         if selectable {
                             CellCard(word: word, language: $language)
@@ -29,7 +28,6 @@ struct SectionView: View {
                                 }
                         } else {
                             CellCard(word: word, language: $language)
-            
                         }
                     }
                 }
