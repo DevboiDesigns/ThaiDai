@@ -18,8 +18,7 @@ struct SectionView: View {
     @State var selected = false
     
     var level: Int {
-        print(words.first)
-        return words.first?.lesson ?? 99
+       words.first?.lesson ?? 99
     }
     var body: some View {
         ZStack {

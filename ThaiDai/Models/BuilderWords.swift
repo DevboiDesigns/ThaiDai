@@ -7,6 +7,37 @@
 
 import Foundation
 
-enum BuilderWords {
+enum BuilderWords: CaseIterable, Identifiable {
     case adjectives, pronouns, verbs
+    
+    var id: String {
+        UUID().uuidString
+    }
+    
+    var title: String {
+        switch self {
+        case .adjectives:
+            return "Adjectives"
+        case .pronouns:
+            return "Pronouns"
+        case .verbs:
+            return "Verbs"
+        }
+    }
+    
+    var key: UserKeys {
+        switch self {
+        case .adjectives:
+            return .adjectives
+        case .pronouns:
+            return .pronouns
+        case .verbs:
+            return .verbs
+        }
+    }
+    
+    enum LevelType {
+        case one
+    }
+    
 }

@@ -22,30 +22,20 @@ struct BuilderWordsView: View {
         case .verbs:
             return builderVM.verbs.filter { $0.lesson == lesson}
         }
-  
+        
     }
     var body: some View {
         VStack {
             HeaderBar(language: $language, title: "Builder Words")
             
             ScrollView(showsIndicators: false) {
-                SectionView(words: lesson(1, type: .adjectives),
-                            title: "Adjectives", type: .adjectives,
-                            action: builderVM.buttonHandler,
-                            resetAction: builderVM.reset)
-                
-                SectionView(words: lesson(1, type: .pronouns),
-                            title: "Pronouns", type: .pronouns,
-                            action: builderVM.buttonHandler,
-                            resetAction: builderVM.reset)
-                
-                SectionView(words: lesson(1, type: .verbs),
-                            title: "Verbs", type: .verbs,
-                            action: builderVM.buttonHandler,
-                            resetAction: builderVM.reset)
-
+                ForEach(BuilderWords.allCases) { type in
+                    SectionView(words: lesson(1, type: type),
+                                title: type.title, type: type.key,
+                                action: builderVM.buttonHandler,
+                                resetAction: builderVM.reset)
+                }
             }
-
         }
         .mainBackground()
     }
