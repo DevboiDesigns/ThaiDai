@@ -29,22 +29,25 @@ struct PhrasesView: View {
             HeaderBar(language: $language, title: "Phrases")
             
             ScrollView {
-                SectionView(words: lesson(1, type: .phrase), title: title(1), language: $language,
+                SectionView(words: lesson(1, type: .phrase),
+                            title: title(1),
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
-                SectionView(words: lesson(2, type: .phrase), title: title(2), language: $language,
+                SectionView(words: lesson(2, type: .phrase),
+                            title: title(2),
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
-                SectionView(words: lesson(3, type: .phrase), title: title(3), language: $language,
+                SectionView(words: lesson(3, type: .phrase),
+                            title: title(3),
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
-                SectionView(words: lesson(4, type: .phrase), title: title(4), language: $language,
+                SectionView(words: lesson(4, type: .phrase),
+                            title: title(4),
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
                 
                 SectionView(words: lesson(1, type: .question),
                             title: "Questions",
-                            language: $language,
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
             }

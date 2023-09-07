@@ -10,7 +10,7 @@ import SwiftUI
 struct SectionView: View {
     let words: [Word]
     let title: String
-    @Binding var language: Language
+    @State var language: Language = .english
     let action: (CellButtons, Word) -> Void
     let resetAction: () -> Void
     var selectable: Bool = true
@@ -19,7 +19,7 @@ struct SectionView: View {
         ZStack {
             if selected {
                 VStack {
-                    SectionCell(title: title, toggleAction: toggleView, resetAction: resetAction)
+                    SectionCell(title: title, language: $language, toggleAction: toggleView, resetAction: resetAction)
                     ForEach(words) { word in
                         if selectable {
                             CellCard(word: word, language: $language)
@@ -33,7 +33,7 @@ struct SectionView: View {
                 }
             } else {
                 VStack {
-                    SectionCell(title: title, toggleAction: toggleView, resetAction: resetAction)
+                    SectionCell(title: title, language: $language, toggleAction: toggleView, resetAction: resetAction)
                 }
             }
         }

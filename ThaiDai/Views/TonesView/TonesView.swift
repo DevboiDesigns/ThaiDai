@@ -21,13 +21,11 @@ struct TonesView: View {
             ScrollView {
                 SectionView(words: tonesVM.tones,
                             title: "Tones",
-                            language: $language,
                             action: tonesVM.buttonHandler,
                             resetAction: tonesVM.reset)
                 
                 SectionView(words: tonesVM.tenses,
                             title: "Tenses",
-                            language: $language,
                             action: tonesVM.buttonHandler,
                             resetAction: tonesVM.reset)
             }

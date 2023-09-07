@@ -13,8 +13,8 @@ struct HeaderBar: View {
     var body: some View {
         HStack(alignment: .bottom) {
             Spacer()
-            LanguageIcon
-                .padding(.trailing, 8)
+//            LanguageIcon
+//                .padding(.trailing, 8)
             
             NavigationLink {
                 SettingsView(settingsVM: SettingsViewModel())

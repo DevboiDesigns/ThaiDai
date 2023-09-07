@@ -28,7 +28,6 @@ struct SettingsView: View {
                 ScrollView(showsIndicators: false) {
                     SectionView(words: settingsVM.savedWords,
                                 title: "Saved Words",
-                                language: $language,
                                 action: settingsVM.buttonHandler,
                                 resetAction: settingsVM.reset,
                                 selectable: false,

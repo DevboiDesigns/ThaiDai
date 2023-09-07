@@ -10,12 +10,13 @@ import SwiftUI
 struct SectionCell: View {
     
     let title: String
+    @Binding var language: Language
     let toggleAction: () -> Void
     let resetAction: () -> Void
     
     var body: some View {
         VStack {
-            HStack(alignment: .bottom, spacing: 14) {
+            HStack(alignment: .center, spacing: 14) {
                 Text(title)
                     .appSectionFont()
                     .onTapGesture { toggleAction() }
@@ -23,9 +24,32 @@ struct SectionCell: View {
                 Text("Reset")
                     .appCellFont(.appPurple, size: .footnote)
                     .onTapGesture { resetAction() }
+                    .padding(.trailing)
+                LanguageIcon
             }
             .padding(.horizontal)
             Divider()
+        }
+    }
+    
+    
+    @ViewBuilder
+    private var LanguageIcon: some View {
+        ZStack {
+            if language == .english {
+                Image(systemName: "e.circle")
+            } else {
+                Image(systemName: "t.circle")
+            }
+        }
+        .font(.title2)
+        .foregroundColor(.appWhite)
+        .onTapGesture {
+            if language == .english {
+                withAnimation(.easeInOut) { language = .thai }
+            } else {
+                withAnimation(.easeInOut) { language = .english }
+            }
         }
     }
 }
