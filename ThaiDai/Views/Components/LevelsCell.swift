@@ -10,9 +10,9 @@ import SwiftUI
 struct LevelsCell: View {
     
     let level: WordLevels
-    let type: UserKeys
+    let type: FileKeys
     let toggleAction: (WordLevels) -> Void
-    let resetAction: (Int, UserKeys) -> Void
+    let resetAction: (Int, FileKeys) -> Void
     
     var body: some View {
         VStack {

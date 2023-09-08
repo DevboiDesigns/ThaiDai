@@ -33,7 +33,7 @@ final class BuilderWordsViewModel: BaseViewModel {
         return (adjectives, pronouns, verbs)
     }
     
-    func reset(_ level: Int, type: UserKeys) {
+    func reset(_ level: Int, type: FileKeys) {
         switch type {
         case .adjectives:
             self.adjectives = resetHandler(level: level, key: .adjectives)

@@ -11,10 +11,10 @@ struct SectionCell: View {
     
     let title: String
     let level: Int
-    let type: UserKeys
+    let type: FileKeys
     @Binding var language: Language
     let toggleAction: () -> Void
-    let resetAction: (Int, UserKeys) -> Void
+    let resetAction: (Int, FileKeys) -> Void
     
     var body: some View {
         VStack {

@@ -10,10 +10,10 @@ import SwiftUI
 struct SectionView: View {
     let words: [Word]
     let title: String
-    let type: UserKeys
+    let type: FileKeys
     @State var language: Language = .english
     let action: (CellButtons, Word) -> Void
-    let resetAction: (Int, UserKeys) -> Void
+    let resetAction: (Int, FileKeys) -> Void
     var selectable: Bool = true
     @State var selected = false
     

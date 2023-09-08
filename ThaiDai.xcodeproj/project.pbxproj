@@ -53,7 +53,7 @@
 		A797CD612A87BE1600AC790B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD602A87BE1600AC790B /* SettingsView.swift */; };
 		A797CD812A87C54B00AC790B /* SwipeContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD802A87C54B00AC790B /* SwipeContainerCell.swift */; };
 		A797CD832A87CCA800AC790B /* CellButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD822A87CCA800AC790B /* CellButtons.swift */; };
-		A797CD862A87CF4200AC790B /* UserKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD852A87CF4200AC790B /* UserKeys.swift */; };
+		A797CD862A87CF4200AC790B /* FileKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD852A87CF4200AC790B /* FileKeys.swift */; };
 		A7BCB0932A8D2A700053415E /* numbers.json in Resources */ = {isa = PBXBuildFile; fileRef = A70A34F22A880B1700A2671C /* numbers.json */; };
 		A7BCB0942A8D2AA80053415E /* phrases.json in Resources */ = {isa = PBXBuildFile; fileRef = A70A34F42A880B3100A2671C /* phrases.json */; };
 /* End PBXBuildFile section */
@@ -109,7 +109,7 @@
 		A797CD602A87BE1600AC790B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A797CD802A87C54B00AC790B /* SwipeContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeContainerCell.swift; sourceTree = "<group>"; };
 		A797CD822A87CCA800AC790B /* CellButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellButtons.swift; sourceTree = "<group>"; };
-		A797CD852A87CF4200AC790B /* UserKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKeys.swift; sourceTree = "<group>"; };
+		A797CD852A87CF4200AC790B /* FileKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,7 +167,7 @@
 		A7112D0F2A862BDF00091ECC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A797CD852A87CF4200AC790B /* UserKeys.swift */,
+				A797CD852A87CF4200AC790B /* FileKeys.swift */,
 				A7112D102A862BE900091ECC /* Word.swift */,
 				A795F7E72A866582007BF2FD /* Language.swift */,
 				A75A4F652A87E37B007AD5AF /* WordLevels.swift */,
@@ -387,7 +387,7 @@
 				A75A4F6C2A87ECCD007AD5AF /* LevelsSectionView.swift in Sources */,
 				A7112D192A862D1E00091ECC /* CellEnglish.swift in Sources */,
 				A7607F0F2AA9BF1000C5FAB5 /* TonesView.swift in Sources */,
-				A797CD862A87CF4200AC790B /* UserKeys.swift in Sources */,
+				A797CD862A87CF4200AC790B /* FileKeys.swift in Sources */,
 				A795F7C12A863E03007BF2FD /* PhrasesView.swift in Sources */,
 				A797CD812A87C54B00AC790B /* SwipeContainerCell.swift in Sources */,
 				A7607F112AA9BF2400C5FAB5 /* TonesViewModel.swift in Sources */,
