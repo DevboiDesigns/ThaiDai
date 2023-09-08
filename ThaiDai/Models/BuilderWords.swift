@@ -36,4 +36,8 @@ enum BuilderWords: CaseIterable, Identifiable {
         }
     }
     
+    enum LevelType {
+        case one
+    }
+    
 }
