@@ -26,7 +26,7 @@ final class NumbersViewModel: BaseViewModel {
         return (numbers, daysOfWeek)
     }
     
-    func reset(_ level: Int, type: FileKeys) {
+    func reset(_ level: Int, type: UserKeys) {
         switch type {
         case .numbers:
             self.numbers = self.resetHandler(level: level, key: .numbers)

@@ -19,7 +19,7 @@ final class PhrasesViewModel: BaseViewModel {
         self.questions = questions
     }
     
-    func reset(_ level: Int, type: FileKeys) {
+    func reset(_ level: Int, type: UserKeys) {
         switch type {
         case .phrases:
             self.phrases = self.resetHandler(level: level, key: .phrases)

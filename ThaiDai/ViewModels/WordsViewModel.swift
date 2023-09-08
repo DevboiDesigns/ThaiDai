@@ -36,10 +36,10 @@ final class WordsViewModel: BaseViewModel {
 
     private func delete(_ id: String) {
         words = words.filter { $0.id != id }
-        self.save(self.words, key: FileKeys.words)
+        self.save(self.words, key: UserKeys.words)
     }
 
-    func reset(_ level: Int, type: FileKeys) {
+    func reset(_ level: Int, type: UserKeys) {
         self.words = self.resetHandler(level: level, key: .words)
     }
 

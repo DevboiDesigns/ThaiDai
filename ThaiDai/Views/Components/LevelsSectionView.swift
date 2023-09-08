@@ -10,10 +10,10 @@ import SwiftUI
 struct LevelsSectionView: View {
     let words: [Word]
     let level: WordLevels
-    let type: FileKeys
+    let type: UserKeys
     @Binding var language: Language
     let action: (CellButtons, Word) -> Void
-    let resetAction: (Int, FileKeys) -> Void
+    let resetAction: (Int, UserKeys) -> Void
     let toggleAction: (WordLevels) -> Void
     var selectable: Bool = true
     @State private var selected = true

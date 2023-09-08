@@ -10,7 +10,7 @@ import Foundation
 
 class BaseViewModel: ObservableObject {
     
-    func save(_ items: [Word], key: FileKeys) {
+    func save(_ items: [Word], key: UserKeys) {
         if let encoded = try? JSONEncoder().encode(items) {
             UserDefaults.standard.set(encoded, forKey: key.rawValue)
         } else {
@@ -18,7 +18,7 @@ class BaseViewModel: ObservableObject {
         }
     }
     
-    func getData(_ key: FileKeys) -> [Word]? {
+    func getData(_ key: UserKeys) -> [Word]? {
         if let data = UserDefaults.standard.data(forKey: key.rawValue) {
             let words = try? JSONDecoder().decode([Word].self, from: data)
             return words
@@ -27,28 +27,30 @@ class BaseViewModel: ObservableObject {
         }
     }
     
-    func saveStatus(_ word: Word, key: FileKeys) {
+    func saveStatus(_ word: Word, key: UserKeys) {
         if let savedWords: [Word] = self.getData(key) {
             var newWords = [word]
             newWords.append(contentsOf: savedWords)
-            self.save(newWords, key: FileKeys.savedWords)
+            print("SAVE---> \(newWords)")
+            self.save(newWords, key: UserKeys.savedWords)
         } else {
-            self.save([word], key: FileKeys.savedWords)
+            print("SAVE---> \([word])")
+            self.save([word], key: UserKeys.savedWords)
         }
     }
     
     
     func resetAllLessons() {
-        UserDefaults.standard.removeObject(forKey: FileKeys.words.rawValue)
-        UserDefaults.standard.removeObject(forKey: FileKeys.numbers.rawValue)
-        UserDefaults.standard.removeObject(forKey: FileKeys.phrases.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserKeys.words.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserKeys.numbers.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserKeys.phrases.rawValue)
     }
     
 }
 
 extension BaseViewModel {
     //MARK: RESET HANDLER
-    func resetHandler(level: Int, key: FileKeys) -> [Word] {
+    func resetHandler(level: Int, key: UserKeys) -> [Word] {
         let data: [Word] = getData(key) ?? Bundle.main.decode(key)
         var words = data.filter { $0.lesson != level }
         var resetLesson: [Word] = Bundle.main.decode(key)

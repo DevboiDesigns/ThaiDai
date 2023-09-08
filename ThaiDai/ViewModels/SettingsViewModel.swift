@@ -20,8 +20,8 @@ final class SettingsViewModel: BaseViewModel {
         savedWords = self.getData(.savedWords) ?? savedWords
     }
     
-    func reset(_ level: Int, type: FileKeys) {
-        UserDefaults.standard.removeObject(forKey: FileKeys.savedWords.rawValue)
+    func reset(_ level: Int, type: UserKeys) {
+        UserDefaults.standard.removeObject(forKey: UserKeys.savedWords.rawValue)
         savedWords = []
     }
     
