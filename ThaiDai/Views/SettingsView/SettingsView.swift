@@ -9,7 +9,10 @@ import SwiftUI
 
 struct SettingsView: View {
     @StateObject var settingsVM: SettingsViewModel
+    @StateObject private var tonesVM = TonesViewModel()
+    
     @State private var language: Language = .english
+    
     var body: some View {
         VStack {
             Text("Reset All Lessons")
@@ -22,10 +25,26 @@ struct SettingsView: View {
                 .onTapGesture {
                     settingsVM.resetAllLessons()
                 }
-                .padding(.top)
+                .padding(.horizontal)
             
             VStack {
                 ScrollView(showsIndicators: false) {
+                    SectionView(words: tonesVM.tones,
+                                title: "Tones",
+                                type: .tones,
+                                action: tonesVM.buttonHandler,
+                                resetAction: tonesVM.reset,
+                                selectable: false,
+                                showReset: false)
+                    
+                    SectionView(words: tonesVM.tenses,
+                                title: "Tenses",
+                                type: .tenses,
+                                action: tonesVM.buttonHandler,
+                                resetAction: tonesVM.reset,
+                                selectable: false,
+                                showReset: false)
+                    
                     SectionView(words: settingsVM.savedWords,
                                 title: "Saved Words", type: .savedWords,
                                 action: settingsVM.buttonHandler,
@@ -34,9 +53,6 @@ struct SettingsView: View {
                                 selected: true)
                 }
             }
-            .padding()
-            .padding(.top)
-            
         }
         .background(Color.appBlack)
         .onAppear { settingsVM.setView() }

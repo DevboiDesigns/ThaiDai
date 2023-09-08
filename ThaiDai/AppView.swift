@@ -20,38 +20,29 @@ struct AppView: View {
     var body: some View {
         NavigationStack {
             TabView(selection: $selection) {
-                TonesView()
-                    .tabItem {
-                        Text("Tones")
-                    }
-                    .tag(0)
                 WordsView()
                     .tabItem {
                         Image(systemName: "textformat.abc")
                         Text("Words")
                     }
-                    .tag(1)
                 
                 BuilderWordsView()
                     .tabItem {
                         Image(systemName: "bubble.left.and.bubble.right")
                         Text("Builder Words")
                     }
-                    .tag(2)
                 
                 NumbersView()
                     .tabItem {
                         Image(systemName: "list.number")
                         Text("Numbers")
                     }
-                    .tag(3)
                 
                 PhrasesView()
                     .tabItem {
                         Image(systemName: "text.word.spacing")
                         Text("Phrases")
                     }
-                    .tag(4)
             }
         }
         .tint(.appWhite)

@@ -15,6 +15,7 @@ struct SectionCell: View {
     @Binding var language: Language
     let toggleAction: () -> Void
     let resetAction: (Int, FileKeys) -> Void
+    var showReset = true
     
     var body: some View {
         VStack {
@@ -23,10 +24,12 @@ struct SectionCell: View {
                     .appSectionFont()
                     .onTapGesture { toggleAction() }
                 Spacer()
-                Text("Reset")
-                    .appCellFont(.appPurple, size: .footnote)
-                    .onTapGesture { resetAction(level, type) }
-                    .padding(.trailing)
+                if showReset {
+                    Text("Reset")
+                        .appCellFont(.appPurple, size: .footnote)
+                        .onTapGesture { resetAction(level, type) }
+                        .padding(.trailing)
+                }
                 LanguageIcon
             }
             .padding(.horizontal)

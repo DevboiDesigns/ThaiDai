@@ -16,16 +16,23 @@ struct SectionView: View {
     let resetAction: (Int, FileKeys) -> Void
     var selectable: Bool = true
     @State var selected = false
+    var showReset = true
     
     var level: Int {
-        print(words.first)
-        return words.first?.lesson ?? 99
+        words.first?.lesson ?? 99
     }
     var body: some View {
         ZStack {
             if selected {
                 VStack {
-                    SectionCell(title: title, level: level, type: type, language: $language, toggleAction: toggleView, resetAction: resetAction)
+                    SectionCell(title: title,
+                                level: level,
+                                type: type,
+                                language: $language,
+                                toggleAction: toggleView,
+                                resetAction: resetAction,
+                                showReset: showReset)
+                    
                     ForEach(words) { word in
                         if selectable {
                             CellCard(word: word, language: $language)
@@ -39,7 +46,12 @@ struct SectionView: View {
                 }
             } else {
                 VStack {
-                    SectionCell(title: title, level: level, type: type, language: $language, toggleAction: toggleView, resetAction: resetAction)
+                    SectionCell(title: title,
+                                level: level,
+                                type: type,
+                                language: $language,
+                                toggleAction: toggleView,
+                                resetAction: resetAction, showReset: showReset)
                 }
             }
         }
