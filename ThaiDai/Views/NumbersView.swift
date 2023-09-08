@@ -22,25 +22,31 @@ struct NumbersView: View {
             HeaderBar(language: $language, title: "Numbers")
             
             ScrollView(showsIndicators: false) {
-                ForEach(NumbersLevels.allCases) { level in
-                    SectionView(words: lesson(level.level),
-                                title: level.title,
-                                type: .numbers,
-                                action: numbersVM.buttonHandler,
-                                resetAction: numbersVM.reset)
-                }
+                SectionView(words: lesson(1),
+                            title: "0-9", type: .numbers,
+                            action: numbersVM.buttonHandler,
+                            resetAction: numbersVM.reset)
+                SectionView(words: lesson(2),
+                            title: "10-99", type: .numbers,
+                            action: numbersVM.buttonHandler,
+                            resetAction: numbersVM.reset)
+                SectionView(words: lesson(3),
+                            title: "100-*", type: .numbers,
+                            action: numbersVM.buttonHandler,
+                            resetAction: numbersVM.reset)
+                SectionView(words: lesson(4),
+                            title: "1st-*", type: .numbers,
+                            action: numbersVM.buttonHandler,
+                            resetAction: numbersVM.reset)
                 
-                ForEach(DateLevels.allCases) { level in
-                    SectionView(words: numbersVM.daysOfTheWeek,
-                                title: level.title,
-                                type: .daysOfWeek,
-                                action: numbersVM.buttonHandler,
-                                resetAction: numbersVM.reset)
-                }
+                SectionView(words: numbersVM.daysOfTheWeek,
+                            title: "Days Of The Week", type: .daysOfWeek,
+                            action: numbersVM.buttonHandler,
+                            resetAction: numbersVM.reset)
                 
                 ZStack {
                     if !showTimeImage {
-                        ImageHeader
+                       ImageHeader
                     } else {
                         VStack {
                             ImageHeader
@@ -55,15 +61,15 @@ struct NumbersView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(maxWidth: .infinity)
-                            
+   
                         }
                     }
                     
                 }
                 .padding(.horizontal)
-                
+
             }
-            
+
         }
         .mainBackground()
     }
