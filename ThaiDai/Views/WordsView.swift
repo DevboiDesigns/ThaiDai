@@ -22,8 +22,20 @@ struct WordsView: View {
                 ZStack {
                     if !selected {
                         VStack {
-                            ForEach(WordLevels.allCases) { level in
-                                LevelsCell(level: level, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                            Group {
+                                LevelsCell(level: .one, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .two, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .three, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .four, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .five, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .six, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                            }
+                            Group {
+                                LevelsCell(level: .seven, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .eight, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .nine, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .ten, type: .words, toggleAction: select, resetAction: wordVM.reset)
+                                LevelsCell(level: .eleven, type: .words, toggleAction: select, resetAction: wordVM.reset)
                             }
                         }
                     } else {
