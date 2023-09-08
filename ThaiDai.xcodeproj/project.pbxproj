@@ -53,13 +53,14 @@
 		A797CD612A87BE1600AC790B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD602A87BE1600AC790B /* SettingsView.swift */; };
 		A797CD812A87C54B00AC790B /* SwipeContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD802A87C54B00AC790B /* SwipeContainerCell.swift */; };
 		A797CD832A87CCA800AC790B /* CellButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD822A87CCA800AC790B /* CellButtons.swift */; };
-		A797CD862A87CF4200AC790B /* FileKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD852A87CF4200AC790B /* FileKeys.swift */; };
+		A797CD862A87CF4200AC790B /* UserKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD852A87CF4200AC790B /* UserKeys.swift */; };
 		A7BCB0932A8D2A700053415E /* numbers.json in Resources */ = {isa = PBXBuildFile; fileRef = A70A34F22A880B1700A2671C /* numbers.json */; };
 		A7BCB0942A8D2AA80053415E /* phrases.json in Resources */ = {isa = PBXBuildFile; fileRef = A70A34F42A880B3100A2671C /* phrases.json */; };
 		A7D43DED2AAA40EA002F68BE /* PhraseLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D43DEC2AAA40EA002F68BE /* PhraseLevels.swift */; };
 		A7D43DEF2AAA40F1002F68BE /* QuestionLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D43DEE2AAA40F1002F68BE /* QuestionLevels.swift */; };
 		A7D43DF42AAA434F002F68BE /* NumbersLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D43DF32AAA434F002F68BE /* NumbersLevels.swift */; };
 		A7D43DF62AAA4366002F68BE /* DateLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D43DF52AAA4366002F68BE /* DateLevels.swift */; };
+		A7D43DF82AAA43F8002F68BE /* BuilderViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D43DF72AAA43F8002F68BE /* BuilderViewState.swift */; };
 		A7D43DFA2AAA46DE002F68BE /* TimeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D43DF92AAA46DE002F68BE /* TimeImage.swift */; };
 /* End PBXBuildFile section */
 
@@ -114,11 +115,12 @@
 		A797CD602A87BE1600AC790B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A797CD802A87C54B00AC790B /* SwipeContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeContainerCell.swift; sourceTree = "<group>"; };
 		A797CD822A87CCA800AC790B /* CellButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellButtons.swift; sourceTree = "<group>"; };
-		A797CD852A87CF4200AC790B /* FileKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileKeys.swift; sourceTree = "<group>"; };
+		A797CD852A87CF4200AC790B /* UserKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKeys.swift; sourceTree = "<group>"; };
 		A7D43DEC2AAA40EA002F68BE /* PhraseLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseLevels.swift; sourceTree = "<group>"; };
 		A7D43DEE2AAA40F1002F68BE /* QuestionLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionLevels.swift; sourceTree = "<group>"; };
 		A7D43DF32AAA434F002F68BE /* NumbersLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersLevels.swift; sourceTree = "<group>"; };
 		A7D43DF52AAA4366002F68BE /* DateLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLevels.swift; sourceTree = "<group>"; };
+		A7D43DF72AAA43F8002F68BE /* BuilderViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderViewState.swift; sourceTree = "<group>"; };
 		A7D43DF92AAA46DE002F68BE /* TimeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,7 +179,7 @@
 		A7112D0F2A862BDF00091ECC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A797CD852A87CF4200AC790B /* FileKeys.swift */,
+				A797CD852A87CF4200AC790B /* UserKeys.swift */,
 				A7112D102A862BE900091ECC /* Word.swift */,
 				A795F7E72A866582007BF2FD /* Language.swift */,
 				A75A4F652A87E37B007AD5AF /* WordLevels.swift */,
@@ -187,6 +189,7 @@
 				A7D43DEE2AAA40F1002F68BE /* QuestionLevels.swift */,
 				A7D43DF52AAA4366002F68BE /* DateLevels.swift */,
 				A7D43DF32AAA434F002F68BE /* NumbersLevels.swift */,
+				A7D43DF72AAA43F8002F68BE /* BuilderViewState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				A795F7F12A867EF7007BF2FD /* HeaderBar.swift in Sources */,
 				A795F7F32A868203007BF2FD /* Text+.swift in Sources */,
 				A795F7F82A868D03007BF2FD /* Bundle+.swift in Sources */,
+				A7D43DF82AAA43F8002F68BE /* BuilderViewState.swift in Sources */,
 				A7112D142A862C2200091ECC /* WordsViewModel.swift in Sources */,
 				A70A34F12A8803B300A2671C /* SettingsViewModel.swift in Sources */,
 				A7112D202A863BC400091ECC /* NumbersView.swift in Sources */,
@@ -406,7 +410,7 @@
 				A7112D192A862D1E00091ECC /* CellEnglish.swift in Sources */,
 				A7D43DF42AAA434F002F68BE /* NumbersLevels.swift in Sources */,
 				A7607F0F2AA9BF1000C5FAB5 /* TonesView.swift in Sources */,
-				A797CD862A87CF4200AC790B /* FileKeys.swift in Sources */,
+				A797CD862A87CF4200AC790B /* UserKeys.swift in Sources */,
 				A795F7C12A863E03007BF2FD /* PhrasesView.swift in Sources */,
 				A797CD812A87C54B00AC790B /* SwipeContainerCell.swift in Sources */,
 				A7607F112AA9BF2400C5FAB5 /* TonesViewModel.swift in Sources */,

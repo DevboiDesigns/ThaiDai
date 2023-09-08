@@ -8,7 +8,7 @@
 import Foundation
 
 extension Bundle {
-    func decode<T: Codable>(_ key: FileKeys) -> T {
+    func decode<T: Codable>(_ key: UserKeys) -> T {
         guard let url = self.url(forResource: key.fileName, withExtension: nil) else {
             fatalError("Failed to locate \(key.fileName) in Bundle")
         }

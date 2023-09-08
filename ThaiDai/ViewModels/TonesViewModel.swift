@@ -49,7 +49,7 @@ final class TonesViewModel: BaseViewModel {
         self.save(tenses, key: .tenses)
     }
     
-    func reset(_ level: Int, type: FileKeys) {
+    func reset(_ level: Int, type: UserKeys) {
         switch type {
         case .tones:
             self.tones = resetHandler(level: level, key: .tones)
