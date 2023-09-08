@@ -18,7 +18,7 @@ final class SearchViewModel: BaseViewModel {
     
     private func getAllWords() -> [Word] {
         var allWords: [Word] = []
-        UserKeys.allCases.forEach { wordType in
+        FileKeys.allCases.forEach { wordType in
             if wordType != .savedWords {
                 let words: [Word] = Bundle.main.decode(wordType)
                 allWords.append(contentsOf: words)

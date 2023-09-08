@@ -25,7 +25,7 @@ enum BuilderWords: CaseIterable, Identifiable {
         }
     }
     
-    var key: UserKeys {
+    var key: FileKeys {
         switch self {
         case .adjectives:
             return .adjectives
