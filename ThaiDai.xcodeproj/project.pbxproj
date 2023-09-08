@@ -28,7 +28,7 @@
 		A743BD912AA9808500526271 /* adjectives.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79BF2AA9083100AE4062 /* adjectives.json */; };
 		A743BD932AA987BB00526271 /* BuilderWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743BD922AA987BB00526271 /* BuilderWords.swift */; };
 		A743BD942AA9887F00526271 /* pronouns.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79B92AA907E000AE4062 /* pronouns.json */; };
-		A743BD962AA98BF900526271 /* PhraseViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743BD952AA98BF900526271 /* PhraseViewState.swift */; };
+		A743BD962AA98BF900526271 /* PhraseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743BD952AA98BF900526271 /* PhraseType.swift */; };
 		A743BD982AA9961C00526271 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743BD972AA9961C00526271 /* SearchView.swift */; };
 		A743BD9A2AA9965D00526271 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743BD992AA9965D00526271 /* SearchViewModel.swift */; };
 		A75A4F662A87E37B007AD5AF /* WordLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F652A87E37B007AD5AF /* WordLevels.swift */; };
@@ -56,8 +56,6 @@
 		A797CD862A87CF4200AC790B /* UserKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A797CD852A87CF4200AC790B /* UserKeys.swift */; };
 		A7BCB0932A8D2A700053415E /* numbers.json in Resources */ = {isa = PBXBuildFile; fileRef = A70A34F22A880B1700A2671C /* numbers.json */; };
 		A7BCB0942A8D2AA80053415E /* phrases.json in Resources */ = {isa = PBXBuildFile; fileRef = A70A34F42A880B3100A2671C /* phrases.json */; };
-		A7D43DED2AAA40EA002F68BE /* PhraseLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D43DEC2AAA40EA002F68BE /* PhraseLevels.swift */; };
-		A7D43DEF2AAA40F1002F68BE /* QuestionLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D43DEE2AAA40F1002F68BE /* QuestionLevels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,7 +84,7 @@
 		A743BD8D2AA97DEB00526271 /* BuilderWordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderWordsView.swift; sourceTree = "<group>"; };
 		A743BD8F2AA97E1500526271 /* BuilderWordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderWordsViewModel.swift; sourceTree = "<group>"; };
 		A743BD922AA987BB00526271 /* BuilderWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderWords.swift; sourceTree = "<group>"; };
-		A743BD952AA98BF900526271 /* PhraseViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseViewState.swift; sourceTree = "<group>"; };
+		A743BD952AA98BF900526271 /* PhraseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseType.swift; sourceTree = "<group>"; };
 		A743BD972AA9961C00526271 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		A743BD992AA9965D00526271 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		A75A4F652A87E37B007AD5AF /* WordLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordLevels.swift; sourceTree = "<group>"; };
@@ -112,8 +110,6 @@
 		A797CD802A87C54B00AC790B /* SwipeContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeContainerCell.swift; sourceTree = "<group>"; };
 		A797CD822A87CCA800AC790B /* CellButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellButtons.swift; sourceTree = "<group>"; };
 		A797CD852A87CF4200AC790B /* UserKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKeys.swift; sourceTree = "<group>"; };
-		A7D43DEC2AAA40EA002F68BE /* PhraseLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseLevels.swift; sourceTree = "<group>"; };
-		A7D43DEE2AAA40F1002F68BE /* QuestionLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionLevels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,9 +172,7 @@
 				A795F7E72A866582007BF2FD /* Language.swift */,
 				A75A4F652A87E37B007AD5AF /* WordLevels.swift */,
 				A743BD922AA987BB00526271 /* BuilderWords.swift */,
-				A743BD952AA98BF900526271 /* PhraseViewState.swift */,
-				A7D43DEC2AAA40EA002F68BE /* PhraseLevels.swift */,
-				A7D43DEE2AAA40F1002F68BE /* QuestionLevels.swift */,
+				A743BD952AA98BF900526271 /* PhraseType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -362,7 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A743BD962AA98BF900526271 /* PhraseViewState.swift in Sources */,
+				A743BD962AA98BF900526271 /* PhraseType.swift in Sources */,
 				A743BD9A2AA9965D00526271 /* SearchViewModel.swift in Sources */,
 				A797CD612A87BE1600AC790B /* SettingsView.swift in Sources */,
 				A795F7E62A86655D007BF2FD /* CellThai.swift in Sources */,
@@ -388,7 +382,6 @@
 				A7112D1C2A862E3800091ECC /* View+.swift in Sources */,
 				A743BD8E2AA97DEB00526271 /* BuilderWordsView.swift in Sources */,
 				A795F7BA2A863C9B007BF2FD /* NumbersViewModel.swift in Sources */,
-				A7D43DEF2AAA40F1002F68BE /* QuestionLevels.swift in Sources */,
 				A795F7EF2A866C39007BF2FD /* SectionView.swift in Sources */,
 				A743BD902AA97E1500526271 /* BuilderWordsViewModel.swift in Sources */,
 				A75A4F6C2A87ECCD007AD5AF /* LevelsSectionView.swift in Sources */,
@@ -398,7 +391,6 @@
 				A795F7C12A863E03007BF2FD /* PhrasesView.swift in Sources */,
 				A797CD812A87C54B00AC790B /* SwipeContainerCell.swift in Sources */,
 				A7607F112AA9BF2400C5FAB5 /* TonesViewModel.swift in Sources */,
-				A7D43DED2AAA40EA002F68BE /* PhraseLevels.swift in Sources */,
 				A75A4F6A2A87E954007AD5AF /* LevelsCell.swift in Sources */,
 				A7112D112A862BE900091ECC /* Word.swift in Sources */,
 			);

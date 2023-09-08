@@ -7,8 +7,6 @@
 
 import Foundation
 
-enum PhraseViewState {
+enum PhraseType {
     case phrase, question
 }
-
-
