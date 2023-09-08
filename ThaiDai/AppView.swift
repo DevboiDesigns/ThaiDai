@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct AppView: View {
+    
     @State private var selection: TabItems = .words
     
     init() {

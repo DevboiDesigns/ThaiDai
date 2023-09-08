@@ -25,12 +25,12 @@ struct SearchView: View {
                 Text("Search...")
                     .appSectionFont()
             }
-            .padding(.vertical)
+            .padding(.vertical, 8)
             .padding(.horizontal)
             .foregroundColor(.white)
             .background(Color.appPurple)
             .cornerRadius(8)
-            .padding(.vertical)
+            .padding(.vertical, 10)
             .padding(.horizontal)
         
             
