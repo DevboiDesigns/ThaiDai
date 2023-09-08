@@ -7,10 +7,8 @@
 
 import SwiftUI
 
-
-
 struct AppView: View {
-    @State private var selection = 0
+    @State private var selection: TabItems = .words
     
     init() {
         UITabBar.appearance().isTranslucent = false
@@ -45,7 +43,7 @@ struct AppView: View {
                     }
             }
         }
-        .tint(.appWhite)
+        .tint(.appPurple)
     }
 }
 
