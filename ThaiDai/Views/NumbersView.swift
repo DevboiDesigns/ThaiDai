@@ -40,7 +40,7 @@ struct NumbersView: View {
                             resetAction: numbersVM.reset)
                 
                 SectionView(words: numbersVM.daysOfTheWeek,
-                            title: "Days Of The Week", type: .daysOfWeek,
+                            title: "Dates", type: .daysOfWeek,
                             action: numbersVM.buttonHandler,
                             resetAction: numbersVM.reset)
                 
