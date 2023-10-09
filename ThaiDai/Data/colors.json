@@ -1,0 +1,115 @@
+
+[
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "leuang",
+   "english": "yellow",
+   "tone": 5
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "dam",
+   "english": "black",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "chom puu",
+   "english": "pink",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "keaw",
+   "english": "green",
+   "tone": 5
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "som",
+   "english": "orange",
+   "tone": 3
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "faa",
+   "english": "light blue",
+   "tone": 4
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "muang",
+   "english": "violet",
+   "tone": 3
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "daeng",
+   "english": "red",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "kaao",
+   "english": "white",
+   "tone": 5
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "tao",
+   "english": "gray",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "ngern",
+   "english": "silver",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "thong",
+   "english": "gold",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "nam ngern",
+   "english": "dark blue",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "nam dtaan",
+   "english": "brown, sugar",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "cream",
+   "english": "cream",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "kaao dam",
+   "english": "black & white, photocopy",
+   "tone": null
+ }
+]

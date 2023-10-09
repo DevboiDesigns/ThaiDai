@@ -1,51 +1,240 @@
-    [
-     {
-       "id": "",
-       "lesson": 1,
-       "thai": "Wan aatid",
-       "english": "Sunday",
-       "tone": ""
-     },
-     {
-       "id": "",
-       "lesson": 1,
-       "thai": "Wan jan",
-       "english": "Monday",
-       "tone": ""
-     },
-     {
-       "id": "",
-       "lesson": 1,
-       "thai": "Wan ang kaan",
-       "english": "Tuesday",
-       "tone": ""
-     },
-     {
-       "id": "",
-       "lesson": 1,
-       "thai": "Wan pud",
-       "english": "Wednesday",
-       "tone": ""
-     },
-     {
-       "id": "",
-       "lesson": 1,
-       "thai": "Wan pareuhad (kru)",
-       "english": "Thursday",
-       "tone": ""
-     },
-     {
-       "id": "",
-       "lesson": 1,
-       "thai": "Wan suk",
-       "english": "Friday",
-       "tone": ""
-     },
-     {
-       "id": "",
-       "lesson": 1,
-       "thai": "Wan sao",
-       "english": "Saturday",
-       "tone": ""
-     }
-    ]
+[
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "Wan aatid",
+   "english": "Sunday",
+   "tone": 1
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "Wan jan",
+   "english": "Monday",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "Wan ang kaan",
+   "english": "Tuesday",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "Wan pud",
+   "english": "Wednesday",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "Wan pareuhad (kru)",
+   "english": "Thursday",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "Wan suk",
+   "english": "Friday",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 1,
+   "thai": "Wan sao",
+   "english": "Saturday",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "wan",
+   "english": "day",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "aatid (sab da)",
+   "english": "week",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "bpii",
+   "english": "year",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 2,
+   "thai": "deaun",
+   "english": "month",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "_ nii",
+   "english": "present",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "_ naa",
+   "english": "future",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 3,
+   "thai": "_ tii laew",
+   "english": "past",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "wa nii",
+   "english": "today",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "meau wa nii",
+   "english": "yesterday",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "prung nii",
+   "english": "tomoorrow",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "tug wan",
+   "english": "every day",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "kheon nii",
+   "english": "tonight",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "meau kheon nii",
+   "english": "last night",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "kheun prung nii",
+   "english": "tomorrow night",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "tug kheaun",
+   "english": "every night",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "aatid nii",
+   "english": "this week",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "aatid tii laew",
+   "english": "last week",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "aatid naa",
+   "english": "next week",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "tug aatid",
+   "english": "every week",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "deum nii",
+   "english": "this month",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "deum nii tii laew",
+   "english": "last month",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "deum naa",
+   "english": "next month",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "tug deum",
+   "english": "every month",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "bpii nii",
+   "english": "this year",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "bpii tii laew ",
+   "english": "last year",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "bpii naa",
+   "english": "next year",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "tug bpii",
+   "english": "every year",
+   "tone": null
+ }
+]

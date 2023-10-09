@@ -1,0 +1,23 @@
+    [
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "mai _(verb)_ loey",
+       "english": "i dont (verb) very much",
+       "tone": 1
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "_(verb)_ loey",
+       "english": "just do it, lets do it, lets talk",
+       "tone": null
+     },
+     {
+       "id": "",
+       "lesson": 1,
+       "thai": "__ maag loey",
+       "english": "___ so very much",
+       "tone": null
+     }
+    ]

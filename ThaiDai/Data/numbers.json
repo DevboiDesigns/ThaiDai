@@ -220,5 +220,29 @@
    "lesson": 4,
    "thai": "tii sii",
    "english": "fourth"
+ },
+ {
+   "id": "",
+   "lesson": 5,
+   "thai": "1000 bht - 1 bht",
+   "english": "baht"
+ },
+ {
+   "id": "",
+   "lesson": 5,
+   "thai": "0.99 bht - 0.01 bht",
+   "english": "sa tong"
+ },
+ {
+   "id": "",
+   "lesson": 5,
+   "thai": "cents",
+   "english": "sa tong"
+ },
+ {
+   "id": "",
+   "lesson": 5,
+   "thai": "ngern, dtong",
+   "english": "money"
  }
 ]

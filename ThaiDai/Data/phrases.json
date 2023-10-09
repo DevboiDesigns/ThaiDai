@@ -3,246 +3,301 @@
    "id": "",
    "lesson": 1,
    "thai": "dee maag",
-   "english": "very good"
+   "english": "very good",
+   "tone": 1
  },
  {
    "id": "",
    "lesson": 1,
    "thai": "kop kun k.",
-   "english": "thank you"
+   "english": "thank you",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 1,
    "thai": "koh tod",
-   "english": "i am sorry"
+   "english": "i am sorry",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 1,
    "thai": "koh tod jing jing",
-   "english": "i am very sorry"
+   "english": "i am very sorry",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 1,
    "thai": "mai bpen rai",
-   "english": "its ok, doesn’t matter"
+   "english": "its ok, doesn’t matter",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 1,
    "thai": "mai aao",
-   "english": "i dont want to take"
+   "english": "i dont want to take",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 1,
    "thai": "mai k. kap kun k.",
-   "english": "no thank you"
+   "english": "no thank you",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 2,
    "thai": "kop kun maag maag k.",
-   "english": "thank you very much"
+   "english": "thank you very much",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 2,
    "thai": "kop kun maag maag k.",
-   "english": "thank you very very much"
+   "english": "thank you very very much",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 1,
    "thai": "yin dee",
-   "english": "your welcome"
+   "english": "your welcome",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 2,
    "thai": "yin dee tii dai ruu jag",
-   "english": "nice to meet you"
+   "english": "nice to meet you",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 2,
    "thai": "mai sabai nid noi k.",
-   "english": "I am sick a little bit"
+   "english": "I am sick a little bit",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 1,
    "thai": "pom/chan cheu _",
-   "english": "my name is _"
+   "english": "my name is _",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 2,
    "thai": "kon cheu arai?",
-   "english": "what is your name?"
+   "english": "what is your name?",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 2,
    "thai": "Pom puud pasa thai dai nid noi",
-   "english": "i speak thai a little bit"
+   "english": "i speak thai a little bit",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "mai dai tam",
-   "english": "i did not do it"
+   "english": "i did not do it",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "mai dai puud",
-   "english": "i did not say it"
+   "english": "i did not say it",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "tam mai dai ",
-   "english": "i can not do"
+   "english": "i can not do",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "bpai bpai",
-   "english": "go away"
+   "english": "go away",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "maa nii noi",
-   "english": "come here please"
+   "english": "come here please",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "bpai bpai maa maa",
-   "english": "come and go, on and off"
+   "english": "come and go, on and off",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "tam gafae",
-   "english": "make coffee"
+   "english": "make coffee",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "bpai wai nam tii haad salad ",
-   "english": "go to swim at haad salad"
+   "english": "go to swim at haad salad",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "pom rian pasa thai tii KPG",
-   "english": "i study speaking thai in KPG"
+   "english": "i study speaking thai in KPG",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "Sabai dii mai?",
-   "english": "How are you?"
+   "english": "How are you?",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "Sabai dii",
-   "english": "I am good"
+   "english": "I am good",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "mai dii",
-   "english": "not a good day"
+   "english": "not a good day",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "mai sabai",
-   "english": "not feel good"
+   "english": "not feel good",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "mii _ mai ?",
-   "english": "do you have _ ?"
+   "english": "do you have _ ?",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 4,
    "thai": "mai aao tung",
-   "english": "i dont want a plastic bag"
+   "english": "i dont want a plastic bag",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 4,
    "thai": "mai dai tam",
-   "english": "I did not do it"
+   "english": "I did not do it",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 4,
    "thai": "puud chaa chaa noi",
-   "english": "Speak a little bit slower"
+   "english": "Speak a little bit slower",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 2,
    "thai": "gii baht?",
-   "english": "How much baht?"
+   "english": "How much baht?",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 3,
    "thai": "bpai glab",
-   "english": "go and come back (round trip)"
+   "english": "go and come back (round trip)",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 4,
    "thai": "Gii mong laew?",
-   "english": "What time is it?"
+   "english": "What time is it?",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 4,
    "thai": "Mii wela",
-   "english": "Have time"
+   "english": "Have time",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 4,
    "thai": "aao iig mai?",
-   "english": "Do you want more?"
+   "english": "Do you want more?",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 4,
    "thai": "Tam arai yuu?",
-   "english": "What are you doing?"
+   "english": "What are you doing?",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 4,
    "thai": "Gin arai yuu?",
-   "english": "What are you eating?"
+   "english": "What are you eating?",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 4,
    "thai": "Pom rag kun",
-   "english": "I love you"
+   "english": "I love you",
+   "tone": null
  },
  {
    "id": "",
    "lesson": 4,
    "thai": "Arai sod?",
-   "english": "What is fresh?"
+   "english": "What is fresh?",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "Pog ga ti, Kun tam gaab baan mai?",
+   "english": "Usually, do you do homework?",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 4,
+   "thai": "Pom kid waa",
+   "english": "I am thinking/ I think _ ",
+   "tone": null
  }
 ]

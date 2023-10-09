@@ -1720,5 +1720,614 @@
    "thai": "yerh",
    "english": "alot",
    "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "mai chai waa nii",
+   "english": "not today",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "bpaag waan",
+   "english": "someone who speaks kindly",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "bpaag ",
+   "english": "mouth",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "gluoy gluoy",
+   "english": "easy peasy",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "muu muu",
+   "english": "easy peasy",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "jer gan prung nii",
+   "english": "see you tomorrow",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "meua waa nii",
+   "english": "yesterday",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "kheun prung nii ",
+   "english": "tomorrow night",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "meau kheaun nii",
+   "english": "last night ",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "nang",
+   "english": "movie, skin (animal), leather",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "duu nang",
+   "english": "watch movie",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "don dtrii",
+   "english": "music",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "pleng",
+   "english": "song, play song",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "don dtrii sod",
+   "english": "live music",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "nag rian",
+   "english": "student",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "nag don dtrii",
+   "english": "musician",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "dton",
+   "english": "at",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "cha lad",
+   "english": "(someone) smart",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "mai cha lad",
+   "english": "not smart",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "rod",
+   "english": "flavor, car",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "gluoy ",
+   "english": "bannana",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "dtad",
+   "english": "cut",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "sud yord",
+   "english": "amazing excellent",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "bra yog",
+   "english": "sentence",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "dtrong",
+   "english": "straight",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "dtrong wela",
+   "english": "on time",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "dtrong nii",
+   "english": "right here",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "dtrong bpai",
+   "english": "go straight",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "puud dtrong",
+   "english": "speak direct",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "thong faa ",
+   "english": "sky",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "yud",
+   "english": "stop",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "sorm",
+   "english": "repair",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "bpai tiew",
+   "english": "travel, make trip",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "raan sorm motersai",
+   "english": "moterbike repair shop",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "aab nam",
+   "english": "shower",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "aab daed",
+   "english": "sun bath",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "daed",
+   "english": "sun light",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "non ",
+   "english": "rest",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "non lab",
+   "english": "sleep",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "non mai lab",
+   "english": "can not sleep",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "seu ",
+   "english": "buy (thing)",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "seu kong",
+   "english": "shopping",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "bpen",
+   "english": "for, am, to be",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "kon",
+   "english": "people, everyone",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "yaag",
+   "english": "I want it, i take it",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "poog ga ti",
+   "english": "usually, normally",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "yaa ",
+   "english": "medicine",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "raan yaa",
+   "english": "pharmacy",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "dtong",
+   "english": "must, have to",
+   "tone": 3
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "sai seua",
+   "english": "put shirt on",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "mai sai seua",
+   "english": "no shirt",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "neu",
+   "english": "mouse, rat, kid",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "maa nii, maa tii nii",
+   "english": "come here",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "fan di",
+   "english": "dream",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "non lab fan di",
+   "english": "sweet dreams",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "reua",
+   "english": "boat",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "kreuang",
+   "english": "machine",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "taa reua",
+   "english": "pier",
+   "tone": 31
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "kreuang bin",
+   "english": "plane",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "bin",
+   "english": "fly",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 12,
+   "thai": "kwad",
+   "english": "bottle",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "thong ",
+   "english": "stomach, center",
+   "tone": 4
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "kaao daeng",
+   "english": "red rice",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "hua",
+   "english": "head",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "hua jai",
+   "english": "heart",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "bplaa ",
+   "english": "fish",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "tod",
+   "english": "deep fried",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "pad",
+   "english": "stir fry",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "med",
+   "english": "seed",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "tua",
+   "english": "nut, bean",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "hed",
+   "english": "mushroom",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "bpang",
+   "english": "bread",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "kai",
+   "english": "egg",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "kanom",
+   "english": "snack",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "waan",
+   "english": "sweet",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "diew",
+   "english": "just one, only",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "kon diew",
+   "english": "only one person",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "peng",
+   "english": "expensive",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "tuug",
+   "english": "cheap",
+   "tone": 2
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "tii nai goh dai",
+   "english": "wherever ",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "gii mong goh dai",
+   "english": "anytime",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "krai goh dai",
+   "english": "whoever",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "kuad ",
+   "english": "bottle",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "gaew",
+   "english": "cup/ glass",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "an",
+   "english": "item",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "laai ___",
+   "english": "many ___",
+   "tone": null
+ },
+ {
+   "id": "",
+   "lesson": 13,
+   "thai": "sug",
+   "english": "ripe",
+   "tone": null
  }
 ]
