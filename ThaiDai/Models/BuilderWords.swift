@@ -8,5 +8,5 @@
 import Foundation
 
 enum BuilderWords {
-    case adjectives, pronouns, verbs
+    case adjectives, pronouns, verbs, colors
 }

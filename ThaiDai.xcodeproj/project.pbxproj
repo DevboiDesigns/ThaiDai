@@ -30,10 +30,10 @@
 		A743BD962AA98BF900526271 /* PhraseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743BD952AA98BF900526271 /* PhraseType.swift */; };
 		A743BD982AA9961C00526271 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743BD972AA9961C00526271 /* SearchView.swift */; };
 		A743BD9A2AA9965D00526271 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A743BD992AA9965D00526271 /* SearchViewModel.swift */; };
-		A751B3802AD4123300C00781 /* colors.json in Sources */ = {isa = PBXBuildFile; fileRef = A751B37F2AD4123300C00781 /* colors.json */; };
-		A751B3822AD4126100C00781 /* sentences.json in Sources */ = {isa = PBXBuildFile; fileRef = A751B3812AD4126100C00781 /* sentences.json */; };
 		A751B3832AD413BB00C00781 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = A71E79C52AA9088700AE4062 /* questions.json */; };
 		A751B3842AD413BF00C00781 /* phrases.json in Resources */ = {isa = PBXBuildFile; fileRef = A70A34F42A880B3100A2671C /* phrases.json */; };
+		A751B3852AD4171200C00781 /* sentences.json in Resources */ = {isa = PBXBuildFile; fileRef = A751B3812AD4126100C00781 /* sentences.json */; };
+		A751B3862AD41A1E00C00781 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = A751B37F2AD4123300C00781 /* colors.json */; };
 		A75A4F662A87E37B007AD5AF /* WordLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F652A87E37B007AD5AF /* WordLevels.swift */; };
 		A75A4F682A87E4F2007AD5AF /* SectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F672A87E4F2007AD5AF /* SectionCell.swift */; };
 		A75A4F6A2A87E954007AD5AF /* LevelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75A4F692A87E954007AD5AF /* LevelsCell.swift */; };
@@ -350,8 +350,10 @@
 				A71E79B72AA907C100AE4062 /* tenses.json in Resources */,
 				A71E79B82AA907C500AE4062 /* tones.json in Resources */,
 				A743BD942AA9887F00526271 /* pronouns.json in Resources */,
+				A751B3862AD41A1E00C00781 /* colors.json in Resources */,
 				A795F7F92A868F96007BF2FD /* words.json in Resources */,
 				A7BCB0932A8D2A700053415E /* numbers.json in Resources */,
+				A751B3852AD4171200C00781 /* sentences.json in Resources */,
 				A743BD912AA9808500526271 /* adjectives.json in Resources */,
 				A751B3832AD413BB00C00781 /* questions.json in Resources */,
 				A7112D052A862AAC00091ECC /* Assets.xcassets in Resources */,
@@ -396,10 +398,8 @@
 				A743BD902AA97E1500526271 /* BuilderWordsViewModel.swift in Sources */,
 				A75A4F6C2A87ECCD007AD5AF /* LevelsSectionView.swift in Sources */,
 				A7112D192A862D1E00091ECC /* CellEnglish.swift in Sources */,
-				A751B3802AD4123300C00781 /* colors.json in Sources */,
 				A7607F0F2AA9BF1000C5FAB5 /* TonesView.swift in Sources */,
 				A797CD862A87CF4200AC790B /* FileKeys.swift in Sources */,
-				A751B3822AD4126100C00781 /* sentences.json in Sources */,
 				A795F7C12A863E03007BF2FD /* PhrasesView.swift in Sources */,
 				A797CD812A87C54B00AC790B /* SwipeContainerCell.swift in Sources */,
 				A7607F112AA9BF2400C5FAB5 /* TonesViewModel.swift in Sources */,

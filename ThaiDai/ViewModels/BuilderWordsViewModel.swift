@@ -12,6 +12,7 @@ final class BuilderWordsViewModel: BaseViewModel {
     @Published var adjectives: [Word] = []
     @Published var pronouns: [Word] = []
     @Published var verbs: [Word] = []
+    @Published var colors: [Word] = []
     
     override init() {
         super.init()
@@ -19,18 +20,19 @@ final class BuilderWordsViewModel: BaseViewModel {
     }
     
     private func setView() {
-        let (adjectives, pronouns, verbs) = setBuilderWords()
-        print(adjectives)
+        let (adjectives, pronouns, verbs, colors) = setBuilderWords()
         self.adjectives = adjectives
         self.pronouns = pronouns
         self.verbs = verbs
+        self.colors = colors
     }
     
-    private func setBuilderWords() -> ([Word], [Word], [Word]) {
+    private func setBuilderWords() -> ([Word], [Word], [Word], [Word]) {
         let adjectives =  getData(.adjectives) ?? Bundle.main.decode(.adjectives)
         let pronouns = getData(.pronouns) ?? Bundle.main.decode(.pronouns)
         let verbs = getData(.verbs) ?? Bundle.main.decode(.verbs)
-        return (adjectives, pronouns, verbs)
+        let colors = getData(.colors) ?? Bundle.main.decode(.colors)
+        return (adjectives, pronouns, verbs, colors)
     }
     
     func reset(_ level: Int, type: FileKeys) {
@@ -41,6 +43,8 @@ final class BuilderWordsViewModel: BaseViewModel {
             self.pronouns = resetHandler(level: level, key: .pronouns)
         case .verbs:
             self.verbs = resetHandler(level: level, key: .verbs)
+        case .colors:
+            self.colors = resetHandler(level: level, key: .colors)
         default:
             break
         }

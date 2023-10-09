@@ -18,6 +18,8 @@ enum FileKeys: String, CaseIterable {
     case daysOfWeek = "co.thaidai.daysOfTheWeek"
     case tones = "co.thaidai.tones"
     case tenses = "co.thaidai.tenses"
+    case sentences = "co.thaidai.sentences"
+    case colors = "co.thaidai.colors"
     
     case savedWords = "co.thaidai.savedWords"
     
@@ -45,6 +47,10 @@ enum FileKeys: String, CaseIterable {
         case .tones:
             return "\(self).json"
         case .tenses:
+            return "\(self).json"
+        case .sentences:
+            return "\(self).json"
+        case .colors:
             return "\(self).json"
         }
     }

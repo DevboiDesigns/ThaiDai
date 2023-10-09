@@ -11,12 +11,14 @@ final class PhrasesViewModel: BaseViewModel {
     
     @Published var phrases: [Word] = []
     @Published var questions: [Word] = []
+    @Published var sentences: [Word] = []
     
     override init() {
         super.init()
-        let (phrases, questions) = setPhrases()
+        let (phrases, questions, sentences) = setPhrases()
         self.phrases = phrases
         self.questions = questions
+        self.sentences = sentences
     }
     
     func reset(_ level: Int, type: FileKeys) {
@@ -25,15 +27,18 @@ final class PhrasesViewModel: BaseViewModel {
             self.phrases = self.resetHandler(level: level, key: .phrases)
         case .questions:
             self.questions = self.resetHandler(level: level, key: .questions)
+        case .sentences:
+            self.sentences = self.resetHandler(level: level, key: .sentences)
         default:
             break
         }
     }
 
-    private func setPhrases() -> ([Word], [Word]) {
+    private func setPhrases() -> ([Word], [Word], [Word]) {
         let phrases = getData(.phrases) ?? Bundle.main.decode(.phrases)
         let questions = getData(.questions) ?? Bundle.main.decode(.questions)
-        return (phrases, questions)
+        let sentences = getData(.sentences) ?? Bundle.main.decode(.sentences)
+        return (phrases, questions, sentences)
     }
     
     func buttonHandler(_ button: CellButtons, _ word: Word) {

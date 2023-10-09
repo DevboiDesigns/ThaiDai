@@ -8,5 +8,5 @@
 import Foundation
 
 enum PhraseType {
-    case phrase, question
+    case phrase, question, sentences
 }

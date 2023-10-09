@@ -21,6 +21,8 @@ struct BuilderWordsView: View {
             return builderVM.pronouns.filter { $0.lesson == lesson}
         case .verbs:
             return builderVM.verbs.filter { $0.lesson == lesson}
+        case .colors:
+            return builderVM.colors.filter { $0.lesson == lesson }
         }
   
     }
@@ -41,6 +43,11 @@ struct BuilderWordsView: View {
                 
                 SectionView(words: lesson(1, type: .verbs),
                             title: "Verbs", type: .verbs,
+                            action: builderVM.buttonHandler,
+                            resetAction: builderVM.reset)
+                
+                SectionView(words: lesson(2, type: .verbs),
+                            title: "Verbs II", type: .verbs,
                             action: builderVM.buttonHandler,
                             resetAction: builderVM.reset)
 

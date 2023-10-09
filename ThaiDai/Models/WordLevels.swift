@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum WordLevels {
-    case one, two, three, four, five, six, seven, eight, nine, ten, eleven
+enum WordLevels: CaseIterable {
+    case one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen
     
     var name: String {
         switch self {
@@ -34,6 +34,10 @@ enum WordLevels {
             return "Level 10"
         case .eleven:
             return "Level 11"
+        case .twelve:
+            return "Level 12"
+        case .thirteen:
+            return "Level 13"
         }
     }
     
@@ -61,6 +65,10 @@ enum WordLevels {
             return 10
         case .eleven:
             return 11
+        case .twelve:
+            return 12
+        case .thirteen:
+            return 13
         }
     }
 }

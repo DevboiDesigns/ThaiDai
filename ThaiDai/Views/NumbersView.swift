@@ -38,6 +38,10 @@ struct NumbersView: View {
                             title: "1st-*", type: .numbers,
                             action: numbersVM.buttonHandler,
                             resetAction: numbersVM.reset)
+                SectionView(words: lesson(5),
+                            title: "Money", type: .numbers,
+                            action: numbersVM.buttonHandler,
+                            resetAction: numbersVM.reset)
                 
                 SectionView(words: numbersVM.daysOfTheWeek,
                             title: "Dates", type: .daysOfWeek,

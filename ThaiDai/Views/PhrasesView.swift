@@ -17,6 +17,8 @@ struct PhrasesView: View {
             return phrasesVM.phrases.filter { $0.lesson == lesson }
         case .question:
             return phrasesVM.questions.filter { $0.lesson == lesson }
+        case .sentences:
+            return phrasesVM.sentences.filter { $0.lesson == lesson }
         }
     }
     
@@ -48,6 +50,11 @@ struct PhrasesView: View {
                 
                 SectionView(words: lesson(1, type: .question),
                             title: "Questions", type: .questions,
+                            action: phrasesVM.buttonHandler,
+                            resetAction: phrasesVM.reset)
+                
+                SectionView(words: lesson(1, type: .sentences),
+                            title: "Sentences", type: .questions,
                             action: phrasesVM.buttonHandler,
                             resetAction: phrasesVM.reset)
             }
