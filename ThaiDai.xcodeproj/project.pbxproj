@@ -65,6 +65,13 @@
 		A79B43C12AD58728003917FD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = A79B43C02AD58728003917FD /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		A79B43CB2AD58728003917FD /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = A79B43CA2AD58728003917FD /* FirebaseCrashlytics */; };
 		A79B43F12AD587B7003917FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B43F02AD587B7003917FD /* AppDelegate.swift */; };
+		A79B43FA2AD5BCA1003917FD /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B43F92AD5BCA1003917FD /* Service.swift */; };
+		A79B43FC2AD5BD23003917FD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B43FB2AD5BD23003917FD /* Endpoint.swift */; };
+		A79B43FE2AD5BE78003917FD /* Endpoint+Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B43FD2AD5BE78003917FD /* Endpoint+Lessons.swift */; };
+		A79B44002AD5BEDD003917FD /* Service+Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B43FF2AD5BEDD003917FD /* Service+Lessons.swift */; };
+		A79B44022AD5BF05003917FD /* URLSession+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B44012AD5BF05003917FD /* URLSession+Request.swift */; };
+		A79B44042AD5BFB7003917FD /* TDError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B44032AD5BFB7003917FD /* TDError.swift */; };
+		A79B44062AD5C012003917FD /* LessonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B44052AD5C012003917FD /* LessonsViewModel.swift */; };
 		A7BCB0932A8D2A700053415E /* numbers.json in Resources */ = {isa = PBXBuildFile; fileRef = A70A34F22A880B1700A2671C /* numbers.json */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +132,13 @@
 		A797CD852A87CF4200AC790B /* FileKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileKeys.swift; sourceTree = "<group>"; };
 		A79B43B72AD586AF003917FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A79B43F02AD587B7003917FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A79B43F92AD5BCA1003917FD /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A79B43FB2AD5BD23003917FD /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A79B43FD2AD5BE78003917FD /* Endpoint+Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Lessons.swift"; sourceTree = "<group>"; };
+		A79B43FF2AD5BEDD003917FD /* Service+Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+Lessons.swift"; sourceTree = "<group>"; };
+		A79B44012AD5BF05003917FD /* URLSession+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Request.swift"; sourceTree = "<group>"; };
+		A79B44032AD5BFB7003917FD /* TDError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDError.swift; sourceTree = "<group>"; };
+		A79B44052AD5C012003917FD /* LessonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +176,7 @@
 		A7112CFF2A862AAB00091ECC /* ThaiDai */ = {
 			isa = PBXGroup;
 			children = (
+				A79B43F82AD5BC89003917FD /* Network */,
 				A7112D062A862AAC00091ECC /* ThaiDai.entitlements */,
 				A79B43B72AD586AF003917FD /* GoogleService-Info.plist */,
 				A79B43F02AD587B7003917FD /* AppDelegate.swift */,
@@ -211,6 +226,7 @@
 				A743BD8F2AA97E1500526271 /* BuilderWordsViewModel.swift */,
 				A743BD992AA9965D00526271 /* SearchViewModel.swift */,
 				A7607F102AA9BF2400C5FAB5 /* TonesViewModel.swift */,
+				A79B44052AD5C012003917FD /* LessonsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -299,6 +315,35 @@
 				A797CD822A87CCA800AC790B /* CellButtons.swift */,
 			);
 			path = SwipeDelete;
+			sourceTree = "<group>";
+		};
+		A79B43F82AD5BC89003917FD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A79B44082AD5C215003917FD /* Service */,
+				A79B44072AD5C20B003917FD /* Endpoint */,
+				A79B44032AD5BFB7003917FD /* TDError.swift */,
+				A79B44012AD5BF05003917FD /* URLSession+Request.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A79B44072AD5C20B003917FD /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				A79B43FB2AD5BD23003917FD /* Endpoint.swift */,
+				A79B43FD2AD5BE78003917FD /* Endpoint+Lessons.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		A79B44082AD5C215003917FD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A79B43F92AD5BCA1003917FD /* Service.swift */,
+				A79B43FF2AD5BEDD003917FD /* Service+Lessons.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,6 +470,7 @@
 				A743BD9A2AA9965D00526271 /* SearchViewModel.swift in Sources */,
 				A797CD612A87BE1600AC790B /* SettingsView.swift in Sources */,
 				A795F7E62A86655D007BF2FD /* CellThai.swift in Sources */,
+				A79B44042AD5BFB7003917FD /* TDError.swift in Sources */,
 				A76D267C2AAB336500126F32 /* TabItems.swift in Sources */,
 				A797CD5F2A87BBB200AC790B /* Color+.swift in Sources */,
 				A743BD932AA987BB00526271 /* BuilderWords.swift in Sources */,
@@ -438,17 +484,22 @@
 				A75A4F662A87E37B007AD5AF /* WordLevels.swift in Sources */,
 				A795F7C32A863E0E007BF2FD /* PhrasesViewModel.swift in Sources */,
 				A797CD832A87CCA800AC790B /* CellButtons.swift in Sources */,
+				A79B43FA2AD5BCA1003917FD /* Service.swift in Sources */,
 				A795F7F12A867EF7007BF2FD /* HeaderBar.swift in Sources */,
 				A795F7F32A868203007BF2FD /* Text+.swift in Sources */,
+				A79B43FE2AD5BE78003917FD /* Endpoint+Lessons.swift in Sources */,
 				A795F7F82A868D03007BF2FD /* Bundle+.swift in Sources */,
+				A79B44022AD5BF05003917FD /* URLSession+Request.swift in Sources */,
 				A7112D142A862C2200091ECC /* WordsViewModel.swift in Sources */,
 				A79B43F12AD587B7003917FD /* AppDelegate.swift in Sources */,
 				A70A34F12A8803B300A2671C /* SettingsViewModel.swift in Sources */,
 				A7112D202A863BC400091ECC /* NumbersView.swift in Sources */,
 				A7112D172A862CD200091ECC /* WordsView.swift in Sources */,
+				A79B43FC2AD5BD23003917FD /* Endpoint.swift in Sources */,
 				A7112D1C2A862E3800091ECC /* View+.swift in Sources */,
 				A743BD8E2AA97DEB00526271 /* BuilderWordsView.swift in Sources */,
 				A795F7BA2A863C9B007BF2FD /* NumbersViewModel.swift in Sources */,
+				A79B44002AD5BEDD003917FD /* Service+Lessons.swift in Sources */,
 				A795F7EF2A866C39007BF2FD /* SectionView.swift in Sources */,
 				A743BD902AA97E1500526271 /* BuilderWordsViewModel.swift in Sources */,
 				A75A4F6C2A87ECCD007AD5AF /* LevelsSectionView.swift in Sources */,
@@ -457,6 +508,7 @@
 				A797CD862A87CF4200AC790B /* FileKeys.swift in Sources */,
 				A795F7C12A863E03007BF2FD /* PhrasesView.swift in Sources */,
 				A797CD812A87C54B00AC790B /* SwipeContainerCell.swift in Sources */,
+				A79B44062AD5C012003917FD /* LessonsViewModel.swift in Sources */,
 				A7607F112AA9BF2400C5FAB5 /* TonesViewModel.swift in Sources */,
 				A75A4F6A2A87E954007AD5AF /* LevelsCell.swift in Sources */,
 				A7112D112A862BE900091ECC /* Word.swift in Sources */,

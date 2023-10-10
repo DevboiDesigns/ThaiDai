@@ -11,6 +11,8 @@ struct AppView: View {
     
     @State private var selection: TabItems = .words
     
+    @StateObject private var lessonVM = LessonsViewModel()
+    
     init() {
         UITabBar.appearance().isTranslucent = false
         UITabBar.appearance().backgroundColor = UIColor.black
