@@ -72,6 +72,7 @@
 		A79B44022AD5BF05003917FD /* URLSession+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B44012AD5BF05003917FD /* URLSession+Request.swift */; };
 		A79B44042AD5BFB7003917FD /* TDError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B44032AD5BFB7003917FD /* TDError.swift */; };
 		A79B44062AD5C012003917FD /* LessonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B44052AD5C012003917FD /* LessonsViewModel.swift */; };
+		A79B440B2AD5C785003917FD /* LessonsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B440A2AD5C785003917FD /* LessonsResponse.swift */; };
 		A7BCB0932A8D2A700053415E /* numbers.json in Resources */ = {isa = PBXBuildFile; fileRef = A70A34F22A880B1700A2671C /* numbers.json */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +140,7 @@
 		A79B44012AD5BF05003917FD /* URLSession+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Request.swift"; sourceTree = "<group>"; };
 		A79B44032AD5BFB7003917FD /* TDError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDError.swift; sourceTree = "<group>"; };
 		A79B44052AD5C012003917FD /* LessonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewModel.swift; sourceTree = "<group>"; };
+		A79B440A2AD5C785003917FD /* LessonsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 				A743BD922AA987BB00526271 /* BuilderWords.swift */,
 				A743BD952AA98BF900526271 /* PhraseType.swift */,
 				A76D267B2AAB336500126F32 /* TabItems.swift */,
+				A79B440A2AD5C785003917FD /* LessonsResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				A797CD812A87C54B00AC790B /* SwipeContainerCell.swift in Sources */,
 				A79B44062AD5C012003917FD /* LessonsViewModel.swift in Sources */,
 				A7607F112AA9BF2400C5FAB5 /* TonesViewModel.swift in Sources */,
+				A79B440B2AD5C785003917FD /* LessonsResponse.swift in Sources */,
 				A75A4F6A2A87E954007AD5AF /* LevelsCell.swift in Sources */,
 				A7112D112A862BE900091ECC /* Word.swift in Sources */,
 			);

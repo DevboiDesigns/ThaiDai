@@ -9,7 +9,7 @@ import Foundation
 
 extension Service {
     
-    func getAllLessons(_ session: URLSession = .shared, complete: @escaping (Result<(), TDError>) -> Void) {
+    func getAllLessons(_ session: URLSession = .shared, complete: @escaping (Result<LessonsResponse, TDError>) -> Void) {
         session.request(.lessons, method: .get) { data, response, error in
             if let _ = error {
                 complete(.failure(.unableToComplete))
@@ -24,18 +24,16 @@ extension Service {
                 complete(.failure(.invalidData))
                 return
             }
+
             
-            print(data)
-            complete(.success(()))
-            
-//            do {
-//                let decoder = JSONDecoder()
-//                let res = try decoder.decode(SearchUsersResponse.self, from: data)
-//                complete(.success(res))
-//                return
-//            } catch {
-//                complete(.failure(.invalidData))
-//            }
+            do {
+                let decoder = JSONDecoder()
+                let res = try decoder.decode(LessonsResponse.self, from: data)
+                complete(.success(res))
+                return
+            } catch {
+                complete(.failure(.invalidData))
+            }
         }
     }
 }

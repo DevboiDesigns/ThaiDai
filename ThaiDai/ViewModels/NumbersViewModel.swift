@@ -22,7 +22,6 @@ final class NumbersViewModel: BaseViewModel {
     private func setNumbers() -> ([Word], [Word]) {
         let numbers = getData(.numbers) ?? Bundle.main.decode(.numbers)
         let daysOfWeek = getData(.daysOfWeek) ?? Bundle.main.decode(.daysOfWeek)
-        print(numbers)
         return (numbers, daysOfWeek)
     }
     
