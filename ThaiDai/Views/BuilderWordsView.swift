@@ -50,6 +50,11 @@ struct BuilderWordsView: View {
                             title: "Verbs II", type: .verbs,
                             action: builderVM.buttonHandler,
                             resetAction: builderVM.reset)
+                
+                SectionView(words: lesson(1, type: .colors),
+                            title: "Colors", type: .colors,
+                            action: builderVM.buttonHandler,
+                            resetAction: builderVM.reset)
 
             }
 
